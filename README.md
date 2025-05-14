@@ -7,7 +7,7 @@ The automatic classification of medical time series signals, such as electroence
 
 
 
-<span style="color:red;">All code is available</span>
+## All code is available
 
 ## 1. Installation
 ```
