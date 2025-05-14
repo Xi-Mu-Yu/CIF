@@ -3,19 +3,21 @@
 <h1> Channel-Imposed Fusion: A Simple yet Effective Method for Medical Time Series Classification </h1>
 </div>
 
-Co-training has achieved significant success in the field of semi-supervised learning; however, the *homogenization phenomenon*, which arises from multiple models tending towards similar decision boundaries, remains inadequately addressed. To tackle this issue, we propose a novel algorithm called **&beta;-FFT** from the perspectives of data diversity and training structure.First, from the perspective of data diversity, we introduce a nonlinear interpolation method based on the **Fast Fourier Transform (FFT)**. This method generates more diverse training samples by swapping low-frequency components between pairs of images, thereby enhancing the model's generalization capability. Second, from the structural perspective, we propose a differentiated training strategy to alleviate the homogenization issue in co-training. In this strategy, we apply additional training with labeled data to one model in the co-training framework, while employing linear interpolation based on the **Beta (&beta;)** distribution for the unlabeled data as a regularization term for the additional training. This approach enables us to effectively utilize the limited labeled data while simultaneously improving the model's performance on unlabeled data, ultimately enhancing the overall performance of the system.Experimental results demonstrate that **&beta;-FFT** outperforms current state-of-the-art (SOTA) methods on three public medical image datasets.
+The automatic classification of medical time series signals, such as electroencephalogram (EEG) and electrocardiogram (ECG), plays a pivotal role in clinical decision support and early detection of diseases. Although Transformer based models have achieved notable performance by implicitly modeling temporal dependencies through self-attention mechanisms, their inherently complex architectures and opaque reasoning processes undermine their trustworthiness in high stakes clinical settings. In response to these limitations, this study shifts focus toward a modeling paradigm that emphasizes interpretability and structural transparency, aligning more closely with the intrinsic characteristics of medical data. We propose a novel method Channel Imposed Fusion (CIF) that explicitly models temporal relationships across multiple channels, effectively reducing redundancy and improving feature diversity, thus improving model interpretability. Furthermore, we integrate CIF with the Temporal Convolutional Network (TCN), known for its structural simplicity and controllable receptive field, to construct an efficient and interpretable classification framework. Experimental results on several public EEG and ECG datasets demonstrate that the proposed method not only surpasses current mainstream Transformer models in classification accuracy but also achieves a desirable balance between performance and interpretability, thus offering a novel perspective for medical time series classification.
 
 
 
+## All code is available
 
 ## 1. Installation
 ```
 conda create -n TCN python=3.8.10
+conda activate TCN
 pip3 install torch==1.11.0+cu113 torchvision==0.12.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 pip install -r requirements.txt
 ```
 ## 2. Dataset
-All data can be accessed in Medformer.
+All data can be accessed in [Medformer](https://github.com/DL4mHealth/Medformer).
 ```
 ├── ./dataset
     ├── [ADFTD]
@@ -26,26 +28,34 @@ All data can be accessed in Medformer.
 ```
 
 ## 3. Usage
-**To train a model**
-```
-I will organize my code after submitting another piece of work to NeurIPS 2025, and plan to make the code publicly available by the end of June
-``` 
 **To test a model**
 
 We have given the model of the corresponding results of our paper
 ```
-code/model
+./checkpoints/classification
+```
+The training logs for the paper results can be found in:
+
+```
+./log/classification
+```
+
+The training results for the paper results can be found in:
+```
+./results/classification
 ```
 
 if you want to test, you can follow the code below.
+```
+bash ./scripts/test.sh
+```
 
+**To train a model**
 ```
-python test_ACDC_beta_FFT.py  # for ACDC testing
-python test_promise12_beta_FFT.py  # for PROMISE12 testing
-python test_MSCMR_split1.py  # for MS-CMRSEG19_split1
-python test_MSCMR_split2.py  # for MS-CMRSEG19_split2
-```
+bash ./scripts/TCN.sh
+``` 
+
 
 ## Acknowledgements
-Our code is largely based on [SSL4MIS](https://github.com/HiLab-git/SSL4MIS), [BCP](https://github.com/DeepMed-Lab-ECNU/BCP), [DiffRect](https://github.com/CUHK-AIM-Group/DiffRect/),and [ABD](https://github.com/chy-upc/ABD). Thanks for these authors for their valuable work, hope our work can also contribute to related research.
+Our code is largely based on [Medformer](https://github.com/DL4mHealth/Medformer) and [Time-Series-Library](https://github.com/thuml/Time-Series-Library). Thanks for these authors for their valuable work, hope our work can also contribute to related research.
 
