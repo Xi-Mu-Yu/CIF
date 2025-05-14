@@ -39,8 +39,6 @@ code/model
 
 if you want to test, you can follow the code below.
 
-**Note**: For MS-CMRSEG19, the dataset is split into training and validation only. We report the averaged results on the validation sets of the two random splits.This is to follow the article [DiffRect](https://github.com/CUHK-AIM-Group/DiffRect/).
-
 ```
 python test_ACDC_beta_FFT.py  # for ACDC testing
 python test_promise12_beta_FFT.py  # for PROMISE12 testing
@@ -51,5 +49,3 @@ python test_MSCMR_split2.py  # for MS-CMRSEG19_split2
 ## Acknowledgements
 Our code is largely based on [SSL4MIS](https://github.com/HiLab-git/SSL4MIS), [BCP](https://github.com/DeepMed-Lab-ECNU/BCP), [DiffRect](https://github.com/CUHK-AIM-Group/DiffRect/),and [ABD](https://github.com/chy-upc/ABD). Thanks for these authors for their valuable work, hope our work can also contribute to related research.
 
-
-**Email：**huming708@gmail.com
