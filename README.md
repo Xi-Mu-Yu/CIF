@@ -30,9 +30,12 @@ All data can be accessed in [Medformer](https://github.com/DL4mHealth/Medformer)
 ## 3. Usage
 **To test a model**
 
-We have given the model of the corresponding results of our paper
+We have given the model of the corresponding results of our paper, **checkpoints are included in the supplementary material  we provided in openreview**.
+
 ```
+
 ./checkpoints/classification
+
 ```
 The training logs for the paper results can be found in:
 
