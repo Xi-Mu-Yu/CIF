@@ -1,0 +1,25 @@
+classification_PTB-Indep_1_8_0.21_-0.5_best_TCN_PTB_ftM_sl96_ll48_pl96_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_seed41  
+Validation results --- Loss: 0.28551, Accuracy: 0.96952, Precision: 0.96785, Recall: 0.83631, F1: 0.88907, AUROC: 0.91875, AUPRC: 0.91000
+Test results --- Loss: 1.02767, Accuracy: 0.85611, Precision: 0.88492, Recall: 0.79342, F1: 0.81886, AUROC: 0.94337, AUPRC: 0.92911
+
+
+classification_PTB-Indep_1_8_0.21_-0.5_best_TCN_PTB_ftM_sl300_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_seed42  
+Validation results --- Loss: 0.18451, Accuracy: 0.95567, Precision: 0.89247, Recall: 0.80920, F1: 0.84470, AUROC: 0.95887, AUPRC: 0.91784
+Test results --- Loss: 0.70460, Accuracy: 0.88717, Precision: 0.90732, Recall: 0.83965, F1: 0.86242, AUROC: 0.93401, AUPRC: 0.93238
+
+
+classification_PTB-Indep_1_8_0.21_-0.5_best_TCN_PTB_ftM_sl300_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_seed43  
+Validation results --- Loss: 0.15611, Accuracy: 0.96067, Precision: 0.88257, Recall: 0.86572, F1: 0.87390, AUROC: 0.96792, AUPRC: 0.92102
+Test results --- Loss: 0.62159, Accuracy: 0.89293, Precision: 0.90977, Recall: 0.84924, F1: 0.87053, AUROC: 0.95887, AUPRC: 0.95555
+
+
+classification_PTB-Indep_1_8_0.21_-0.5_best_TCN_PTB_ftM_sl300_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_seed44  
+Validation results --- Loss: 0.24799, Accuracy: 0.95790, Precision: 0.87412, Recall: 0.85583, F1: 0.86469, AUROC: 0.92320, AUPRC: 0.89477
+Test results --- Loss: 0.79454, Accuracy: 0.89731, Precision: 0.93057, Recall: 0.84634, F1: 0.87313, AUROC: 0.94473, AUPRC: 0.94566
+
+
+classification_PTB-Indep_1_8_0.21_-0.5_best_TCN_PTB_ftM_sl300_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_seed45  
+Validation results --- Loss: 0.22296, Accuracy: 0.95605, Precision: 0.88032, Recall: 0.82893, F1: 0.85229, AUROC: 0.94883, AUPRC: 0.90071
+Test results --- Loss: 0.89727, Accuracy: 0.88098, Precision: 0.90062, Recall: 0.83169, F1: 0.85449, AUROC: 0.93325, AUPRC: 0.92623
+
+

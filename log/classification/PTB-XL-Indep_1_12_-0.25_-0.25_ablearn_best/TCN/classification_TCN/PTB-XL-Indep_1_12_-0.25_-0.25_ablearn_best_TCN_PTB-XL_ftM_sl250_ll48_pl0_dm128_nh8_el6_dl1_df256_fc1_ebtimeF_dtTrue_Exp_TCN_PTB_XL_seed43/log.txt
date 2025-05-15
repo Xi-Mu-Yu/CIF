@@ -1,0 +1,858 @@
+2025-05-14 17:26:21,794 - INFO - Args in experiment:
+2025-05-14 17:26:21,794 - INFO - Namespace(a=-0.25, activation='gelu', anomaly_ratio=0.25, augmentations='flip,shuffle,frequency,jitter,mask,drop', b=-0.25, batch_size=32, c_out=7, chunk_size=16, d_conv=4, d_ff=256, d_layers=1, d_model=128, data='PTB-XL', data_path='ETTh1.csv', dec_in=7, des='Exp_TCN_PTB_XL', devices='0,1,2,3', distil=True, dropout=0.1, e_layers=6, embed='timeF', enc_in=12, expand=2, factor=1, features='M', freq='h', gpu=0, inverse=False, is_training=1, itr=5, label_len=48, learnab=True, learning_rate=0.0001, loss='MSE', lradj='type1', mask_rate=0.25, model='TCN', model_id='TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best', moving_avg=25, n=12, n_heads=8, no_inter_attn=False, num_class=5, num_kernels=6, num_workers=0, output_attention=False, p_hidden_dims=[128, 128], p_hidden_layers=2, patch_H='2,4,8', patch_len=16, patch_len_list='2,4,8', patience=10, pred_len=0, root_path='../Medformer_train/dataset/PTB-XL/', sampling_rate=256, seasonal_patterns='Monthly', seed=43, seq_len=250, single_channel=False, stride=8, swa=False, t=1, target='OT', task_name='classification', top_k=5, train_epochs=100, use_amp=False, use_gpu=True, use_multi_gpu=False)
+2025-05-14 17:26:21,795 - INFO - >>>>>>>training : classification_TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best_TCN_PTB-XL_ftM_sl250_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_PTB_XL_seed43<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-05-14 18:19:04,794 - INFO - train_steps: 3518
+2025-05-14 18:19:04,795 - INFO - 
+2025-05-14 18:19:04,795 - INFO - 
+2025-05-14 18:19:07,679 - INFO - 	iters: 100, epoch: 1 | loss: 1.3951062
+2025-05-14 18:19:07,680 - INFO - 	speed: 0.0289s/iter; left time: 10149.1087s
+2025-05-14 18:19:10,908 - INFO - 	iters: 200, epoch: 1 | loss: 0.9703119
+2025-05-14 18:19:10,908 - INFO - 	speed: 0.0323s/iter; left time: 11350.9827s
+2025-05-14 18:19:13,280 - INFO - 	iters: 300, epoch: 1 | loss: 0.9248019
+2025-05-14 18:19:13,281 - INFO - 	speed: 0.0237s/iter; left time: 8338.9437s
+2025-05-14 18:19:16,486 - INFO - 	iters: 400, epoch: 1 | loss: 0.8111381
+2025-05-14 18:19:16,486 - INFO - 	speed: 0.0321s/iter; left time: 11263.7967s
+2025-05-14 18:19:19,330 - INFO - 	iters: 500, epoch: 1 | loss: 0.7383451
+2025-05-14 18:19:19,330 - INFO - 	speed: 0.0284s/iter; left time: 9991.4983s
+2025-05-14 18:19:22,742 - INFO - 	iters: 600, epoch: 1 | loss: 0.9296429
+2025-05-14 18:19:22,742 - INFO - 	speed: 0.0341s/iter; left time: 11982.7209s
+2025-05-14 18:19:26,212 - INFO - 	iters: 700, epoch: 1 | loss: 0.8780965
+2025-05-14 18:19:26,212 - INFO - 	speed: 0.0347s/iter; left time: 12181.5047s
+2025-05-14 18:19:29,135 - INFO - 	iters: 800, epoch: 1 | loss: 0.7688268
+2025-05-14 18:19:29,136 - INFO - 	speed: 0.0292s/iter; left time: 10262.4258s
+2025-05-14 18:19:31,452 - INFO - 	iters: 900, epoch: 1 | loss: 0.5377013
+2025-05-14 18:19:31,452 - INFO - 	speed: 0.0232s/iter; left time: 8126.7952s
+2025-05-14 18:19:33,808 - INFO - 	iters: 1000, epoch: 1 | loss: 0.8837390
+2025-05-14 18:19:33,808 - INFO - 	speed: 0.0236s/iter; left time: 8266.4747s
+2025-05-14 18:19:35,951 - INFO - 	iters: 1100, epoch: 1 | loss: 0.7591289
+2025-05-14 18:19:35,951 - INFO - 	speed: 0.0214s/iter; left time: 7514.2193s
+2025-05-14 18:19:39,222 - INFO - 	iters: 1200, epoch: 1 | loss: 0.8057917
+2025-05-14 18:19:39,222 - INFO - 	speed: 0.0327s/iter; left time: 11468.8447s
+2025-05-14 18:19:42,467 - INFO - 	iters: 1300, epoch: 1 | loss: 0.4976580
+2025-05-14 18:19:42,468 - INFO - 	speed: 0.0325s/iter; left time: 11375.0047s
+2025-05-14 18:19:45,847 - INFO - 	iters: 1400, epoch: 1 | loss: 0.7776709
+2025-05-14 18:19:45,848 - INFO - 	speed: 0.0338s/iter; left time: 11843.5918s
+2025-05-14 18:19:49,284 - INFO - 	iters: 1500, epoch: 1 | loss: 0.7497438
+2025-05-14 18:19:49,284 - INFO - 	speed: 0.0344s/iter; left time: 12038.7364s
+2025-05-14 18:19:52,190 - INFO - 	iters: 1600, epoch: 1 | loss: 0.6629518
+2025-05-14 18:19:52,190 - INFO - 	speed: 0.0291s/iter; left time: 10173.9810s
+2025-05-14 18:19:54,314 - INFO - 	iters: 1700, epoch: 1 | loss: 0.6252775
+2025-05-14 18:19:54,314 - INFO - 	speed: 0.0212s/iter; left time: 7436.5445s
+2025-05-14 18:19:56,433 - INFO - 	iters: 1800, epoch: 1 | loss: 0.3447500
+2025-05-14 18:19:56,433 - INFO - 	speed: 0.0212s/iter; left time: 7417.5741s
+2025-05-14 18:19:58,527 - INFO - 	iters: 1900, epoch: 1 | loss: 0.7527567
+2025-05-14 18:19:58,527 - INFO - 	speed: 0.0209s/iter; left time: 7324.9986s
+2025-05-14 18:20:00,854 - INFO - 	iters: 2000, epoch: 1 | loss: 0.4339186
+2025-05-14 18:20:00,854 - INFO - 	speed: 0.0233s/iter; left time: 8140.1316s
+2025-05-14 18:20:04,211 - INFO - 	iters: 2100, epoch: 1 | loss: 0.5565056
+2025-05-14 18:20:04,211 - INFO - 	speed: 0.0336s/iter; left time: 11739.2337s
+2025-05-14 18:20:06,319 - INFO - 	iters: 2200, epoch: 1 | loss: 0.5902985
+2025-05-14 18:20:06,319 - INFO - 	speed: 0.0211s/iter; left time: 7370.2869s
+2025-05-14 18:20:09,678 - INFO - 	iters: 2300, epoch: 1 | loss: 0.7276749
+2025-05-14 18:20:09,678 - INFO - 	speed: 0.0336s/iter; left time: 11738.4477s
+2025-05-14 18:20:12,680 - INFO - 	iters: 2400, epoch: 1 | loss: 0.8386260
+2025-05-14 18:20:12,691 - INFO - 	speed: 0.0301s/iter; left time: 10529.0658s
+2025-05-14 18:20:15,576 - INFO - 	iters: 2500, epoch: 1 | loss: 0.6707618
+2025-05-14 18:20:15,576 - INFO - 	speed: 0.0288s/iter; left time: 10076.7125s
+2025-05-14 18:20:18,233 - INFO - 	iters: 2600, epoch: 1 | loss: 0.8424371
+2025-05-14 18:20:18,233 - INFO - 	speed: 0.0266s/iter; left time: 9278.1184s
+2025-05-14 18:20:21,693 - INFO - 	iters: 2700, epoch: 1 | loss: 0.5856846
+2025-05-14 18:20:21,693 - INFO - 	speed: 0.0346s/iter; left time: 12078.7249s
+2025-05-14 18:20:25,148 - INFO - 	iters: 2800, epoch: 1 | loss: 0.5203304
+2025-05-14 18:20:25,149 - INFO - 	speed: 0.0346s/iter; left time: 12058.8230s
+2025-05-14 18:20:28,006 - INFO - 	iters: 2900, epoch: 1 | loss: 0.8366511
+2025-05-14 18:20:28,006 - INFO - 	speed: 0.0286s/iter; left time: 9969.2491s
+2025-05-14 18:20:31,516 - INFO - 	iters: 3000, epoch: 1 | loss: 0.8738099
+2025-05-14 18:20:31,517 - INFO - 	speed: 0.0351s/iter; left time: 12245.1172s
+2025-05-14 18:20:34,903 - INFO - 	iters: 3100, epoch: 1 | loss: 0.7854089
+2025-05-14 18:20:34,904 - INFO - 	speed: 0.0339s/iter; left time: 11810.3236s
+2025-05-14 18:20:38,355 - INFO - 	iters: 3200, epoch: 1 | loss: 0.6261691
+2025-05-14 18:20:38,356 - INFO - 	speed: 0.0345s/iter; left time: 12032.6224s
+2025-05-14 18:20:41,881 - INFO - 	iters: 3300, epoch: 1 | loss: 0.6584486
+2025-05-14 18:20:41,881 - INFO - 	speed: 0.0353s/iter; left time: 12287.6310s
+2025-05-14 18:20:45,336 - INFO - 	iters: 3400, epoch: 1 | loss: 0.4975304
+2025-05-14 18:20:45,337 - INFO - 	speed: 0.0346s/iter; left time: 12037.7867s
+2025-05-14 18:20:48,701 - INFO - 	iters: 3500, epoch: 1 | loss: 0.3400359
+2025-05-14 18:20:48,701 - INFO - 	speed: 0.0336s/iter; left time: 11718.9876s
+2025-05-14 18:20:49,276 - INFO - Epoch: 1 cost time: 104.4806
+2025-05-14 18:21:06,001 - INFO - Epoch: 1, Steps: 3518 | Train Loss: 0.70629
+Validation results --- Loss: 0.70428, Accuracy: 0.74847, Precision: 0.67643, Recall: 0.62663, F1: 0.64211, AUROC: 0.91279, AUPRC: 0.70903
+Test results --- Loss: 0.73659, Accuracy: 0.74020, Precision: 0.66021, Recall: 0.60997, F1: 0.62258, AUROC: 0.90685, AUPRC: 0.68051
+2025-05-14 18:21:06,002 - INFO - Metric score decreased (inf --> -0.642108).  Saving model ...
+2025-05-14 18:21:06,020 - INFO - Model saved at ./checkpoints/classification/TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best/TCN/classification_TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best_TCN_PTB-XL_ftM_sl250_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_PTB_XL_seed43//checkpoint.pth
+2025-05-14 18:21:06,020 - INFO - 
+2025-05-14 18:21:06,020 - INFO - 
+2025-05-14 18:21:09,352 - INFO - 	iters: 100, epoch: 2 | loss: 0.5938599
+2025-05-14 18:21:09,352 - INFO - 	speed: 0.2065s/iter; left time: 71902.5791s
+2025-05-14 18:21:12,599 - INFO - 	iters: 200, epoch: 2 | loss: 0.5133658
+2025-05-14 18:21:12,600 - INFO - 	speed: 0.0325s/iter; left time: 11303.6043s
+2025-05-14 18:21:15,953 - INFO - 	iters: 300, epoch: 2 | loss: 0.2828178
+2025-05-14 18:21:15,953 - INFO - 	speed: 0.0335s/iter; left time: 11670.0459s
+2025-05-14 18:21:19,410 - INFO - 	iters: 400, epoch: 2 | loss: 0.4707941
+2025-05-14 18:21:19,410 - INFO - 	speed: 0.0346s/iter; left time: 12026.3593s
+2025-05-14 18:21:22,614 - INFO - 	iters: 500, epoch: 2 | loss: 0.7389368
+2025-05-14 18:21:22,614 - INFO - 	speed: 0.0320s/iter; left time: 11140.8280s
+2025-05-14 18:21:26,018 - INFO - 	iters: 600, epoch: 2 | loss: 0.6622751
+2025-05-14 18:21:26,018 - INFO - 	speed: 0.0340s/iter; left time: 11835.0507s
+2025-05-14 18:21:29,429 - INFO - 	iters: 700, epoch: 2 | loss: 0.8012211
+2025-05-14 18:21:29,429 - INFO - 	speed: 0.0341s/iter; left time: 11856.7241s
+2025-05-14 18:21:32,842 - INFO - 	iters: 800, epoch: 2 | loss: 0.5580682
+2025-05-14 18:21:32,843 - INFO - 	speed: 0.0341s/iter; left time: 11860.8370s
+2025-05-14 18:21:36,194 - INFO - 	iters: 900, epoch: 2 | loss: 0.4111470
+2025-05-14 18:21:36,194 - INFO - 	speed: 0.0335s/iter; left time: 11641.7711s
+2025-05-14 18:21:39,875 - INFO - 	iters: 1000, epoch: 2 | loss: 0.5533129
+2025-05-14 18:21:39,875 - INFO - 	speed: 0.0368s/iter; left time: 12783.2487s
+2025-05-14 18:21:43,601 - INFO - 	iters: 1100, epoch: 2 | loss: 0.5320013
+2025-05-14 18:21:43,602 - INFO - 	speed: 0.0373s/iter; left time: 12937.8590s
+2025-05-14 18:21:47,434 - INFO - 	iters: 1200, epoch: 2 | loss: 0.7475094
+2025-05-14 18:21:47,434 - INFO - 	speed: 0.0383s/iter; left time: 13301.4867s
+2025-05-14 18:21:51,047 - INFO - 	iters: 1300, epoch: 2 | loss: 0.6446844
+2025-05-14 18:21:51,047 - INFO - 	speed: 0.0361s/iter; left time: 12536.4169s
+2025-05-14 18:21:54,734 - INFO - 	iters: 1400, epoch: 2 | loss: 0.5285270
+2025-05-14 18:21:54,734 - INFO - 	speed: 0.0369s/iter; left time: 12790.9343s
+2025-05-14 18:21:57,645 - INFO - 	iters: 1500, epoch: 2 | loss: 0.4050307
+2025-05-14 18:21:57,645 - INFO - 	speed: 0.0291s/iter; left time: 10092.6068s
+2025-05-14 18:22:01,098 - INFO - 	iters: 1600, epoch: 2 | loss: 0.7937903
+2025-05-14 18:22:01,098 - INFO - 	speed: 0.0345s/iter; left time: 11971.6114s
+2025-05-14 18:22:03,564 - INFO - 	iters: 1700, epoch: 2 | loss: 0.6320040
+2025-05-14 18:22:03,564 - INFO - 	speed: 0.0247s/iter; left time: 8546.2685s
+2025-05-14 18:22:06,992 - INFO - 	iters: 1800, epoch: 2 | loss: 0.4222200
+2025-05-14 18:22:06,992 - INFO - 	speed: 0.0343s/iter; left time: 11878.5763s
+2025-05-14 18:22:10,134 - INFO - 	iters: 1900, epoch: 2 | loss: 0.4164040
+2025-05-14 18:22:10,134 - INFO - 	speed: 0.0314s/iter; left time: 10882.0877s
+2025-05-14 18:22:13,507 - INFO - 	iters: 2000, epoch: 2 | loss: 0.4894543
+2025-05-14 18:22:13,507 - INFO - 	speed: 0.0337s/iter; left time: 11679.5366s
+2025-05-14 18:22:17,023 - INFO - 	iters: 2100, epoch: 2 | loss: 0.3765883
+2025-05-14 18:22:17,023 - INFO - 	speed: 0.0352s/iter; left time: 12171.8621s
+2025-05-14 18:22:20,529 - INFO - 	iters: 2200, epoch: 2 | loss: 0.4555672
+2025-05-14 18:22:20,529 - INFO - 	speed: 0.0351s/iter; left time: 12133.3690s
+2025-05-14 18:22:22,582 - INFO - 	iters: 2300, epoch: 2 | loss: 0.6326108
+2025-05-14 18:22:22,582 - INFO - 	speed: 0.0205s/iter; left time: 7101.5073s
+2025-05-14 18:22:25,372 - INFO - 	iters: 2400, epoch: 2 | loss: 0.6911632
+2025-05-14 18:22:25,372 - INFO - 	speed: 0.0279s/iter; left time: 9650.7961s
+2025-05-14 18:22:27,474 - INFO - 	iters: 2500, epoch: 2 | loss: 0.4797257
+2025-05-14 18:22:27,475 - INFO - 	speed: 0.0210s/iter; left time: 7270.0808s
+2025-05-14 18:22:29,521 - INFO - 	iters: 2600, epoch: 2 | loss: 0.2306090
+2025-05-14 18:22:29,521 - INFO - 	speed: 0.0205s/iter; left time: 7075.2901s
+2025-05-14 18:22:31,609 - INFO - 	iters: 2700, epoch: 2 | loss: 0.4749770
+2025-05-14 18:22:31,609 - INFO - 	speed: 0.0209s/iter; left time: 7215.5096s
+2025-05-14 18:22:33,906 - INFO - 	iters: 2800, epoch: 2 | loss: 0.3676036
+2025-05-14 18:22:33,906 - INFO - 	speed: 0.0230s/iter; left time: 7936.0630s
+2025-05-14 18:22:36,098 - INFO - 	iters: 2900, epoch: 2 | loss: 0.4297360
+2025-05-14 18:22:36,098 - INFO - 	speed: 0.0219s/iter; left time: 7569.1613s
+2025-05-14 18:22:38,757 - INFO - 	iters: 3000, epoch: 2 | loss: 0.4291137
+2025-05-14 18:22:38,758 - INFO - 	speed: 0.0266s/iter; left time: 9182.6857s
+2025-05-14 18:22:41,977 - INFO - 	iters: 3100, epoch: 2 | loss: 0.5447699
+2025-05-14 18:22:41,977 - INFO - 	speed: 0.0322s/iter; left time: 11112.3785s
+2025-05-14 18:22:44,028 - INFO - 	iters: 3200, epoch: 2 | loss: 0.4405308
+2025-05-14 18:22:44,028 - INFO - 	speed: 0.0205s/iter; left time: 7078.3216s
+2025-05-14 18:22:46,611 - INFO - 	iters: 3300, epoch: 2 | loss: 0.3755088
+2025-05-14 18:22:46,612 - INFO - 	speed: 0.0258s/iter; left time: 8912.4924s
+2025-05-14 18:22:49,150 - INFO - 	iters: 3400, epoch: 2 | loss: 0.6023763
+2025-05-14 18:22:49,150 - INFO - 	speed: 0.0254s/iter; left time: 8755.1940s
+2025-05-14 18:22:51,224 - INFO - 	iters: 3500, epoch: 2 | loss: 0.3236148
+2025-05-14 18:22:51,224 - INFO - 	speed: 0.0207s/iter; left time: 7149.5742s
+2025-05-14 18:22:51,617 - INFO - Epoch: 2 cost time: 105.5970
+2025-05-14 18:23:06,917 - INFO - Epoch: 2, Steps: 3518 | Train Loss: 0.49849
+Validation results --- Loss: 0.78878, Accuracy: 0.74061, Precision: 0.67959, Recall: 0.59694, F1: 0.61455, AUROC: 0.90684, AUPRC: 0.69154
+Test results --- Loss: 0.83069, Accuracy: 0.73105, Precision: 0.66776, Recall: 0.58426, F1: 0.59783, AUROC: 0.90142, AUPRC: 0.66542
+2025-05-14 18:23:06,917 - INFO - EarlyStopping counter: 1 out of 10
+2025-05-14 18:23:06,917 - INFO - 
+2025-05-14 18:23:06,917 - INFO - 
+2025-05-14 18:23:09,068 - INFO - 	iters: 100, epoch: 3 | loss: 0.2279939
+2025-05-14 18:23:09,068 - INFO - 	speed: 0.1784s/iter; left time: 61501.0870s
+2025-05-14 18:23:11,047 - INFO - 	iters: 200, epoch: 3 | loss: 0.3331027
+2025-05-14 18:23:11,047 - INFO - 	speed: 0.0198s/iter; left time: 6818.4299s
+2025-05-14 18:23:13,036 - INFO - 	iters: 300, epoch: 3 | loss: 0.2013436
+2025-05-14 18:23:13,036 - INFO - 	speed: 0.0199s/iter; left time: 6852.9769s
+2025-05-14 18:23:14,997 - INFO - 	iters: 400, epoch: 3 | loss: 0.3382545
+2025-05-14 18:23:14,997 - INFO - 	speed: 0.0196s/iter; left time: 6753.1568s
+2025-05-14 18:23:17,250 - INFO - 	iters: 500, epoch: 3 | loss: 0.3334443
+2025-05-14 18:23:17,250 - INFO - 	speed: 0.0225s/iter; left time: 7754.2763s
+2025-05-14 18:23:20,459 - INFO - 	iters: 600, epoch: 3 | loss: 0.3102671
+2025-05-14 18:23:20,459 - INFO - 	speed: 0.0321s/iter; left time: 11045.5919s
+2025-05-14 18:23:24,164 - INFO - 	iters: 700, epoch: 3 | loss: 0.6542727
+2025-05-14 18:23:24,164 - INFO - 	speed: 0.0370s/iter; left time: 12747.4464s
+2025-05-14 18:23:27,300 - INFO - 	iters: 800, epoch: 3 | loss: 0.2242006
+2025-05-14 18:23:27,300 - INFO - 	speed: 0.0314s/iter; left time: 10785.3586s
+2025-05-14 18:23:30,746 - INFO - 	iters: 900, epoch: 3 | loss: 0.7572100
+2025-05-14 18:23:30,746 - INFO - 	speed: 0.0345s/iter; left time: 11850.0039s
+2025-05-14 18:23:34,285 - INFO - 	iters: 1000, epoch: 3 | loss: 0.6887568
+2025-05-14 18:23:34,285 - INFO - 	speed: 0.0354s/iter; left time: 12164.7952s
+2025-05-14 18:23:36,688 - INFO - 	iters: 1100, epoch: 3 | loss: 0.3774337
+2025-05-14 18:23:36,688 - INFO - 	speed: 0.0240s/iter; left time: 8260.0099s
+2025-05-14 18:23:39,626 - INFO - 	iters: 1200, epoch: 3 | loss: 0.3864233
+2025-05-14 18:23:39,626 - INFO - 	speed: 0.0294s/iter; left time: 10092.8624s
+2025-05-14 18:23:41,741 - INFO - 	iters: 1300, epoch: 3 | loss: 0.4107012
+2025-05-14 18:23:41,741 - INFO - 	speed: 0.0211s/iter; left time: 7263.5486s
+2025-05-14 18:23:44,672 - INFO - 	iters: 1400, epoch: 3 | loss: 0.1962609
+2025-05-14 18:23:44,673 - INFO - 	speed: 0.0293s/iter; left time: 10065.9831s
+2025-05-14 18:23:48,054 - INFO - 	iters: 1500, epoch: 3 | loss: 0.3697276
+2025-05-14 18:23:48,055 - INFO - 	speed: 0.0338s/iter; left time: 11608.5765s
+2025-05-14 18:23:51,351 - INFO - 	iters: 1600, epoch: 3 | loss: 0.2390755
+2025-05-14 18:23:51,352 - INFO - 	speed: 0.0330s/iter; left time: 11314.0279s
+2025-05-14 18:23:54,165 - INFO - 	iters: 1700, epoch: 3 | loss: 0.2561081
+2025-05-14 18:23:54,166 - INFO - 	speed: 0.0281s/iter; left time: 9653.5322s
+2025-05-14 18:23:56,323 - INFO - 	iters: 1800, epoch: 3 | loss: 0.2964900
+2025-05-14 18:23:56,323 - INFO - 	speed: 0.0216s/iter; left time: 7400.5853s
+2025-05-14 18:23:59,191 - INFO - 	iters: 1900, epoch: 3 | loss: 0.2074151
+2025-05-14 18:23:59,191 - INFO - 	speed: 0.0287s/iter; left time: 9832.1683s
+2025-05-14 18:24:02,426 - INFO - 	iters: 2000, epoch: 3 | loss: 0.3829380
+2025-05-14 18:24:02,426 - INFO - 	speed: 0.0323s/iter; left time: 11087.8713s
+2025-05-14 18:24:05,696 - INFO - 	iters: 2100, epoch: 3 | loss: 0.3462501
+2025-05-14 18:24:05,696 - INFO - 	speed: 0.0327s/iter; left time: 11205.5523s
+2025-05-14 18:24:08,971 - INFO - 	iters: 2200, epoch: 3 | loss: 0.3665941
+2025-05-14 18:24:08,971 - INFO - 	speed: 0.0328s/iter; left time: 11219.2850s
+2025-05-14 18:24:12,380 - INFO - 	iters: 2300, epoch: 3 | loss: 0.4572523
+2025-05-14 18:24:12,380 - INFO - 	speed: 0.0341s/iter; left time: 11673.5448s
+2025-05-14 18:24:14,487 - INFO - 	iters: 2400, epoch: 3 | loss: 0.0785613
+2025-05-14 18:24:14,488 - INFO - 	speed: 0.0211s/iter; left time: 7215.2071s
+2025-05-14 18:24:16,909 - INFO - 	iters: 2500, epoch: 3 | loss: 0.1862510
+2025-05-14 18:24:16,909 - INFO - 	speed: 0.0242s/iter; left time: 8287.8906s
+2025-05-14 18:24:20,071 - INFO - 	iters: 2600, epoch: 3 | loss: 0.5071847
+2025-05-14 18:24:20,072 - INFO - 	speed: 0.0316s/iter; left time: 10820.3127s
+2025-05-14 18:24:22,135 - INFO - 	iters: 2700, epoch: 3 | loss: 0.2109081
+2025-05-14 18:24:22,135 - INFO - 	speed: 0.0206s/iter; left time: 7058.8845s
+2025-05-14 18:24:24,179 - INFO - 	iters: 2800, epoch: 3 | loss: 0.1129481
+2025-05-14 18:24:24,179 - INFO - 	speed: 0.0204s/iter; left time: 6988.2299s
+2025-05-14 18:24:26,749 - INFO - 	iters: 2900, epoch: 3 | loss: 0.1460918
+2025-05-14 18:24:26,749 - INFO - 	speed: 0.0257s/iter; left time: 8787.7837s
+2025-05-14 18:24:29,602 - INFO - 	iters: 3000, epoch: 3 | loss: 0.2626373
+2025-05-14 18:24:29,602 - INFO - 	speed: 0.0285s/iter; left time: 9748.6656s
+2025-05-14 18:24:31,733 - INFO - 	iters: 3100, epoch: 3 | loss: 0.1007659
+2025-05-14 18:24:31,733 - INFO - 	speed: 0.0213s/iter; left time: 7280.1335s
+2025-05-14 18:24:33,847 - INFO - 	iters: 3200, epoch: 3 | loss: 0.2171350
+2025-05-14 18:24:33,848 - INFO - 	speed: 0.0211s/iter; left time: 7223.1926s
+2025-05-14 18:24:36,605 - INFO - 	iters: 3300, epoch: 3 | loss: 0.4187048
+2025-05-14 18:24:36,606 - INFO - 	speed: 0.0276s/iter; left time: 9417.5938s
+2025-05-14 18:24:39,495 - INFO - 	iters: 3400, epoch: 3 | loss: 0.1380593
+2025-05-14 18:24:39,495 - INFO - 	speed: 0.0289s/iter; left time: 9864.4470s
+2025-05-14 18:24:41,659 - INFO - 	iters: 3500, epoch: 3 | loss: 0.1704325
+2025-05-14 18:24:41,659 - INFO - 	speed: 0.0216s/iter; left time: 7384.6761s
+2025-05-14 18:24:42,063 - INFO - Epoch: 3 cost time: 95.1460
+2025-05-14 18:24:57,652 - INFO - Epoch: 3, Steps: 3518 | Train Loss: 0.30342
+Validation results --- Loss: 0.91925, Accuracy: 0.74282, Precision: 0.66183, Recall: 0.61704, F1: 0.63164, AUROC: 0.90114, AUPRC: 0.68133
+Test results --- Loss: 0.97835, Accuracy: 0.72860, Precision: 0.63978, Recall: 0.59925, F1: 0.61071, AUROC: 0.89354, AUPRC: 0.65502
+2025-05-14 18:24:57,652 - INFO - EarlyStopping counter: 2 out of 10
+2025-05-14 18:24:57,652 - INFO - 
+2025-05-14 18:24:57,652 - INFO - 
+2025-05-14 18:25:00,614 - INFO - 	iters: 100, epoch: 4 | loss: 0.1761890
+2025-05-14 18:25:00,614 - INFO - 	speed: 0.1895s/iter; left time: 64664.1785s
+2025-05-14 18:25:03,182 - INFO - 	iters: 200, epoch: 4 | loss: 0.2668872
+2025-05-14 18:25:03,182 - INFO - 	speed: 0.0257s/iter; left time: 8756.3333s
+2025-05-14 18:25:06,551 - INFO - 	iters: 300, epoch: 4 | loss: 0.2526782
+2025-05-14 18:25:06,551 - INFO - 	speed: 0.0337s/iter; left time: 11485.8735s
+2025-05-14 18:25:09,126 - INFO - 	iters: 400, epoch: 4 | loss: 0.0815387
+2025-05-14 18:25:09,126 - INFO - 	speed: 0.0258s/iter; left time: 8778.6299s
+2025-05-14 18:25:11,240 - INFO - 	iters: 500, epoch: 4 | loss: 0.1059796
+2025-05-14 18:25:11,240 - INFO - 	speed: 0.0211s/iter; left time: 7202.8744s
+2025-05-14 18:25:13,364 - INFO - 	iters: 600, epoch: 4 | loss: 0.1669404
+2025-05-14 18:25:13,364 - INFO - 	speed: 0.0212s/iter; left time: 7234.7610s
+2025-05-14 18:25:15,411 - INFO - 	iters: 700, epoch: 4 | loss: 0.0620657
+2025-05-14 18:25:15,411 - INFO - 	speed: 0.0205s/iter; left time: 6969.7205s
+2025-05-14 18:25:18,621 - INFO - 	iters: 800, epoch: 4 | loss: 0.0763870
+2025-05-14 18:25:18,621 - INFO - 	speed: 0.0321s/iter; left time: 10930.4600s
+2025-05-14 18:25:22,096 - INFO - 	iters: 900, epoch: 4 | loss: 0.2168042
+2025-05-14 18:25:22,097 - INFO - 	speed: 0.0347s/iter; left time: 11826.9816s
+2025-05-14 18:25:25,413 - INFO - 	iters: 1000, epoch: 4 | loss: 0.1637853
+2025-05-14 18:25:25,413 - INFO - 	speed: 0.0332s/iter; left time: 11284.5082s
+2025-05-14 18:25:27,773 - INFO - 	iters: 1100, epoch: 4 | loss: 0.0678702
+2025-05-14 18:25:27,774 - INFO - 	speed: 0.0236s/iter; left time: 8028.8459s
+2025-05-14 18:25:29,858 - INFO - 	iters: 1200, epoch: 4 | loss: 0.2083473
+2025-05-14 18:25:29,858 - INFO - 	speed: 0.0208s/iter; left time: 7086.7185s
+2025-05-14 18:25:31,960 - INFO - 	iters: 1300, epoch: 4 | loss: 0.0429137
+2025-05-14 18:25:31,960 - INFO - 	speed: 0.0210s/iter; left time: 7146.2922s
+2025-05-14 18:25:33,990 - INFO - 	iters: 1400, epoch: 4 | loss: 0.1308918
+2025-05-14 18:25:33,990 - INFO - 	speed: 0.0203s/iter; left time: 6900.3581s
+2025-05-14 18:25:35,965 - INFO - 	iters: 1500, epoch: 4 | loss: 0.5315579
+2025-05-14 18:25:35,965 - INFO - 	speed: 0.0197s/iter; left time: 6709.8822s
+2025-05-14 18:25:37,978 - INFO - 	iters: 1600, epoch: 4 | loss: 0.2446736
+2025-05-14 18:25:37,979 - INFO - 	speed: 0.0201s/iter; left time: 6837.1905s
+2025-05-14 18:25:40,677 - INFO - 	iters: 1700, epoch: 4 | loss: 0.2009437
+2025-05-14 18:25:40,678 - INFO - 	speed: 0.0270s/iter; left time: 9164.6055s
+2025-05-14 18:25:43,774 - INFO - 	iters: 1800, epoch: 4 | loss: 0.1717760
+2025-05-14 18:25:43,774 - INFO - 	speed: 0.0310s/iter; left time: 10509.0928s
+2025-05-14 18:25:47,171 - INFO - 	iters: 1900, epoch: 4 | loss: 0.0858848
+2025-05-14 18:25:47,171 - INFO - 	speed: 0.0340s/iter; left time: 11529.3355s
+2025-05-14 18:25:50,253 - INFO - 	iters: 2000, epoch: 4 | loss: 0.0852359
+2025-05-14 18:25:50,253 - INFO - 	speed: 0.0308s/iter; left time: 10455.1348s
+2025-05-14 18:25:52,639 - INFO - 	iters: 2100, epoch: 4 | loss: 0.0986287
+2025-05-14 18:25:52,639 - INFO - 	speed: 0.0239s/iter; left time: 8090.6224s
+2025-05-14 18:25:56,037 - INFO - 	iters: 2200, epoch: 4 | loss: 0.0503567
+2025-05-14 18:25:56,037 - INFO - 	speed: 0.0340s/iter; left time: 11522.4459s
+2025-05-14 18:25:59,121 - INFO - 	iters: 2300, epoch: 4 | loss: 0.0562965
+2025-05-14 18:25:59,122 - INFO - 	speed: 0.0308s/iter; left time: 10453.5768s
+2025-05-14 18:26:01,216 - INFO - 	iters: 2400, epoch: 4 | loss: 0.0822973
+2025-05-14 18:26:01,217 - INFO - 	speed: 0.0209s/iter; left time: 7098.5030s
+2025-05-14 18:26:03,314 - INFO - 	iters: 2500, epoch: 4 | loss: 0.2622363
+2025-05-14 18:26:03,314 - INFO - 	speed: 0.0210s/iter; left time: 7105.6677s
+2025-05-14 18:26:05,419 - INFO - 	iters: 2600, epoch: 4 | loss: 0.0442505
+2025-05-14 18:26:05,419 - INFO - 	speed: 0.0210s/iter; left time: 7127.0168s
+2025-05-14 18:26:07,849 - INFO - 	iters: 2700, epoch: 4 | loss: 0.2195514
+2025-05-14 18:26:07,849 - INFO - 	speed: 0.0243s/iter; left time: 8227.0071s
+2025-05-14 18:26:11,360 - INFO - 	iters: 2800, epoch: 4 | loss: 0.0862743
+2025-05-14 18:26:11,360 - INFO - 	speed: 0.0351s/iter; left time: 11883.7389s
+2025-05-14 18:26:14,782 - INFO - 	iters: 2900, epoch: 4 | loss: 0.2797183
+2025-05-14 18:26:14,782 - INFO - 	speed: 0.0342s/iter; left time: 11576.4852s
+2025-05-14 18:26:17,358 - INFO - 	iters: 3000, epoch: 4 | loss: 0.2481536
+2025-05-14 18:26:17,358 - INFO - 	speed: 0.0258s/iter; left time: 8712.8781s
+2025-05-14 18:26:20,369 - INFO - 	iters: 3100, epoch: 4 | loss: 0.2281399
+2025-05-14 18:26:20,369 - INFO - 	speed: 0.0301s/iter; left time: 10181.3157s
+2025-05-14 18:26:23,765 - INFO - 	iters: 3200, epoch: 4 | loss: 0.0502667
+2025-05-14 18:26:23,765 - INFO - 	speed: 0.0340s/iter; left time: 11481.4959s
+2025-05-14 18:26:27,149 - INFO - 	iters: 3300, epoch: 4 | loss: 0.1158550
+2025-05-14 18:26:27,149 - INFO - 	speed: 0.0338s/iter; left time: 11434.7763s
+2025-05-14 18:26:30,322 - INFO - 	iters: 3400, epoch: 4 | loss: 0.2758938
+2025-05-14 18:26:30,322 - INFO - 	speed: 0.0317s/iter; left time: 10719.5787s
+2025-05-14 18:26:33,698 - INFO - 	iters: 3500, epoch: 4 | loss: 0.0740996
+2025-05-14 18:26:33,699 - INFO - 	speed: 0.0338s/iter; left time: 11404.4015s
+2025-05-14 18:26:34,331 - INFO - Epoch: 4 cost time: 96.6787
+2025-05-14 18:26:49,941 - INFO - Epoch: 4, Steps: 3518 | Train Loss: 0.17569
+Validation results --- Loss: 1.14379, Accuracy: 0.71881, Precision: 0.62381, Recall: 0.61944, F1: 0.61880, AUROC: 0.88916, AUPRC: 0.65739
+Test results --- Loss: 1.16935, Accuracy: 0.71118, Precision: 0.61300, Recall: 0.60806, F1: 0.60646, AUROC: 0.88388, AUPRC: 0.63896
+2025-05-14 18:26:49,942 - INFO - EarlyStopping counter: 3 out of 10
+2025-05-14 18:26:49,942 - INFO - 
+2025-05-14 18:26:49,942 - INFO - 
+2025-05-14 18:26:53,312 - INFO - 	iters: 100, epoch: 5 | loss: 0.0547356
+2025-05-14 18:26:53,312 - INFO - 	speed: 0.1961s/iter; left time: 66219.6617s
+2025-05-14 18:26:56,698 - INFO - 	iters: 200, epoch: 5 | loss: 0.0533778
+2025-05-14 18:26:56,699 - INFO - 	speed: 0.0339s/iter; left time: 11431.2521s
+2025-05-14 18:27:00,114 - INFO - 	iters: 300, epoch: 5 | loss: 0.0862262
+2025-05-14 18:27:00,115 - INFO - 	speed: 0.0342s/iter; left time: 11525.9226s
+2025-05-14 18:27:03,524 - INFO - 	iters: 400, epoch: 5 | loss: 0.0054618
+2025-05-14 18:27:03,525 - INFO - 	speed: 0.0341s/iter; left time: 11502.9731s
+2025-05-14 18:27:07,147 - INFO - 	iters: 500, epoch: 5 | loss: 0.0544936
+2025-05-14 18:27:07,148 - INFO - 	speed: 0.0362s/iter; left time: 12217.4108s
+2025-05-14 18:27:10,663 - INFO - 	iters: 600, epoch: 5 | loss: 0.0453610
+2025-05-14 18:27:10,663 - INFO - 	speed: 0.0352s/iter; left time: 11852.5611s
+2025-05-14 18:27:14,235 - INFO - 	iters: 700, epoch: 5 | loss: 0.1026775
+2025-05-14 18:27:14,235 - INFO - 	speed: 0.0357s/iter; left time: 12036.8447s
+2025-05-14 18:27:16,939 - INFO - 	iters: 800, epoch: 5 | loss: 0.1330573
+2025-05-14 18:27:16,940 - INFO - 	speed: 0.0270s/iter; left time: 9112.6415s
+2025-05-14 18:27:20,282 - INFO - 	iters: 900, epoch: 5 | loss: 0.0785636
+2025-05-14 18:27:20,282 - INFO - 	speed: 0.0334s/iter; left time: 11259.2384s
+2025-05-14 18:27:23,345 - INFO - 	iters: 1000, epoch: 5 | loss: 0.1029626
+2025-05-14 18:27:23,345 - INFO - 	speed: 0.0306s/iter; left time: 10313.5820s
+2025-05-14 18:27:25,763 - INFO - 	iters: 1100, epoch: 5 | loss: 0.1068345
+2025-05-14 18:27:25,763 - INFO - 	speed: 0.0242s/iter; left time: 8139.7060s
+2025-05-14 18:27:27,886 - INFO - 	iters: 1200, epoch: 5 | loss: 0.1213379
+2025-05-14 18:27:27,886 - INFO - 	speed: 0.0212s/iter; left time: 7144.0667s
+2025-05-14 18:27:31,099 - INFO - 	iters: 1300, epoch: 5 | loss: 0.0124291
+2025-05-14 18:27:31,099 - INFO - 	speed: 0.0321s/iter; left time: 10809.1343s
+2025-05-14 18:27:33,612 - INFO - 	iters: 1400, epoch: 5 | loss: 0.0955026
+2025-05-14 18:27:33,612 - INFO - 	speed: 0.0251s/iter; left time: 8451.3328s
+2025-05-14 18:27:37,021 - INFO - 	iters: 1500, epoch: 5 | loss: 0.0274541
+2025-05-14 18:27:37,021 - INFO - 	speed: 0.0341s/iter; left time: 11461.5317s
+2025-05-14 18:27:40,431 - INFO - 	iters: 1600, epoch: 5 | loss: 0.1086852
+2025-05-14 18:27:40,432 - INFO - 	speed: 0.0341s/iter; left time: 11463.7206s
+2025-05-14 18:27:43,798 - INFO - 	iters: 1700, epoch: 5 | loss: 0.3976472
+2025-05-14 18:27:43,798 - INFO - 	speed: 0.0337s/iter; left time: 11311.7822s
+2025-05-14 18:27:47,243 - INFO - 	iters: 1800, epoch: 5 | loss: 0.0626725
+2025-05-14 18:27:47,243 - INFO - 	speed: 0.0344s/iter; left time: 11571.7991s
+2025-05-14 18:27:49,698 - INFO - 	iters: 1900, epoch: 5 | loss: 0.0406380
+2025-05-14 18:27:49,698 - INFO - 	speed: 0.0246s/iter; left time: 8245.4712s
+2025-05-14 18:27:51,863 - INFO - 	iters: 2000, epoch: 5 | loss: 0.1006399
+2025-05-14 18:27:51,863 - INFO - 	speed: 0.0216s/iter; left time: 7267.9748s
+2025-05-14 18:27:53,974 - INFO - 	iters: 2100, epoch: 5 | loss: 0.0251962
+2025-05-14 18:27:53,975 - INFO - 	speed: 0.0211s/iter; left time: 7086.8120s
+2025-05-14 18:27:56,061 - INFO - 	iters: 2200, epoch: 5 | loss: 0.0402686
+2025-05-14 18:27:56,061 - INFO - 	speed: 0.0209s/iter; left time: 7000.3228s
+2025-05-14 18:27:58,038 - INFO - 	iters: 2300, epoch: 5 | loss: 0.2593879
+2025-05-14 18:27:58,038 - INFO - 	speed: 0.0198s/iter; left time: 6630.6452s
+2025-05-14 18:28:00,015 - INFO - 	iters: 2400, epoch: 5 | loss: 0.1554137
+2025-05-14 18:28:00,015 - INFO - 	speed: 0.0198s/iter; left time: 6630.5824s
+2025-05-14 18:28:03,431 - INFO - 	iters: 2500, epoch: 5 | loss: 0.0132833
+2025-05-14 18:28:03,432 - INFO - 	speed: 0.0342s/iter; left time: 11452.6395s
+2025-05-14 18:28:06,658 - INFO - 	iters: 2600, epoch: 5 | loss: 0.0607702
+2025-05-14 18:28:06,658 - INFO - 	speed: 0.0323s/iter; left time: 10811.7364s
+2025-05-14 18:28:10,224 - INFO - 	iters: 2700, epoch: 5 | loss: 0.0677955
+2025-05-14 18:28:10,224 - INFO - 	speed: 0.0357s/iter; left time: 11948.6390s
+2025-05-14 18:28:13,613 - INFO - 	iters: 2800, epoch: 5 | loss: 0.2543365
+2025-05-14 18:28:13,614 - INFO - 	speed: 0.0339s/iter; left time: 11351.5813s
+2025-05-14 18:28:16,783 - INFO - 	iters: 2900, epoch: 5 | loss: 0.0314578
+2025-05-14 18:28:16,783 - INFO - 	speed: 0.0317s/iter; left time: 10612.8885s
+2025-05-14 18:28:19,888 - INFO - 	iters: 3000, epoch: 5 | loss: 0.0553677
+2025-05-14 18:28:19,888 - INFO - 	speed: 0.0310s/iter; left time: 10391.8152s
+2025-05-14 18:28:22,634 - INFO - 	iters: 3100, epoch: 5 | loss: 0.0337081
+2025-05-14 18:28:22,635 - INFO - 	speed: 0.0275s/iter; left time: 9190.6980s
+2025-05-14 18:28:25,560 - INFO - 	iters: 3200, epoch: 5 | loss: 0.0882313
+2025-05-14 18:28:25,560 - INFO - 	speed: 0.0293s/iter; left time: 9787.6195s
+2025-05-14 18:28:28,942 - INFO - 	iters: 3300, epoch: 5 | loss: 0.0877636
+2025-05-14 18:28:28,943 - INFO - 	speed: 0.0338s/iter; left time: 11310.5721s
+2025-05-14 18:28:32,035 - INFO - 	iters: 3400, epoch: 5 | loss: 0.2593068
+2025-05-14 18:28:32,035 - INFO - 	speed: 0.0309s/iter; left time: 10339.7747s
+2025-05-14 18:28:35,483 - INFO - 	iters: 3500, epoch: 5 | loss: 0.0069373
+2025-05-14 18:28:35,483 - INFO - 	speed: 0.0345s/iter; left time: 11524.7497s
+2025-05-14 18:28:36,198 - INFO - Epoch: 5 cost time: 106.2566
+2025-05-14 18:28:51,904 - INFO - Epoch: 5, Steps: 3518 | Train Loss: 0.11140
+Validation results --- Loss: 1.34599, Accuracy: 0.72721, Precision: 0.65399, Recall: 0.59264, F1: 0.61115, AUROC: 0.88700, AUPRC: 0.65693
+Test results --- Loss: 1.38808, Accuracy: 0.71236, Precision: 0.62457, Recall: 0.56972, F1: 0.58596, AUROC: 0.88029, AUPRC: 0.63095
+2025-05-14 18:28:51,904 - INFO - EarlyStopping counter: 4 out of 10
+2025-05-14 18:28:51,905 - INFO - 
+2025-05-14 18:28:51,905 - INFO - 
+2025-05-14 18:28:55,349 - INFO - 	iters: 100, epoch: 6 | loss: 0.0679498
+2025-05-14 18:28:55,349 - INFO - 	speed: 0.1987s/iter; left time: 66371.6895s
+2025-05-14 18:28:58,357 - INFO - 	iters: 200, epoch: 6 | loss: 0.1574018
+2025-05-14 18:28:58,358 - INFO - 	speed: 0.0301s/iter; left time: 10050.3984s
+2025-05-14 18:29:00,476 - INFO - 	iters: 300, epoch: 6 | loss: 0.1659660
+2025-05-14 18:29:00,476 - INFO - 	speed: 0.0212s/iter; left time: 7071.8943s
+2025-05-14 18:29:02,583 - INFO - 	iters: 400, epoch: 6 | loss: 0.0399214
+2025-05-14 18:29:02,583 - INFO - 	speed: 0.0211s/iter; left time: 7033.6878s
+2025-05-14 18:29:04,679 - INFO - 	iters: 500, epoch: 6 | loss: 0.1796570
+2025-05-14 18:29:04,680 - INFO - 	speed: 0.0210s/iter; left time: 6996.5747s
+2025-05-14 18:29:06,651 - INFO - 	iters: 600, epoch: 6 | loss: 0.0263131
+2025-05-14 18:29:06,652 - INFO - 	speed: 0.0197s/iter; left time: 6578.9032s
+2025-05-14 18:29:08,618 - INFO - 	iters: 700, epoch: 6 | loss: 0.0680973
+2025-05-14 18:29:08,618 - INFO - 	speed: 0.0197s/iter; left time: 6557.9199s
+2025-05-14 18:29:10,641 - INFO - 	iters: 800, epoch: 6 | loss: 0.0313232
+2025-05-14 18:29:10,641 - INFO - 	speed: 0.0202s/iter; left time: 6744.1581s
+2025-05-14 18:29:12,851 - INFO - 	iters: 900, epoch: 6 | loss: 0.2038448
+2025-05-14 18:29:12,851 - INFO - 	speed: 0.0221s/iter; left time: 7366.4561s
+2025-05-14 18:29:14,821 - INFO - 	iters: 1000, epoch: 6 | loss: 0.0275873
+2025-05-14 18:29:14,821 - INFO - 	speed: 0.0197s/iter; left time: 6564.6294s
+2025-05-14 18:29:17,234 - INFO - 	iters: 1100, epoch: 6 | loss: 0.0425203
+2025-05-14 18:29:17,234 - INFO - 	speed: 0.0241s/iter; left time: 8038.9194s
+2025-05-14 18:29:19,460 - INFO - 	iters: 1200, epoch: 6 | loss: 0.4288469
+2025-05-14 18:29:19,460 - INFO - 	speed: 0.0223s/iter; left time: 7410.5131s
+2025-05-14 18:29:21,646 - INFO - 	iters: 1300, epoch: 6 | loss: 0.1274169
+2025-05-14 18:29:21,646 - INFO - 	speed: 0.0219s/iter; left time: 7279.1048s
+2025-05-14 18:29:23,769 - INFO - 	iters: 1400, epoch: 6 | loss: 0.0076245
+2025-05-14 18:29:23,769 - INFO - 	speed: 0.0212s/iter; left time: 7064.7996s
+2025-05-14 18:29:25,842 - INFO - 	iters: 1500, epoch: 6 | loss: 0.0310918
+2025-05-14 18:29:25,842 - INFO - 	speed: 0.0207s/iter; left time: 6895.1062s
+2025-05-14 18:29:27,813 - INFO - 	iters: 1600, epoch: 6 | loss: 0.0250546
+2025-05-14 18:29:27,813 - INFO - 	speed: 0.0197s/iter; left time: 6558.0830s
+2025-05-14 18:29:29,782 - INFO - 	iters: 1700, epoch: 6 | loss: 0.1173734
+2025-05-14 18:29:29,782 - INFO - 	speed: 0.0197s/iter; left time: 6547.0135s
+2025-05-14 18:29:31,751 - INFO - 	iters: 1800, epoch: 6 | loss: 0.0225401
+2025-05-14 18:29:31,751 - INFO - 	speed: 0.0197s/iter; left time: 6542.9927s
+2025-05-14 18:29:33,721 - INFO - 	iters: 1900, epoch: 6 | loss: 0.0442677
+2025-05-14 18:29:33,722 - INFO - 	speed: 0.0197s/iter; left time: 6549.3489s
+2025-05-14 18:29:35,692 - INFO - 	iters: 2000, epoch: 6 | loss: 0.0480147
+2025-05-14 18:29:35,693 - INFO - 	speed: 0.0197s/iter; left time: 6547.3733s
+2025-05-14 18:29:37,661 - INFO - 	iters: 2100, epoch: 6 | loss: 0.0970206
+2025-05-14 18:29:37,661 - INFO - 	speed: 0.0197s/iter; left time: 6538.5493s
+2025-05-14 18:29:39,631 - INFO - 	iters: 2200, epoch: 6 | loss: 0.0518223
+2025-05-14 18:29:39,632 - INFO - 	speed: 0.0197s/iter; left time: 6541.1891s
+2025-05-14 18:29:41,812 - INFO - 	iters: 2300, epoch: 6 | loss: 0.0727724
+2025-05-14 18:29:41,812 - INFO - 	speed: 0.0218s/iter; left time: 7236.6223s
+2025-05-14 18:29:44,140 - INFO - 	iters: 2400, epoch: 6 | loss: 0.0399140
+2025-05-14 18:29:44,140 - INFO - 	speed: 0.0233s/iter; left time: 7723.5430s
+2025-05-14 18:29:46,263 - INFO - 	iters: 2500, epoch: 6 | loss: 0.3186547
+2025-05-14 18:29:46,263 - INFO - 	speed: 0.0212s/iter; left time: 7043.1037s
+2025-05-14 18:29:48,304 - INFO - 	iters: 2600, epoch: 6 | loss: 0.0500099
+2025-05-14 18:29:48,304 - INFO - 	speed: 0.0204s/iter; left time: 6769.1344s
+2025-05-14 18:29:50,318 - INFO - 	iters: 2700, epoch: 6 | loss: 0.0304062
+2025-05-14 18:29:50,318 - INFO - 	speed: 0.0201s/iter; left time: 6676.6021s
+2025-05-14 18:29:52,300 - INFO - 	iters: 2800, epoch: 6 | loss: 0.0037514
+2025-05-14 18:29:52,300 - INFO - 	speed: 0.0198s/iter; left time: 6566.8352s
+2025-05-14 18:29:54,678 - INFO - 	iters: 2900, epoch: 6 | loss: 0.0889783
+2025-05-14 18:29:54,678 - INFO - 	speed: 0.0238s/iter; left time: 7879.1618s
+2025-05-14 18:29:58,030 - INFO - 	iters: 3000, epoch: 6 | loss: 0.2764610
+2025-05-14 18:29:58,030 - INFO - 	speed: 0.0335s/iter; left time: 11101.9455s
+2025-05-14 18:30:01,500 - INFO - 	iters: 3100, epoch: 6 | loss: 0.0216999
+2025-05-14 18:30:01,500 - INFO - 	speed: 0.0347s/iter; left time: 11489.5802s
+2025-05-14 18:30:04,368 - INFO - 	iters: 3200, epoch: 6 | loss: 0.0173212
+2025-05-14 18:30:04,369 - INFO - 	speed: 0.0287s/iter; left time: 9494.4089s
+2025-05-14 18:30:07,495 - INFO - 	iters: 3300, epoch: 6 | loss: 0.0506202
+2025-05-14 18:30:07,496 - INFO - 	speed: 0.0313s/iter; left time: 10347.4642s
+2025-05-14 18:30:11,090 - INFO - 	iters: 3400, epoch: 6 | loss: 0.0635243
+2025-05-14 18:30:11,090 - INFO - 	speed: 0.0359s/iter; left time: 11889.8540s
+2025-05-14 18:30:14,359 - INFO - 	iters: 3500, epoch: 6 | loss: 0.0591329
+2025-05-14 18:30:14,359 - INFO - 	speed: 0.0327s/iter; left time: 10811.5625s
+2025-05-14 18:30:14,970 - INFO - Epoch: 6 cost time: 83.0653
+2025-05-14 18:30:30,991 - INFO - Epoch: 6, Steps: 3518 | Train Loss: 0.07930
+Validation results --- Loss: 1.46396, Accuracy: 0.72859, Precision: 0.65064, Recall: 0.59529, F1: 0.60400, AUROC: 0.89197, AUPRC: 0.66401
+Test results --- Loss: 1.57310, Accuracy: 0.71499, Precision: 0.61480, Recall: 0.57748, F1: 0.58068, AUROC: 0.88099, AUPRC: 0.63217
+2025-05-14 18:30:30,991 - INFO - EarlyStopping counter: 5 out of 10
+2025-05-14 18:30:30,992 - INFO - 
+2025-05-14 18:30:30,992 - INFO - 
+2025-05-14 18:30:34,575 - INFO - 	iters: 100, epoch: 7 | loss: 0.0074999
+2025-05-14 18:30:34,575 - INFO - 	speed: 0.2022s/iter; left time: 66832.0813s
+2025-05-14 18:30:38,009 - INFO - 	iters: 200, epoch: 7 | loss: 0.0127744
+2025-05-14 18:30:38,009 - INFO - 	speed: 0.0343s/iter; left time: 11349.5252s
+2025-05-14 18:30:40,363 - INFO - 	iters: 300, epoch: 7 | loss: 0.0914551
+2025-05-14 18:30:40,363 - INFO - 	speed: 0.0235s/iter; left time: 7775.8265s
+2025-05-14 18:30:42,642 - INFO - 	iters: 400, epoch: 7 | loss: 0.0442665
+2025-05-14 18:30:42,642 - INFO - 	speed: 0.0228s/iter; left time: 7528.4037s
+2025-05-14 18:30:46,083 - INFO - 	iters: 500, epoch: 7 | loss: 0.0491893
+2025-05-14 18:30:46,083 - INFO - 	speed: 0.0344s/iter; left time: 11361.7073s
+2025-05-14 18:30:49,566 - INFO - 	iters: 600, epoch: 7 | loss: 0.0119522
+2025-05-14 18:30:49,566 - INFO - 	speed: 0.0348s/iter; left time: 11495.8620s
+2025-05-14 18:30:52,999 - INFO - 	iters: 700, epoch: 7 | loss: 0.0320015
+2025-05-14 18:30:52,999 - INFO - 	speed: 0.0343s/iter; left time: 11330.1147s
+2025-05-14 18:30:56,383 - INFO - 	iters: 800, epoch: 7 | loss: 0.0170618
+2025-05-14 18:30:56,383 - INFO - 	speed: 0.0338s/iter; left time: 11162.4074s
+2025-05-14 18:30:58,595 - INFO - 	iters: 900, epoch: 7 | loss: 0.0063503
+2025-05-14 18:30:58,595 - INFO - 	speed: 0.0221s/iter; left time: 7295.2543s
+2025-05-14 18:31:00,882 - INFO - 	iters: 1000, epoch: 7 | loss: 0.2260966
+2025-05-14 18:31:00,882 - INFO - 	speed: 0.0229s/iter; left time: 7538.5333s
+2025-05-14 18:31:02,988 - INFO - 	iters: 1100, epoch: 7 | loss: 0.0085602
+2025-05-14 18:31:02,989 - INFO - 	speed: 0.0211s/iter; left time: 6944.0251s
+2025-05-14 18:31:05,245 - INFO - 	iters: 1200, epoch: 7 | loss: 0.0385429
+2025-05-14 18:31:05,245 - INFO - 	speed: 0.0226s/iter; left time: 7435.1525s
+2025-05-14 18:31:08,234 - INFO - 	iters: 1300, epoch: 7 | loss: 0.0108102
+2025-05-14 18:31:08,234 - INFO - 	speed: 0.0299s/iter; left time: 9845.8154s
+2025-05-14 18:31:11,284 - INFO - 	iters: 1400, epoch: 7 | loss: 0.0137917
+2025-05-14 18:31:11,284 - INFO - 	speed: 0.0305s/iter; left time: 10042.6136s
+2025-05-14 18:31:14,805 - INFO - 	iters: 1500, epoch: 7 | loss: 0.0289597
+2025-05-14 18:31:14,805 - INFO - 	speed: 0.0352s/iter; left time: 11589.8382s
+2025-05-14 18:31:17,160 - INFO - 	iters: 1600, epoch: 7 | loss: 0.1112360
+2025-05-14 18:31:17,161 - INFO - 	speed: 0.0236s/iter; left time: 7751.4929s
+2025-05-14 18:31:19,947 - INFO - 	iters: 1700, epoch: 7 | loss: 0.2406861
+2025-05-14 18:31:19,947 - INFO - 	speed: 0.0279s/iter; left time: 9167.0032s
+2025-05-14 18:31:22,508 - INFO - 	iters: 1800, epoch: 7 | loss: 0.0135951
+2025-05-14 18:31:22,509 - INFO - 	speed: 0.0256s/iter; left time: 8424.4564s
+2025-05-14 18:31:25,898 - INFO - 	iters: 1900, epoch: 7 | loss: 0.0806796
+2025-05-14 18:31:25,898 - INFO - 	speed: 0.0339s/iter; left time: 11145.1894s
+2025-05-14 18:31:29,333 - INFO - 	iters: 2000, epoch: 7 | loss: 0.0493197
+2025-05-14 18:31:29,333 - INFO - 	speed: 0.0343s/iter; left time: 11290.1122s
+2025-05-14 18:31:32,631 - INFO - 	iters: 2100, epoch: 7 | loss: 0.3357351
+2025-05-14 18:31:32,631 - INFO - 	speed: 0.0330s/iter; left time: 10835.1525s
+2025-05-14 18:31:36,035 - INFO - 	iters: 2200, epoch: 7 | loss: 0.0385522
+2025-05-14 18:31:36,035 - INFO - 	speed: 0.0340s/iter; left time: 11183.7737s
+2025-05-14 18:31:39,438 - INFO - 	iters: 2300, epoch: 7 | loss: 0.0221803
+2025-05-14 18:31:39,438 - INFO - 	speed: 0.0340s/iter; left time: 11175.2087s
+2025-05-14 18:31:43,092 - INFO - 	iters: 2400, epoch: 7 | loss: 0.0036040
+2025-05-14 18:31:43,092 - INFO - 	speed: 0.0365s/iter; left time: 11994.3541s
+2025-05-14 18:31:46,768 - INFO - 	iters: 2500, epoch: 7 | loss: 0.0799074
+2025-05-14 18:31:46,768 - INFO - 	speed: 0.0368s/iter; left time: 12063.3923s
+2025-05-14 18:31:50,055 - INFO - 	iters: 2600, epoch: 7 | loss: 0.0805575
+2025-05-14 18:31:50,055 - INFO - 	speed: 0.0329s/iter; left time: 10785.1066s
+2025-05-14 18:31:53,356 - INFO - 	iters: 2700, epoch: 7 | loss: 0.0923785
+2025-05-14 18:31:53,357 - INFO - 	speed: 0.0330s/iter; left time: 10828.7181s
+2025-05-14 18:31:56,781 - INFO - 	iters: 2800, epoch: 7 | loss: 0.0850451
+2025-05-14 18:31:56,781 - INFO - 	speed: 0.0342s/iter; left time: 11228.8161s
+2025-05-14 18:31:59,567 - INFO - 	iters: 2900, epoch: 7 | loss: 0.0009919
+2025-05-14 18:31:59,567 - INFO - 	speed: 0.0279s/iter; left time: 9131.5518s
+2025-05-14 18:32:03,053 - INFO - 	iters: 3000, epoch: 7 | loss: 0.2080602
+2025-05-14 18:32:03,053 - INFO - 	speed: 0.0349s/iter; left time: 11422.4539s
+2025-05-14 18:32:06,489 - INFO - 	iters: 3100, epoch: 7 | loss: 0.0090120
+2025-05-14 18:32:06,489 - INFO - 	speed: 0.0344s/iter; left time: 11256.4684s
+2025-05-14 18:32:09,837 - INFO - 	iters: 3200, epoch: 7 | loss: 0.1001490
+2025-05-14 18:32:09,837 - INFO - 	speed: 0.0335s/iter; left time: 10965.1506s
+2025-05-14 18:32:13,056 - INFO - 	iters: 3300, epoch: 7 | loss: 0.0114873
+2025-05-14 18:32:13,056 - INFO - 	speed: 0.0322s/iter; left time: 10536.4971s
+2025-05-14 18:32:16,423 - INFO - 	iters: 3400, epoch: 7 | loss: 0.0573839
+2025-05-14 18:32:16,423 - INFO - 	speed: 0.0337s/iter; left time: 11019.3860s
+2025-05-14 18:32:19,803 - INFO - 	iters: 3500, epoch: 7 | loss: 0.0336437
+2025-05-14 18:32:19,804 - INFO - 	speed: 0.0338s/iter; left time: 11061.7301s
+2025-05-14 18:32:20,444 - INFO - Epoch: 7 cost time: 109.4525
+2025-05-14 18:32:36,142 - INFO - Epoch: 7, Steps: 3518 | Train Loss: 0.05858
+Validation results --- Loss: 1.62169, Accuracy: 0.71701, Precision: 0.62852, Recall: 0.60308, F1: 0.61266, AUROC: 0.88846, AUPRC: 0.65244
+Test results --- Loss: 1.72692, Accuracy: 0.71161, Precision: 0.62031, Recall: 0.59051, F1: 0.59980, AUROC: 0.87788, AUPRC: 0.62962
+2025-05-14 18:32:36,143 - INFO - EarlyStopping counter: 6 out of 10
+2025-05-14 18:32:36,143 - INFO - 
+2025-05-14 18:32:36,143 - INFO - 
+2025-05-14 18:32:39,013 - INFO - 	iters: 100, epoch: 8 | loss: 0.0417164
+2025-05-14 18:32:39,013 - INFO - 	speed: 0.1921s/iter; left time: 62830.2218s
+2025-05-14 18:32:41,713 - INFO - 	iters: 200, epoch: 8 | loss: 0.0131040
+2025-05-14 18:32:41,713 - INFO - 	speed: 0.0270s/iter; left time: 8828.4577s
+2025-05-14 18:32:44,982 - INFO - 	iters: 300, epoch: 8 | loss: 0.0179021
+2025-05-14 18:32:44,982 - INFO - 	speed: 0.0327s/iter; left time: 10683.8372s
+2025-05-14 18:32:48,448 - INFO - 	iters: 400, epoch: 8 | loss: 0.0241109
+2025-05-14 18:32:48,448 - INFO - 	speed: 0.0347s/iter; left time: 11325.9688s
+2025-05-14 18:32:51,524 - INFO - 	iters: 500, epoch: 8 | loss: 0.0403428
+2025-05-14 18:32:51,524 - INFO - 	speed: 0.0308s/iter; left time: 10048.5751s
+2025-05-14 18:32:54,126 - INFO - 	iters: 600, epoch: 8 | loss: 0.0020580
+2025-05-14 18:32:54,126 - INFO - 	speed: 0.0260s/iter; left time: 8497.3452s
+2025-05-14 18:32:57,463 - INFO - 	iters: 700, epoch: 8 | loss: 0.1032992
+2025-05-14 18:32:57,464 - INFO - 	speed: 0.0334s/iter; left time: 10895.6831s
+2025-05-14 18:33:00,970 - INFO - 	iters: 800, epoch: 8 | loss: 0.1056044
+2025-05-14 18:33:00,970 - INFO - 	speed: 0.0351s/iter; left time: 11444.6530s
+2025-05-14 18:33:03,899 - INFO - 	iters: 900, epoch: 8 | loss: 0.0709464
+2025-05-14 18:33:03,899 - INFO - 	speed: 0.0293s/iter; left time: 9555.7263s
+2025-05-14 18:33:06,252 - INFO - 	iters: 1000, epoch: 8 | loss: 0.0986124
+2025-05-14 18:33:06,252 - INFO - 	speed: 0.0235s/iter; left time: 7675.6013s
+2025-05-14 18:33:08,279 - INFO - 	iters: 1100, epoch: 8 | loss: 0.2430403
+2025-05-14 18:33:08,279 - INFO - 	speed: 0.0203s/iter; left time: 6607.7575s
+2025-05-14 18:33:10,404 - INFO - 	iters: 1200, epoch: 8 | loss: 0.1130620
+2025-05-14 18:33:10,405 - INFO - 	speed: 0.0213s/iter; left time: 6929.2327s
+2025-05-14 18:33:13,769 - INFO - 	iters: 1300, epoch: 8 | loss: 0.0150934
+2025-05-14 18:33:13,770 - INFO - 	speed: 0.0337s/iter; left time: 10966.2439s
+2025-05-14 18:33:16,970 - INFO - 	iters: 1400, epoch: 8 | loss: 0.0637745
+2025-05-14 18:33:16,970 - INFO - 	speed: 0.0320s/iter; left time: 10425.7252s
+2025-05-14 18:33:20,443 - INFO - 	iters: 1500, epoch: 8 | loss: 0.0107408
+2025-05-14 18:33:20,443 - INFO - 	speed: 0.0347s/iter; left time: 11310.6525s
+2025-05-14 18:33:23,045 - INFO - 	iters: 1600, epoch: 8 | loss: 0.0005478
+2025-05-14 18:33:23,046 - INFO - 	speed: 0.0260s/iter; left time: 8473.2329s
+2025-05-14 18:33:25,150 - INFO - 	iters: 1700, epoch: 8 | loss: 0.0130828
+2025-05-14 18:33:25,150 - INFO - 	speed: 0.0210s/iter; left time: 6849.8683s
+2025-05-14 18:33:27,204 - INFO - 	iters: 1800, epoch: 8 | loss: 0.0102159
+2025-05-14 18:33:27,204 - INFO - 	speed: 0.0205s/iter; left time: 6682.2969s
+2025-05-14 18:33:29,765 - INFO - 	iters: 1900, epoch: 8 | loss: 0.0363791
+2025-05-14 18:33:29,766 - INFO - 	speed: 0.0256s/iter; left time: 8331.3199s
+2025-05-14 18:33:33,185 - INFO - 	iters: 2000, epoch: 8 | loss: 0.0393607
+2025-05-14 18:33:33,185 - INFO - 	speed: 0.0342s/iter; left time: 11118.8780s
+2025-05-14 18:33:35,717 - INFO - 	iters: 2100, epoch: 8 | loss: 0.0091671
+2025-05-14 18:33:35,717 - INFO - 	speed: 0.0253s/iter; left time: 8231.7789s
+2025-05-14 18:33:37,903 - INFO - 	iters: 2200, epoch: 8 | loss: 0.0247170
+2025-05-14 18:33:37,903 - INFO - 	speed: 0.0219s/iter; left time: 7103.1318s
+2025-05-14 18:33:40,030 - INFO - 	iters: 2300, epoch: 8 | loss: 0.0514307
+2025-05-14 18:33:40,030 - INFO - 	speed: 0.0213s/iter; left time: 6908.7593s
+2025-05-14 18:33:42,196 - INFO - 	iters: 2400, epoch: 8 | loss: 0.0113692
+2025-05-14 18:33:42,197 - INFO - 	speed: 0.0217s/iter; left time: 7037.2534s
+2025-05-14 18:33:44,434 - INFO - 	iters: 2500, epoch: 8 | loss: 0.0110320
+2025-05-14 18:33:44,434 - INFO - 	speed: 0.0224s/iter; left time: 7263.5672s
+2025-05-14 18:33:47,270 - INFO - 	iters: 2600, epoch: 8 | loss: 0.0325372
+2025-05-14 18:33:47,270 - INFO - 	speed: 0.0284s/iter; left time: 9204.9608s
+2025-05-14 18:33:50,266 - INFO - 	iters: 2700, epoch: 8 | loss: 0.0321133
+2025-05-14 18:33:50,266 - INFO - 	speed: 0.0300s/iter; left time: 9722.1825s
+2025-05-14 18:33:53,478 - INFO - 	iters: 2800, epoch: 8 | loss: 0.0875857
+2025-05-14 18:33:53,479 - INFO - 	speed: 0.0321s/iter; left time: 10419.1288s
+2025-05-14 18:33:56,890 - INFO - 	iters: 2900, epoch: 8 | loss: 0.0938992
+2025-05-14 18:33:56,890 - INFO - 	speed: 0.0341s/iter; left time: 11063.3134s
+2025-05-14 18:34:00,229 - INFO - 	iters: 3000, epoch: 8 | loss: 0.0018553
+2025-05-14 18:34:00,229 - INFO - 	speed: 0.0334s/iter; left time: 10823.9590s
+2025-05-14 18:34:03,606 - INFO - 	iters: 3100, epoch: 8 | loss: 0.0999671
+2025-05-14 18:34:03,606 - INFO - 	speed: 0.0338s/iter; left time: 10942.2151s
+2025-05-14 18:34:06,472 - INFO - 	iters: 3200, epoch: 8 | loss: 0.0625565
+2025-05-14 18:34:06,473 - INFO - 	speed: 0.0287s/iter; left time: 9287.5077s
+2025-05-14 18:34:08,806 - INFO - 	iters: 3300, epoch: 8 | loss: 0.0402684
+2025-05-14 18:34:08,806 - INFO - 	speed: 0.0233s/iter; left time: 7557.6800s
+2025-05-14 18:34:10,951 - INFO - 	iters: 3400, epoch: 8 | loss: 0.0019610
+2025-05-14 18:34:10,952 - INFO - 	speed: 0.0215s/iter; left time: 6946.1455s
+2025-05-14 18:34:14,359 - INFO - 	iters: 3500, epoch: 8 | loss: 0.0021605
+2025-05-14 18:34:14,359 - INFO - 	speed: 0.0341s/iter; left time: 11028.9379s
+2025-05-14 18:34:15,008 - INFO - Epoch: 8 cost time: 98.8653
+2025-05-14 18:34:30,798 - INFO - Epoch: 8, Steps: 3518 | Train Loss: 0.04652
+Validation results --- Loss: 1.86478, Accuracy: 0.72828, Precision: 0.64501, Recall: 0.59814, F1: 0.61422, AUROC: 0.89059, AUPRC: 0.66329
+Test results --- Loss: 1.92168, Accuracy: 0.72010, Precision: 0.63051, Recall: 0.58651, F1: 0.60143, AUROC: 0.88201, AUPRC: 0.63955
+2025-05-14 18:34:30,798 - INFO - EarlyStopping counter: 7 out of 10
+2025-05-14 18:34:30,798 - INFO - 
+2025-05-14 18:34:30,798 - INFO - 
+2025-05-14 18:34:33,973 - INFO - 	iters: 100, epoch: 9 | loss: 0.0074363
+2025-05-14 18:34:33,973 - INFO - 	speed: 0.1961s/iter; left time: 63461.8585s
+2025-05-14 18:34:36,074 - INFO - 	iters: 200, epoch: 9 | loss: 0.0681073
+2025-05-14 18:34:36,074 - INFO - 	speed: 0.0210s/iter; left time: 6796.9577s
+2025-05-14 18:34:38,194 - INFO - 	iters: 300, epoch: 9 | loss: 0.0072961
+2025-05-14 18:34:38,194 - INFO - 	speed: 0.0212s/iter; left time: 6854.8049s
+2025-05-14 18:34:40,288 - INFO - 	iters: 400, epoch: 9 | loss: 0.0005660
+2025-05-14 18:34:40,288 - INFO - 	speed: 0.0209s/iter; left time: 6767.6455s
+2025-05-14 18:34:42,514 - INFO - 	iters: 500, epoch: 9 | loss: 0.0068037
+2025-05-14 18:34:42,515 - INFO - 	speed: 0.0223s/iter; left time: 7195.4721s
+2025-05-14 18:34:45,900 - INFO - 	iters: 600, epoch: 9 | loss: 0.0022783
+2025-05-14 18:34:45,901 - INFO - 	speed: 0.0339s/iter; left time: 10938.9385s
+2025-05-14 18:34:47,977 - INFO - 	iters: 700, epoch: 9 | loss: 0.0486081
+2025-05-14 18:34:47,977 - INFO - 	speed: 0.0208s/iter; left time: 6704.2123s
+2025-05-14 18:34:50,162 - INFO - 	iters: 800, epoch: 9 | loss: 0.0836365
+2025-05-14 18:34:50,162 - INFO - 	speed: 0.0219s/iter; left time: 7055.3220s
+2025-05-14 18:34:53,637 - INFO - 	iters: 900, epoch: 9 | loss: 0.0139732
+2025-05-14 18:34:53,637 - INFO - 	speed: 0.0348s/iter; left time: 11216.4680s
+2025-05-14 18:34:57,164 - INFO - 	iters: 1000, epoch: 9 | loss: 0.0027478
+2025-05-14 18:34:57,165 - INFO - 	speed: 0.0353s/iter; left time: 11380.9000s
+2025-05-14 18:35:00,545 - INFO - 	iters: 1100, epoch: 9 | loss: 0.0010256
+2025-05-14 18:35:00,545 - INFO - 	speed: 0.0338s/iter; left time: 10902.9161s
+2025-05-14 18:35:03,020 - INFO - 	iters: 1200, epoch: 9 | loss: 0.0513534
+2025-05-14 18:35:03,020 - INFO - 	speed: 0.0248s/iter; left time: 7981.0957s
+2025-05-14 18:35:06,555 - INFO - 	iters: 1300, epoch: 9 | loss: 0.0065871
+2025-05-14 18:35:06,555 - INFO - 	speed: 0.0353s/iter; left time: 11395.2972s
+2025-05-14 18:35:10,062 - INFO - 	iters: 1400, epoch: 9 | loss: 0.0016876
+2025-05-14 18:35:10,063 - INFO - 	speed: 0.0351s/iter; left time: 11303.0573s
+2025-05-14 18:35:13,599 - INFO - 	iters: 1500, epoch: 9 | loss: 0.0055513
+2025-05-14 18:35:13,600 - INFO - 	speed: 0.0354s/iter; left time: 11394.5462s
+2025-05-14 18:35:16,806 - INFO - 	iters: 1600, epoch: 9 | loss: 0.0074605
+2025-05-14 18:35:16,806 - INFO - 	speed: 0.0321s/iter; left time: 10326.8416s
+2025-05-14 18:35:19,822 - INFO - 	iters: 1700, epoch: 9 | loss: 0.1181918
+2025-05-14 18:35:19,822 - INFO - 	speed: 0.0302s/iter; left time: 9709.9323s
+2025-05-14 18:35:23,284 - INFO - 	iters: 1800, epoch: 9 | loss: 0.0206962
+2025-05-14 18:35:23,284 - INFO - 	speed: 0.0346s/iter; left time: 11141.5778s
+2025-05-14 18:35:26,896 - INFO - 	iters: 1900, epoch: 9 | loss: 0.0218117
+2025-05-14 18:35:26,896 - INFO - 	speed: 0.0361s/iter; left time: 11623.1823s
+2025-05-14 18:35:30,366 - INFO - 	iters: 2000, epoch: 9 | loss: 0.0276324
+2025-05-14 18:35:30,366 - INFO - 	speed: 0.0347s/iter; left time: 11159.9397s
+2025-05-14 18:35:33,765 - INFO - 	iters: 2100, epoch: 9 | loss: 0.0623242
+2025-05-14 18:35:33,766 - INFO - 	speed: 0.0340s/iter; left time: 10931.5898s
+2025-05-14 18:35:36,726 - INFO - 	iters: 2200, epoch: 9 | loss: 0.0042767
+2025-05-14 18:35:36,726 - INFO - 	speed: 0.0296s/iter; left time: 9516.5613s
+2025-05-14 18:35:39,705 - INFO - 	iters: 2300, epoch: 9 | loss: 0.0011120
+2025-05-14 18:35:39,705 - INFO - 	speed: 0.0298s/iter; left time: 9572.0301s
+2025-05-14 18:35:41,808 - INFO - 	iters: 2400, epoch: 9 | loss: 0.0098879
+2025-05-14 18:35:41,808 - INFO - 	speed: 0.0210s/iter; left time: 6755.7541s
+2025-05-14 18:35:43,917 - INFO - 	iters: 2500, epoch: 9 | loss: 0.0120452
+2025-05-14 18:35:43,917 - INFO - 	speed: 0.0211s/iter; left time: 6774.0295s
+2025-05-14 18:35:46,023 - INFO - 	iters: 2600, epoch: 9 | loss: 0.0249574
+2025-05-14 18:35:46,023 - INFO - 	speed: 0.0211s/iter; left time: 6761.0339s
+2025-05-14 18:35:48,009 - INFO - 	iters: 2700, epoch: 9 | loss: 0.0095041
+2025-05-14 18:35:48,009 - INFO - 	speed: 0.0199s/iter; left time: 6375.1168s
+2025-05-14 18:35:49,987 - INFO - 	iters: 2800, epoch: 9 | loss: 0.0031566
+2025-05-14 18:35:49,987 - INFO - 	speed: 0.0198s/iter; left time: 6344.7826s
+2025-05-14 18:35:51,966 - INFO - 	iters: 2900, epoch: 9 | loss: 0.0911386
+2025-05-14 18:35:51,966 - INFO - 	speed: 0.0198s/iter; left time: 6347.1642s
+2025-05-14 18:35:53,944 - INFO - 	iters: 3000, epoch: 9 | loss: 0.0165142
+2025-05-14 18:35:53,944 - INFO - 	speed: 0.0198s/iter; left time: 6343.5730s
+2025-05-14 18:35:55,922 - INFO - 	iters: 3100, epoch: 9 | loss: 0.0028302
+2025-05-14 18:35:55,923 - INFO - 	speed: 0.0198s/iter; left time: 6342.1740s
+2025-05-14 18:35:57,899 - INFO - 	iters: 3200, epoch: 9 | loss: 0.0568709
+2025-05-14 18:35:57,899 - INFO - 	speed: 0.0198s/iter; left time: 6334.0703s
+2025-05-14 18:36:00,526 - INFO - 	iters: 3300, epoch: 9 | loss: 0.0392350
+2025-05-14 18:36:00,526 - INFO - 	speed: 0.0263s/iter; left time: 8416.2721s
+2025-05-14 18:36:03,412 - INFO - 	iters: 3400, epoch: 9 | loss: 0.1233562
+2025-05-14 18:36:03,412 - INFO - 	speed: 0.0289s/iter; left time: 9242.5427s
+2025-05-14 18:36:06,939 - INFO - 	iters: 3500, epoch: 9 | loss: 0.0094380
+2025-05-14 18:36:06,939 - INFO - 	speed: 0.0353s/iter; left time: 11291.3075s
+2025-05-14 18:36:07,596 - INFO - Epoch: 9 cost time: 96.7984
+2025-05-14 18:36:23,600 - INFO - Epoch: 9, Steps: 3518 | Train Loss: 0.04149
+Validation results --- Loss: 2.01361, Accuracy: 0.73271, Precision: 0.66060, Recall: 0.60342, F1: 0.62569, AUROC: 0.89400, AUPRC: 0.66660
+Test results --- Loss: 2.16751, Accuracy: 0.71770, Precision: 0.63462, Recall: 0.57241, F1: 0.59419, AUROC: 0.88177, AUPRC: 0.63574
+2025-05-14 18:36:23,601 - INFO - EarlyStopping counter: 8 out of 10
+2025-05-14 18:36:23,601 - INFO - 
+2025-05-14 18:36:23,601 - INFO - 
+2025-05-14 18:36:26,939 - INFO - 	iters: 100, epoch: 10 | loss: 0.0096713
+2025-05-14 18:36:26,939 - INFO - 	speed: 0.2000s/iter; left time: 64005.5468s
+2025-05-14 18:36:30,437 - INFO - 	iters: 200, epoch: 10 | loss: 0.0158619
+2025-05-14 18:36:30,438 - INFO - 	speed: 0.0350s/iter; left time: 11194.1937s
+2025-05-14 18:36:33,687 - INFO - 	iters: 300, epoch: 10 | loss: 0.0053075
+2025-05-14 18:36:33,687 - INFO - 	speed: 0.0325s/iter; left time: 10393.5825s
+2025-05-14 18:36:36,092 - INFO - 	iters: 400, epoch: 10 | loss: 0.0034193
+2025-05-14 18:36:36,092 - INFO - 	speed: 0.0241s/iter; left time: 7690.0933s
+2025-05-14 18:36:38,189 - INFO - 	iters: 500, epoch: 10 | loss: 0.0060518
+2025-05-14 18:36:38,189 - INFO - 	speed: 0.0210s/iter; left time: 6702.2396s
+2025-05-14 18:36:40,292 - INFO - 	iters: 600, epoch: 10 | loss: 0.0309916
+2025-05-14 18:36:40,292 - INFO - 	speed: 0.0210s/iter; left time: 6718.8795s
+2025-05-14 18:36:42,630 - INFO - 	iters: 700, epoch: 10 | loss: 0.0024254
+2025-05-14 18:36:42,630 - INFO - 	speed: 0.0234s/iter; left time: 7467.5655s
+2025-05-14 18:36:44,724 - INFO - 	iters: 800, epoch: 10 | loss: 0.0277689
+2025-05-14 18:36:44,724 - INFO - 	speed: 0.0209s/iter; left time: 6687.5742s
+2025-05-14 18:36:46,785 - INFO - 	iters: 900, epoch: 10 | loss: 0.0112751
+2025-05-14 18:36:46,785 - INFO - 	speed: 0.0206s/iter; left time: 6579.6813s
+2025-05-14 18:36:50,099 - INFO - 	iters: 1000, epoch: 10 | loss: 0.0098945
+2025-05-14 18:36:50,099 - INFO - 	speed: 0.0331s/iter; left time: 10575.3569s
+2025-05-14 18:36:52,487 - INFO - 	iters: 1100, epoch: 10 | loss: 0.0984730
+2025-05-14 18:36:52,488 - INFO - 	speed: 0.0239s/iter; left time: 7620.4351s
+2025-05-14 18:36:54,597 - INFO - 	iters: 1200, epoch: 10 | loss: 0.0627137
+2025-05-14 18:36:54,598 - INFO - 	speed: 0.0211s/iter; left time: 6729.3890s
+2025-05-14 18:36:57,484 - INFO - 	iters: 1300, epoch: 10 | loss: 0.0059765
+2025-05-14 18:36:57,484 - INFO - 	speed: 0.0289s/iter; left time: 9203.0585s
+2025-05-14 18:37:00,863 - INFO - 	iters: 1400, epoch: 10 | loss: 0.0122037
+2025-05-14 18:37:00,863 - INFO - 	speed: 0.0338s/iter; left time: 10766.1083s
+2025-05-14 18:37:04,214 - INFO - 	iters: 1500, epoch: 10 | loss: 0.0275609
+2025-05-14 18:37:04,214 - INFO - 	speed: 0.0335s/iter; left time: 10677.9380s
+2025-05-14 18:37:07,551 - INFO - 	iters: 1600, epoch: 10 | loss: 0.0148203
+2025-05-14 18:37:07,551 - INFO - 	speed: 0.0334s/iter; left time: 10628.5631s
+2025-05-14 18:37:10,837 - INFO - 	iters: 1700, epoch: 10 | loss: 0.0014289
+2025-05-14 18:37:10,837 - INFO - 	speed: 0.0329s/iter; left time: 10465.3982s
+2025-05-14 18:37:14,163 - INFO - 	iters: 1800, epoch: 10 | loss: 0.0108537
+2025-05-14 18:37:14,163 - INFO - 	speed: 0.0333s/iter; left time: 10585.6182s
+2025-05-14 18:37:17,468 - INFO - 	iters: 1900, epoch: 10 | loss: 0.0034846
+2025-05-14 18:37:17,468 - INFO - 	speed: 0.0331s/iter; left time: 10519.0602s
+2025-05-14 18:37:20,846 - INFO - 	iters: 2000, epoch: 10 | loss: 0.0299883
+2025-05-14 18:37:20,846 - INFO - 	speed: 0.0338s/iter; left time: 10746.2349s
+2025-05-14 18:37:24,302 - INFO - 	iters: 2100, epoch: 10 | loss: 0.0002262
+2025-05-14 18:37:24,302 - INFO - 	speed: 0.0346s/iter; left time: 10990.1482s
+2025-05-14 18:37:26,401 - INFO - 	iters: 2200, epoch: 10 | loss: 0.0312032
+2025-05-14 18:37:26,401 - INFO - 	speed: 0.0210s/iter; left time: 6673.2416s
+2025-05-14 18:37:28,436 - INFO - 	iters: 2300, epoch: 10 | loss: 0.0028579
+2025-05-14 18:37:28,436 - INFO - 	speed: 0.0204s/iter; left time: 6468.1459s
+2025-05-14 18:37:31,122 - INFO - 	iters: 2400, epoch: 10 | loss: 0.0189415
+2025-05-14 18:37:31,122 - INFO - 	speed: 0.0269s/iter; left time: 8536.0198s
+2025-05-14 18:37:34,155 - INFO - 	iters: 2500, epoch: 10 | loss: 0.1199084
+2025-05-14 18:37:34,155 - INFO - 	speed: 0.0303s/iter; left time: 9633.5705s
+2025-05-14 18:37:37,499 - INFO - 	iters: 2600, epoch: 10 | loss: 0.0017305
+2025-05-14 18:37:37,499 - INFO - 	speed: 0.0334s/iter; left time: 10616.3635s
+2025-05-14 18:37:39,605 - INFO - 	iters: 2700, epoch: 10 | loss: 0.0033895
+2025-05-14 18:37:39,606 - INFO - 	speed: 0.0211s/iter; left time: 6687.7044s
+2025-05-14 18:37:41,718 - INFO - 	iters: 2800, epoch: 10 | loss: 0.0007003
+2025-05-14 18:37:41,718 - INFO - 	speed: 0.0211s/iter; left time: 6704.4157s
+2025-05-14 18:37:43,847 - INFO - 	iters: 2900, epoch: 10 | loss: 0.0243985
+2025-05-14 18:37:43,847 - INFO - 	speed: 0.0213s/iter; left time: 6754.2382s
+2025-05-14 18:37:45,834 - INFO - 	iters: 3000, epoch: 10 | loss: 0.0045050
+2025-05-14 18:37:45,834 - INFO - 	speed: 0.0199s/iter; left time: 6299.4128s
+2025-05-14 18:37:47,810 - INFO - 	iters: 3100, epoch: 10 | loss: 0.0664232
+2025-05-14 18:37:47,810 - INFO - 	speed: 0.0198s/iter; left time: 6264.9902s
+2025-05-14 18:37:49,787 - INFO - 	iters: 3200, epoch: 10 | loss: 0.0205035
+2025-05-14 18:37:49,787 - INFO - 	speed: 0.0198s/iter; left time: 6265.9868s
+2025-05-14 18:37:51,954 - INFO - 	iters: 3300, epoch: 10 | loss: 0.2000168
+2025-05-14 18:37:51,955 - INFO - 	speed: 0.0217s/iter; left time: 6867.5118s
+2025-05-14 18:37:55,392 - INFO - 	iters: 3400, epoch: 10 | loss: 0.0063728
+2025-05-14 18:37:55,392 - INFO - 	speed: 0.0344s/iter; left time: 10887.8201s
+2025-05-14 18:37:58,618 - INFO - 	iters: 3500, epoch: 10 | loss: 0.0037858
+2025-05-14 18:37:58,618 - INFO - 	speed: 0.0323s/iter; left time: 10214.3682s
+2025-05-14 18:37:59,256 - INFO - Epoch: 10 cost time: 95.6551
+2025-05-14 18:38:15,267 - INFO - Epoch: 10, Steps: 3518 | Train Loss: 0.03543
+Validation results --- Loss: 1.97250, Accuracy: 0.71861, Precision: 0.62649, Recall: 0.61519, F1: 0.61914, AUROC: 0.88805, AUPRC: 0.65728
+Test results --- Loss: 2.08410, Accuracy: 0.70566, Precision: 0.60408, Recall: 0.59536, F1: 0.59879, AUROC: 0.87730, AUPRC: 0.63013
+2025-05-14 18:38:15,267 - INFO - EarlyStopping counter: 9 out of 10
+2025-05-14 18:38:15,267 - INFO - 
+2025-05-14 18:38:15,267 - INFO - 
+2025-05-14 18:38:18,853 - INFO - 	iters: 100, epoch: 11 | loss: 0.0045338
+2025-05-14 18:38:18,854 - INFO - 	speed: 0.2024s/iter; left time: 64049.3167s
+2025-05-14 18:38:22,377 - INFO - 	iters: 200, epoch: 11 | loss: 0.0099892
+2025-05-14 18:38:22,377 - INFO - 	speed: 0.0352s/iter; left time: 11148.2066s
+2025-05-14 18:38:25,722 - INFO - 	iters: 300, epoch: 11 | loss: 0.0046361
+2025-05-14 18:38:25,722 - INFO - 	speed: 0.0334s/iter; left time: 10580.4255s
+2025-05-14 18:38:29,141 - INFO - 	iters: 400, epoch: 11 | loss: 0.0046459
+2025-05-14 18:38:29,141 - INFO - 	speed: 0.0342s/iter; left time: 10812.9068s
+2025-05-14 18:38:32,613 - INFO - 	iters: 500, epoch: 11 | loss: 0.0079254
+2025-05-14 18:38:32,614 - INFO - 	speed: 0.0347s/iter; left time: 10976.5099s
+2025-05-14 18:38:35,988 - INFO - 	iters: 600, epoch: 11 | loss: 0.0957528
+2025-05-14 18:38:35,988 - INFO - 	speed: 0.0337s/iter; left time: 10664.5296s
+2025-05-14 18:38:39,486 - INFO - 	iters: 700, epoch: 11 | loss: 0.0102512
+2025-05-14 18:38:39,487 - INFO - 	speed: 0.0350s/iter; left time: 11051.7810s
+2025-05-14 18:38:43,005 - INFO - 	iters: 800, epoch: 11 | loss: 0.0339310
+2025-05-14 18:38:43,005 - INFO - 	speed: 0.0352s/iter; left time: 11112.0974s
+2025-05-14 18:38:46,631 - INFO - 	iters: 900, epoch: 11 | loss: 0.0014716
+2025-05-14 18:38:46,631 - INFO - 	speed: 0.0363s/iter; left time: 11447.3334s
+2025-05-14 18:38:49,867 - INFO - 	iters: 1000, epoch: 11 | loss: 0.3583765
+2025-05-14 18:38:49,867 - INFO - 	speed: 0.0324s/iter; left time: 10212.9494s
+2025-05-14 18:38:53,271 - INFO - 	iters: 1100, epoch: 11 | loss: 0.0039726
+2025-05-14 18:38:53,271 - INFO - 	speed: 0.0340s/iter; left time: 10740.0536s
+2025-05-14 18:38:57,011 - INFO - 	iters: 1200, epoch: 11 | loss: 0.0015755
+2025-05-14 18:38:57,011 - INFO - 	speed: 0.0374s/iter; left time: 11798.4736s
+2025-05-14 18:39:00,441 - INFO - 	iters: 1300, epoch: 11 | loss: 0.0023018
+2025-05-14 18:39:00,442 - INFO - 	speed: 0.0343s/iter; left time: 10815.7661s
+2025-05-14 18:39:03,076 - INFO - 	iters: 1400, epoch: 11 | loss: 0.0010552
+2025-05-14 18:39:03,076 - INFO - 	speed: 0.0263s/iter; left time: 8304.6371s
+2025-05-14 18:39:06,021 - INFO - 	iters: 1500, epoch: 11 | loss: 0.0015321
+2025-05-14 18:39:06,021 - INFO - 	speed: 0.0294s/iter; left time: 9279.6010s
+2025-05-14 18:39:08,134 - INFO - 	iters: 1600, epoch: 11 | loss: 0.0030416
+2025-05-14 18:39:08,134 - INFO - 	speed: 0.0211s/iter; left time: 6655.8587s
+2025-05-14 18:39:10,247 - INFO - 	iters: 1700, epoch: 11 | loss: 0.0074342
+2025-05-14 18:39:10,248 - INFO - 	speed: 0.0211s/iter; left time: 6656.3235s
+2025-05-14 18:39:12,935 - INFO - 	iters: 1800, epoch: 11 | loss: 0.0875518
+2025-05-14 18:39:12,935 - INFO - 	speed: 0.0269s/iter; left time: 8461.5935s
+2025-05-14 18:39:16,257 - INFO - 	iters: 1900, epoch: 11 | loss: 0.0021103
+2025-05-14 18:39:16,257 - INFO - 	speed: 0.0332s/iter; left time: 10453.3209s
+2025-05-14 18:39:19,498 - INFO - 	iters: 2000, epoch: 11 | loss: 0.0996000
+2025-05-14 18:39:19,498 - INFO - 	speed: 0.0324s/iter; left time: 10196.5281s
+2025-05-14 18:39:22,852 - INFO - 	iters: 2100, epoch: 11 | loss: 0.0067860
+2025-05-14 18:39:22,852 - INFO - 	speed: 0.0335s/iter; left time: 10549.2326s
+2025-05-14 18:39:25,303 - INFO - 	iters: 2200, epoch: 11 | loss: 0.0018611
+2025-05-14 18:39:25,303 - INFO - 	speed: 0.0245s/iter; left time: 7705.7165s
+2025-05-14 18:39:28,397 - INFO - 	iters: 2300, epoch: 11 | loss: 0.1792064
+2025-05-14 18:39:28,397 - INFO - 	speed: 0.0309s/iter; left time: 9725.3738s
+2025-05-14 18:39:31,965 - INFO - 	iters: 2400, epoch: 11 | loss: 0.0040893
+2025-05-14 18:39:31,965 - INFO - 	speed: 0.0357s/iter; left time: 11210.1462s
+2025-05-14 18:39:35,125 - INFO - 	iters: 2500, epoch: 11 | loss: 0.0076527
+2025-05-14 18:39:35,125 - INFO - 	speed: 0.0316s/iter; left time: 9927.1001s
+2025-05-14 18:39:38,655 - INFO - 	iters: 2600, epoch: 11 | loss: 0.1062284
+2025-05-14 18:39:38,655 - INFO - 	speed: 0.0353s/iter; left time: 11084.2996s
+2025-05-14 18:39:42,178 - INFO - 	iters: 2700, epoch: 11 | loss: 0.0031321
+2025-05-14 18:39:42,178 - INFO - 	speed: 0.0352s/iter; left time: 11060.3754s
+2025-05-14 18:39:45,652 - INFO - 	iters: 2800, epoch: 11 | loss: 0.0314535
+2025-05-14 18:39:45,652 - INFO - 	speed: 0.0347s/iter; left time: 10901.3304s
+2025-05-14 18:39:49,127 - INFO - 	iters: 2900, epoch: 11 | loss: 0.0385921
+2025-05-14 18:39:49,127 - INFO - 	speed: 0.0347s/iter; left time: 10901.6399s
+2025-05-14 18:39:52,530 - INFO - 	iters: 3000, epoch: 11 | loss: 0.1737554
+2025-05-14 18:39:52,530 - INFO - 	speed: 0.0340s/iter; left time: 10671.2728s
+2025-05-14 18:39:55,999 - INFO - 	iters: 3100, epoch: 11 | loss: 0.0118181
+2025-05-14 18:39:55,999 - INFO - 	speed: 0.0347s/iter; left time: 10877.7264s
+2025-05-14 18:39:59,450 - INFO - 	iters: 3200, epoch: 11 | loss: 0.0696488
+2025-05-14 18:39:59,450 - INFO - 	speed: 0.0345s/iter; left time: 10814.1597s
+2025-05-14 18:40:02,771 - INFO - 	iters: 3300, epoch: 11 | loss: 0.1309524
+2025-05-14 18:40:02,771 - INFO - 	speed: 0.0332s/iter; left time: 10405.1621s
+2025-05-14 18:40:05,832 - INFO - 	iters: 3400, epoch: 11 | loss: 0.0426969
+2025-05-14 18:40:05,832 - INFO - 	speed: 0.0306s/iter; left time: 9589.4673s
+2025-05-14 18:40:09,028 - INFO - 	iters: 3500, epoch: 11 | loss: 0.0114433
+2025-05-14 18:40:09,028 - INFO - 	speed: 0.0320s/iter; left time: 10006.5502s
+2025-05-14 18:40:09,683 - INFO - Epoch: 11 cost time: 114.4154
+2025-05-14 18:40:25,659 - INFO - Epoch: 11, Steps: 3518 | Train Loss: 0.03179
+Validation results --- Loss: 2.29554, Accuracy: 0.72294, Precision: 0.65246, Recall: 0.59432, F1: 0.61412, AUROC: 0.89017, AUPRC: 0.65803
+Test results --- Loss: 2.51574, Accuracy: 0.71391, Precision: 0.62743, Recall: 0.56944, F1: 0.58641, AUROC: 0.87787, AUPRC: 0.62495
+2025-05-14 18:40:25,659 - INFO - EarlyStopping counter: 10 out of 10
+2025-05-14 18:40:25,659 - INFO - Early stopping triggered.
+2025-05-14 18:40:25,659 - INFO - Early stopping
+2025-05-14 18:40:25,694 - INFO - >>>>>>>testing : classification_TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best_TCN_PTB-XL_ftM_sl250_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_PTB_XL_seed43<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-05-14 19:04:33,999 - INFO - Validation results --- Loss: 0.70423, Accuracy: 0.74847, Precision: 0.67643, Recall: 0.62663, F1: 0.64211, AUROC: 0.91279, AUPRC: 0.70903
+Test results --- Loss: 0.73660, Accuracy: 0.74020, Precision: 0.66021, Recall: 0.60997, F1: 0.62258, AUROC: 0.90685, AUPRC: 0.68051
+

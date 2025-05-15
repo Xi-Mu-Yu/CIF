@@ -1,0 +1,119 @@
+2025-05-12 21:17:27,803 - INFO - Args in experiment:
+2025-05-12 21:17:27,804 - INFO - Namespace(a=1.0, activation='gelu', anomaly_ratio=0.25, augmentations='flip,shuffle,frequency,jitter,mask,drop', b=1.0, batch_size=32, c_out=7, chunk_size=16, d_conv=4, d_ff=256, d_layers=1, d_model=128, data='APAVA', data_path='ETTh1.csv', dec_in=7, des='Exp_10', devices='0,1,2,3', distil=True, dropout=0.1, e_layers=6, embed='timeF', enc_in=16, expand=2, factor=1, features='M', freq='h', gpu=0, inverse=False, is_training=1, itr=5, label_len=48, learnab=False, learning_rate=0.0001, loss='MSE', lradj='type1', mask_rate=0.25, model='TCN', model_id='APAVA-Indep_learnab_best', moving_avg=25, n=9, n_heads=8, no_inter_attn=False, num_class=2, num_kernels=6, num_workers=0, output_attention=False, p_hidden_dims=[128, 128], p_hidden_layers=2, patch_H='2,4,8', patch_len=16, patch_len_list='2,4,8', patience=10, pred_len=0, root_path='../Medformer_train/dataset/APAVA/', sampling_rate=256, seasonal_patterns='Monthly', seed=43, seq_len=256, single_channel=False, stride=8, swa=False, t=1, target='OT', task_name='classification', top_k=5, train_epochs=100, use_amp=False, use_gpu=True, use_multi_gpu=False)
+2025-05-12 21:17:27,804 - INFO - >>>>>>>training : classification_APAVA-Indep_learnab_best_TCN_APAVA_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_10_seed43<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-05-12 21:17:30,923 - INFO - train_steps: 98
+2025-05-12 21:17:30,925 - INFO - 
+2025-05-12 21:17:30,925 - INFO - 
+2025-05-12 21:17:34,702 - INFO - Epoch: 1 cost time: 3.7773
+2025-05-12 21:17:36,016 - INFO - Epoch: 1, Steps: 98 | Train Loss: 0.23215
+Validation results --- Loss: 0.64380, Accuracy: 0.68648, Precision: 0.70303, Recall: 0.70490, F1: 0.68642, AUROC: 0.80092, AUPRC: 0.78755
+Test results --- Loss: 0.44774, Accuracy: 0.76939, Precision: 0.77330, Recall: 0.78229, F1: 0.76819, AUROC: 0.88854, AUPRC: 0.89424
+2025-05-12 21:17:36,016 - INFO - Metric score decreased (inf --> -0.686420).  Saving model ...
+2025-05-12 21:17:36,040 - INFO - Model saved at ./checkpoints/classification/APAVA-Indep_learnab_best/TCN/classification_APAVA-Indep_learnab_best_TCN_APAVA_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_10_seed43//checkpoint.pth
+2025-05-12 21:17:36,040 - INFO - 
+2025-05-12 21:17:36,040 - INFO - 
+2025-05-12 21:17:39,963 - INFO - Epoch: 2 cost time: 3.9225
+2025-05-12 21:17:41,194 - INFO - Epoch: 2, Steps: 98 | Train Loss: 0.02490
+Validation results --- Loss: 0.71518, Accuracy: 0.70347, Precision: 0.70771, Recall: 0.71362, F1: 0.70226, AUROC: 0.81427, AUPRC: 0.80793
+Test results --- Loss: 0.35882, Accuracy: 0.83089, Precision: 0.82449, Recall: 0.82955, F1: 0.82652, AUROC: 0.92288, AUPRC: 0.92586
+2025-05-12 21:17:41,194 - INFO - Metric score decreased (-0.686420 --> -0.702260).  Saving model ...
+2025-05-12 21:17:41,222 - INFO - Model saved at ./checkpoints/classification/APAVA-Indep_learnab_best/TCN/classification_APAVA-Indep_learnab_best_TCN_APAVA_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_10_seed43//checkpoint.pth
+2025-05-12 21:17:41,223 - INFO - 
+2025-05-12 21:17:41,223 - INFO - 
+2025-05-12 21:17:44,689 - INFO - Epoch: 3 cost time: 3.4661
+2025-05-12 21:17:46,052 - INFO - Epoch: 3, Steps: 98 | Train Loss: 0.00526
+Validation results --- Loss: 0.94426, Accuracy: 0.69356, Precision: 0.70779, Recall: 0.71068, F1: 0.69340, AUROC: 0.80956, AUPRC: 0.79827
+Test results --- Loss: 0.44921, Accuracy: 0.81342, Precision: 0.81137, Recall: 0.82189, F1: 0.81140, AUROC: 0.91937, AUPRC: 0.92228
+2025-05-12 21:17:46,052 - INFO - EarlyStopping counter: 1 out of 10
+2025-05-12 21:17:46,052 - INFO - 
+2025-05-12 21:17:46,052 - INFO - 
+2025-05-12 21:17:49,444 - INFO - Epoch: 4 cost time: 3.3915
+2025-05-12 21:17:50,589 - INFO - Epoch: 4, Steps: 98 | Train Loss: 0.00109
+Validation results --- Loss: 0.92870, Accuracy: 0.70488, Precision: 0.70687, Recall: 0.71307, F1: 0.70321, AUROC: 0.81740, AUPRC: 0.80934
+Test results --- Loss: 0.41891, Accuracy: 0.83788, Precision: 0.83167, Recall: 0.83520, F1: 0.83322, AUROC: 0.92484, AUPRC: 0.92771
+2025-05-12 21:17:50,590 - INFO - Metric score decreased (-0.702260 --> -0.703213).  Saving model ...
+2025-05-12 21:17:50,654 - INFO - Model saved at ./checkpoints/classification/APAVA-Indep_learnab_best/TCN/classification_APAVA-Indep_learnab_best_TCN_APAVA_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_10_seed43//checkpoint.pth
+2025-05-12 21:17:50,655 - INFO - 
+2025-05-12 21:17:50,655 - INFO - 
+2025-05-12 21:17:54,222 - INFO - Epoch: 5 cost time: 3.5667
+2025-05-12 21:17:55,262 - INFO - Epoch: 5, Steps: 98 | Train Loss: 0.00054
+Validation results --- Loss: 0.94821, Accuracy: 0.70559, Precision: 0.70718, Recall: 0.71342, F1: 0.70383, AUROC: 0.81814, AUPRC: 0.81059
+Test results --- Loss: 0.44580, Accuracy: 0.83927, Precision: 0.83317, Recall: 0.83612, F1: 0.83450, AUROC: 0.92318, AUPRC: 0.92621
+2025-05-12 21:17:55,262 - INFO - Metric score decreased (-0.703213 --> -0.703829).  Saving model ...
+2025-05-12 21:17:55,362 - INFO - Model saved at ./checkpoints/classification/APAVA-Indep_learnab_best/TCN/classification_APAVA-Indep_learnab_best_TCN_APAVA_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_10_seed43//checkpoint.pth
+2025-05-12 21:17:55,362 - INFO - 
+2025-05-12 21:17:55,363 - INFO - 
+2025-05-12 21:17:58,850 - INFO - Epoch: 6 cost time: 3.4870
+2025-05-12 21:18:00,338 - INFO - Epoch: 6, Steps: 98 | Train Loss: 0.00029
+Validation results --- Loss: 0.99963, Accuracy: 0.70488, Precision: 0.70634, Recall: 0.71257, F1: 0.70308, AUROC: 0.81741, AUPRC: 0.80961
+Test results --- Loss: 0.45293, Accuracy: 0.83927, Precision: 0.83331, Recall: 0.83532, F1: 0.83425, AUROC: 0.92460, AUPRC: 0.92745
+2025-05-12 21:18:00,338 - INFO - EarlyStopping counter: 1 out of 10
+2025-05-12 21:18:00,338 - INFO - 
+2025-05-12 21:18:00,338 - INFO - 
+2025-05-12 21:18:04,132 - INFO - Epoch: 7 cost time: 3.7938
+2025-05-12 21:18:05,238 - INFO - Epoch: 7, Steps: 98 | Train Loss: 0.00019
+Validation results --- Loss: 1.06767, Accuracy: 0.70418, Precision: 0.70550, Recall: 0.71171, F1: 0.70234, AUROC: 0.81719, AUPRC: 0.80918
+Test results --- Loss: 0.46464, Accuracy: 0.83927, Precision: 0.83331, Recall: 0.83532, F1: 0.83425, AUROC: 0.92505, AUPRC: 0.92784
+2025-05-12 21:18:05,238 - INFO - EarlyStopping counter: 2 out of 10
+2025-05-12 21:18:05,238 - INFO - 
+2025-05-12 21:18:05,238 - INFO - 
+2025-05-12 21:18:08,785 - INFO - Epoch: 8 cost time: 3.5469
+2025-05-12 21:18:09,905 - INFO - Epoch: 8, Steps: 98 | Train Loss: 0.00014
+Validation results --- Loss: 1.09369, Accuracy: 0.69781, Precision: 0.70117, Recall: 0.70703, F1: 0.69640, AUROC: 0.81766, AUPRC: 0.80963
+Test results --- Loss: 0.48331, Accuracy: 0.83857, Precision: 0.83234, Recall: 0.83658, F1: 0.83414, AUROC: 0.92511, AUPRC: 0.92783
+2025-05-12 21:18:09,906 - INFO - EarlyStopping counter: 3 out of 10
+2025-05-12 21:18:09,906 - INFO - 
+2025-05-12 21:18:09,906 - INFO - 
+2025-05-12 21:18:13,592 - INFO - Epoch: 9 cost time: 3.6862
+2025-05-12 21:18:15,108 - INFO - Epoch: 9, Steps: 98 | Train Loss: 0.00011
+Validation results --- Loss: 1.11995, Accuracy: 0.69710, Precision: 0.70089, Recall: 0.70668, F1: 0.69578, AUROC: 0.81768, AUPRC: 0.80991
+Test results --- Loss: 0.49606, Accuracy: 0.83927, Precision: 0.83303, Recall: 0.83770, F1: 0.83497, AUROC: 0.92531, AUPRC: 0.92802
+2025-05-12 21:18:15,109 - INFO - EarlyStopping counter: 4 out of 10
+2025-05-12 21:18:15,109 - INFO - 
+2025-05-12 21:18:15,109 - INFO - 
+2025-05-12 21:18:19,047 - INFO - Epoch: 10 cost time: 3.9379
+2025-05-12 21:18:20,193 - INFO - Epoch: 10, Steps: 98 | Train Loss: 0.00008
+Validation results --- Loss: 1.20805, Accuracy: 0.69639, Precision: 0.70441, Recall: 0.70934, F1: 0.69573, AUROC: 0.81734, AUPRC: 0.80902
+Test results --- Loss: 0.52332, Accuracy: 0.83229, Precision: 0.82640, Recall: 0.83416, F1: 0.82884, AUROC: 0.92560, AUPRC: 0.92824
+2025-05-12 21:18:20,193 - INFO - EarlyStopping counter: 5 out of 10
+2025-05-12 21:18:20,193 - INFO - 
+2025-05-12 21:18:20,193 - INFO - 
+2025-05-12 21:18:23,678 - INFO - Epoch: 11 cost time: 3.4846
+2025-05-12 21:18:24,785 - INFO - Epoch: 11, Steps: 98 | Train Loss: 0.00007
+Validation results --- Loss: 1.23011, Accuracy: 0.69851, Precision: 0.70474, Recall: 0.71014, F1: 0.69762, AUROC: 0.81647, AUPRC: 0.80813
+Test results --- Loss: 0.52469, Accuracy: 0.83578, Precision: 0.82948, Recall: 0.83474, F1: 0.83158, AUROC: 0.92579, AUPRC: 0.92839
+2025-05-12 21:18:24,786 - INFO - EarlyStopping counter: 6 out of 10
+2025-05-12 21:18:24,786 - INFO - 
+2025-05-12 21:18:24,786 - INFO - 
+2025-05-12 21:18:28,387 - INFO - Epoch: 12 cost time: 3.6006
+2025-05-12 21:18:29,355 - INFO - Epoch: 12, Steps: 98 | Train Loss: 0.00005
+Validation results --- Loss: 1.26456, Accuracy: 0.69568, Precision: 0.70353, Recall: 0.70848, F1: 0.69500, AUROC: 0.81626, AUPRC: 0.80766
+Test results --- Loss: 0.53755, Accuracy: 0.83159, Precision: 0.82547, Recall: 0.83252, F1: 0.82788, AUROC: 0.92558, AUPRC: 0.92818
+2025-05-12 21:18:29,355 - INFO - EarlyStopping counter: 7 out of 10
+2025-05-12 21:18:29,356 - INFO - 
+2025-05-12 21:18:29,356 - INFO - 
+2025-05-12 21:18:32,676 - INFO - Epoch: 13 cost time: 3.3208
+2025-05-12 21:18:33,602 - INFO - Epoch: 13, Steps: 98 | Train Loss: 0.00005
+Validation results --- Loss: 1.22760, Accuracy: 0.69639, Precision: 0.69947, Recall: 0.70532, F1: 0.69492, AUROC: 0.81555, AUPRC: 0.80689
+Test results --- Loss: 0.52908, Accuracy: 0.84067, Precision: 0.83449, Recall: 0.83862, F1: 0.83625, AUROC: 0.92545, AUPRC: 0.92804
+2025-05-12 21:18:33,602 - INFO - EarlyStopping counter: 8 out of 10
+2025-05-12 21:18:33,602 - INFO - 
+2025-05-12 21:18:33,602 - INFO - 
+2025-05-12 21:18:36,953 - INFO - Epoch: 14 cost time: 3.3508
+2025-05-12 21:18:37,976 - INFO - Epoch: 14, Steps: 98 | Train Loss: 0.00004
+Validation results --- Loss: 1.28217, Accuracy: 0.69639, Precision: 0.70122, Recall: 0.70683, F1: 0.69526, AUROC: 0.81557, AUPRC: 0.80615
+Test results --- Loss: 0.54192, Accuracy: 0.83788, Precision: 0.83161, Recall: 0.83652, F1: 0.83361, AUROC: 0.92555, AUPRC: 0.92812
+2025-05-12 21:18:37,976 - INFO - EarlyStopping counter: 9 out of 10
+2025-05-12 21:18:37,976 - INFO - 
+2025-05-12 21:18:37,976 - INFO - 
+2025-05-12 21:18:41,778 - INFO - Epoch: 15 cost time: 3.8016
+2025-05-12 21:18:42,952 - INFO - Epoch: 15, Steps: 98 | Train Loss: 0.00003
+Validation results --- Loss: 1.30821, Accuracy: 0.69427, Precision: 0.69985, Recall: 0.70527, F1: 0.69326, AUROC: 0.81534, AUPRC: 0.80610
+Test results --- Loss: 0.54892, Accuracy: 0.83788, Precision: 0.83161, Recall: 0.83652, F1: 0.83361, AUROC: 0.92588, AUPRC: 0.92844
+2025-05-12 21:18:42,953 - INFO - EarlyStopping counter: 10 out of 10
+2025-05-12 21:18:42,953 - INFO - Early stopping triggered.
+2025-05-12 21:18:42,953 - INFO - Early stopping
+2025-05-12 21:18:42,973 - INFO - >>>>>>>testing : classification_APAVA-Indep_learnab_best_TCN_APAVA_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_10_seed43<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-05-12 21:18:45,665 - INFO - Validation results --- Loss: 0.97644, Accuracy: 0.70559, Precision: 0.70718, Recall: 0.71342, F1: 0.70383, AUROC: 0.81814, AUPRC: 0.81059
+Test results --- Loss: 0.44212, Accuracy: 0.83927, Precision: 0.83317, Recall: 0.83612, F1: 0.83450, AUROC: 0.92318, AUPRC: 0.92621
+

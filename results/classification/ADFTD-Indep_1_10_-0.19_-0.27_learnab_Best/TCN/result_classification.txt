@@ -1,0 +1,25 @@
+classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl96_ll48_pl96_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed41  
+Validation results --- Loss: 1.60097, Accuracy: 0.60533, Precision: 0.58368, Recall: 0.58757, F1: 0.57559, AUROC: 0.74745, AUPRC: 0.57585
+Test results --- Loss: 1.29121, Accuracy: 0.59988, Precision: 0.56407, Recall: 0.56752, F1: 0.56247, AUROC: 0.76660, AUPRC: 0.60222
+
+
+classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed42  
+Validation results --- Loss: 4.38359, Accuracy: 0.58398, Precision: 0.56880, Recall: 0.57098, F1: 0.56885, AUROC: 0.72877, AUPRC: 0.57615
+Test results --- Loss: 3.16143, Accuracy: 0.58506, Precision: 0.56267, Recall: 0.56532, F1: 0.56282, AUROC: 0.76053, AUPRC: 0.59642
+
+
+classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed43  
+Validation results --- Loss: 2.62247, Accuracy: 0.59176, Precision: 0.57539, Recall: 0.57838, F1: 0.57480, AUROC: 0.73366, AUPRC: 0.56232
+Test results --- Loss: 1.96437, Accuracy: 0.57551, Precision: 0.54817, Recall: 0.54906, F1: 0.54768, AUROC: 0.75343, AUPRC: 0.58799
+
+
+classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed44  
+Validation results --- Loss: 1.30798, Accuracy: 0.59394, Precision: 0.57555, Recall: 0.58091, F1: 0.57517, AUROC: 0.73138, AUPRC: 0.55568
+Test results --- Loss: 1.05532, Accuracy: 0.57605, Precision: 0.54527, Recall: 0.54932, F1: 0.54197, AUROC: 0.75497, AUPRC: 0.59377
+
+
+classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed45  
+Validation results --- Loss: 3.11941, Accuracy: 0.58862, Precision: 0.57103, Recall: 0.57199, F1: 0.55944, AUROC: 0.72908, AUPRC: 0.56728
+Test results --- Loss: 2.22045, Accuracy: 0.59155, Precision: 0.56246, Recall: 0.56199, F1: 0.55630, AUROC: 0.76791, AUPRC: 0.60716
+
+

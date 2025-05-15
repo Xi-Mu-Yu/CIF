@@ -1,0 +1,25 @@
+classification_TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best_TCN_TDBRAIN_ftM_sl96_ll48_pl96_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_seed41  
+Validation results --- Loss: 0.17270, Accuracy: 0.93958, Precision: 0.94565, Recall: 0.93958, F1: 0.93938, AUROC: 0.99472, AUPRC: 0.99396
+Test results --- Loss: 0.20739, Accuracy: 0.91875, Precision: 0.92298, Recall: 0.91875, F1: 0.91855, AUROC: 0.98223, AUPRC: 0.98288
+
+
+classification_TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best_TCN_TDBRAIN_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_seed42  
+Validation results --- Loss: 0.10638, Accuracy: 0.97292, Precision: 0.97358, Recall: 0.97292, F1: 0.97291, AUROC: 0.99318, AUPRC: 0.99247
+Test results --- Loss: 0.23245, Accuracy: 0.91667, Precision: 0.91739, Recall: 0.91667, F1: 0.91663, AUROC: 0.97631, AUPRC: 0.97734
+
+
+classification_TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best_TCN_TDBRAIN_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_seed43  
+Validation results --- Loss: 0.14907, Accuracy: 0.95937, Precision: 0.96243, Recall: 0.95937, F1: 0.95931, AUROC: 0.99631, AUPRC: 0.99625
+Test results --- Loss: 0.17702, Accuracy: 0.93125, Precision: 0.93525, Recall: 0.93125, F1: 0.93109, AUROC: 0.99072, AUPRC: 0.99102
+
+
+classification_TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best_TCN_TDBRAIN_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_seed44  
+Validation results --- Loss: 0.13383, Accuracy: 0.96250, Precision: 0.96512, Recall: 0.96250, F1: 0.96245, AUROC: 0.99548, AUPRC: 0.99541
+Test results --- Loss: 0.10845, Accuracy: 0.95625, Precision: 0.95739, Recall: 0.95625, F1: 0.95622, AUROC: 0.99527, AUPRC: 0.99541
+
+
+classification_TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best_TCN_TDBRAIN_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_seed45  
+Validation results --- Loss: 0.13960, Accuracy: 0.96458, Precision: 0.96693, Recall: 0.96458, F1: 0.96454, AUROC: 0.99381, AUPRC: 0.99286
+Test results --- Loss: 0.15817, Accuracy: 0.93333, Precision: 0.93370, Recall: 0.93333, F1: 0.93332, AUROC: 0.98666, AUPRC: 0.98721
+
+

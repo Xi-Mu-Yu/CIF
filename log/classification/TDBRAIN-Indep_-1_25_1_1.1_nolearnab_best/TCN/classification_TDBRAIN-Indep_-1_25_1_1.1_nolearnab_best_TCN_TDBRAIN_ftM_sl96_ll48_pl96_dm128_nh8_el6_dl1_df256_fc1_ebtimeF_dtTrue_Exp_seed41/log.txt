@@ -1,0 +1,129 @@
+2025-04-06 18:24:20,957 - INFO - Args in experiment:
+2025-04-06 18:24:20,957 - INFO - Namespace(a=1.0, activation='gelu', anomaly_ratio=0.25, augmentations='flip,shuffle,frequency,jitter,mask,drop', b=1.1, batch_size=32, c_out=7, chunk_size=16, d_conv=4, d_ff=256, d_layers=1, d_model=128, data='TDBRAIN', data_path='ETTh1.csv', dec_in=7, des='Exp', devices='0,1,2,3', distil=True, dropout=0.1, e_layers=6, embed='timeF', enc_in=33, expand=2, factor=1, features='M', freq='h', gpu=0, inverse=False, is_training=1, itr=5, label_len=48, learnab=False, learning_rate=0.0001, loss='MSE', lradj='type1', mask_rate=0.25, model='TCN', model_id='TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best', moving_avg=25, n=25, n_heads=8, no_inter_attn=False, num_class=2, num_kernels=6, num_workers=0, output_attention=False, p_hidden_dims=[128, 128], p_hidden_layers=2, patch_H='2,4,8', patch_len=16, patch_len_list='2,4,8', patience=10, pred_len=0, root_path='../Medformer_train/dataset/TDBRAIN/', sampling_rate=256, seasonal_patterns='Monthly', seed=41, seq_len=256, single_channel=False, stride=8, swa=False, t=-1, target='OT', task_name='classification', top_k=5, train_epochs=100, use_amp=False, use_gpu=True, use_multi_gpu=False)
+2025-04-06 18:24:20,957 - INFO - >>>>>>>training : classification_TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best_TCN_TDBRAIN_ftM_sl96_ll48_pl96_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_seed41<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-04-06 18:24:26,940 - INFO - train_steps: 135
+2025-04-06 18:24:26,942 - INFO - 
+2025-04-06 18:24:26,942 - INFO - 
+2025-04-06 18:24:30,465 - INFO - 	iters: 100, epoch: 1 | loss: 0.2744164
+2025-04-06 18:24:30,465 - INFO - 	speed: 0.0352s/iter; left time: 472.3618s
+2025-04-06 18:24:31,697 - INFO - Epoch: 1 cost time: 4.7551
+2025-04-06 18:24:32,631 - INFO - Epoch: 1, Steps: 135 | Train Loss: 0.27494
+Validation results --- Loss: 0.21691, Accuracy: 0.92812, Precision: 0.93382, Recall: 0.92813, F1: 0.92789, AUROC: 0.98431, AUPRC: 0.98226
+Test results --- Loss: 0.30284, Accuracy: 0.86042, Precision: 0.86132, Recall: 0.86042, F1: 0.86033, AUROC: 0.94635, AUPRC: 0.94859
+2025-04-06 18:24:32,632 - INFO - Metric score decreased (inf --> -0.927888).  Saving model ...
+2025-04-06 18:24:32,652 - INFO - Model saved at ./checkpoints/classification/TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best/TCN/classification_TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best_TCN_TDBRAIN_ftM_sl96_ll48_pl96_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_seed41//checkpoint.pth
+2025-04-06 18:24:32,653 - INFO - 
+2025-04-06 18:24:32,653 - INFO - 
+2025-04-06 18:24:36,181 - INFO - 	iters: 100, epoch: 2 | loss: 0.0439480
+2025-04-06 18:24:36,182 - INFO - 	speed: 0.0572s/iter; left time: 758.4323s
+2025-04-06 18:24:37,590 - INFO - Epoch: 2 cost time: 4.9368
+2025-04-06 18:24:38,841 - INFO - Epoch: 2, Steps: 135 | Train Loss: 0.09809
+Validation results --- Loss: 0.22171, Accuracy: 0.92812, Precision: 0.93663, Recall: 0.92812, F1: 0.92777, AUROC: 0.98992, AUPRC: 0.98857
+Test results --- Loss: 0.21870, Accuracy: 0.90104, Precision: 0.90562, Recall: 0.90104, F1: 0.90076, AUROC: 0.97750, AUPRC: 0.97841
+2025-04-06 18:24:38,842 - INFO - EarlyStopping counter: 1 out of 10
+2025-04-06 18:24:38,843 - INFO - 
+2025-04-06 18:24:38,843 - INFO - 
+2025-04-06 18:24:42,487 - INFO - 	iters: 100, epoch: 3 | loss: 0.0037390
+2025-04-06 18:24:42,487 - INFO - 	speed: 0.0631s/iter; left time: 827.9583s
+2025-04-06 18:24:43,852 - INFO - Epoch: 3 cost time: 5.0076
+2025-04-06 18:24:45,224 - INFO - Epoch: 3, Steps: 135 | Train Loss: 0.02452
+Validation results --- Loss: 0.17270, Accuracy: 0.93958, Precision: 0.94565, Recall: 0.93958, F1: 0.93938, AUROC: 0.99472, AUPRC: 0.99396
+Test results --- Loss: 0.20739, Accuracy: 0.91875, Precision: 0.92298, Recall: 0.91875, F1: 0.91855, AUROC: 0.98223, AUPRC: 0.98288
+2025-04-06 18:24:45,225 - INFO - Metric score decreased (-0.927888 --> -0.939377).  Saving model ...
+2025-04-06 18:24:45,269 - INFO - Model saved at ./checkpoints/classification/TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best/TCN/classification_TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best_TCN_TDBRAIN_ftM_sl96_ll48_pl96_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_seed41//checkpoint.pth
+2025-04-06 18:24:45,269 - INFO - 
+2025-04-06 18:24:45,269 - INFO - 
+2025-04-06 18:24:48,795 - INFO - 	iters: 100, epoch: 4 | loss: 0.0061691
+2025-04-06 18:24:48,795 - INFO - 	speed: 0.0631s/iter; left time: 819.7529s
+2025-04-06 18:24:50,024 - INFO - Epoch: 4 cost time: 4.7546
+2025-04-06 18:24:51,409 - INFO - Epoch: 4, Steps: 135 | Train Loss: 0.00321
+Validation results --- Loss: 0.19753, Accuracy: 0.93542, Precision: 0.94280, Recall: 0.93542, F1: 0.93515, AUROC: 0.99510, AUPRC: 0.99490
+Test results --- Loss: 0.24538, Accuracy: 0.90625, Precision: 0.91314, Recall: 0.90625, F1: 0.90586, AUROC: 0.98154, AUPRC: 0.98219
+2025-04-06 18:24:51,410 - INFO - EarlyStopping counter: 1 out of 10
+2025-04-06 18:24:51,411 - INFO - 
+2025-04-06 18:24:51,411 - INFO - 
+2025-04-06 18:24:54,578 - INFO - 	iters: 100, epoch: 5 | loss: 0.0000527
+2025-04-06 18:24:54,578 - INFO - 	speed: 0.0578s/iter; left time: 743.7032s
+2025-04-06 18:24:55,629 - INFO - Epoch: 5 cost time: 4.2175
+2025-04-06 18:24:56,202 - INFO - Epoch: 5, Steps: 135 | Train Loss: 0.00094
+Validation results --- Loss: 0.19911, Accuracy: 0.93958, Precision: 0.94610, Recall: 0.93958, F1: 0.93936, AUROC: 0.99614, AUPRC: 0.99613
+Test results --- Loss: 0.22587, Accuracy: 0.91563, Precision: 0.92245, Recall: 0.91562, F1: 0.91528, AUROC: 0.98768, AUPRC: 0.98813
+2025-04-06 18:24:56,202 - INFO - EarlyStopping counter: 2 out of 10
+2025-04-06 18:24:56,202 - INFO - 
+2025-04-06 18:24:56,203 - INFO - 
+2025-04-06 18:24:59,367 - INFO - 	iters: 100, epoch: 6 | loss: 0.0000951
+2025-04-06 18:24:59,368 - INFO - 	speed: 0.0479s/iter; left time: 609.4973s
+2025-04-06 18:25:00,430 - INFO - Epoch: 6 cost time: 4.2276
+2025-04-06 18:25:01,075 - INFO - Epoch: 6, Steps: 135 | Train Loss: 0.00028
+Validation results --- Loss: 0.25852, Accuracy: 0.92188, Precision: 0.93243, Recall: 0.92188, F1: 0.92140, AUROC: 0.99603, AUPRC: 0.99603
+Test results --- Loss: 0.28300, Accuracy: 0.89792, Precision: 0.91049, Recall: 0.89792, F1: 0.89713, AUROC: 0.98749, AUPRC: 0.98794
+2025-04-06 18:25:01,075 - INFO - EarlyStopping counter: 3 out of 10
+2025-04-06 18:25:01,075 - INFO - 
+2025-04-06 18:25:01,075 - INFO - 
+2025-04-06 18:25:04,186 - INFO - 	iters: 100, epoch: 7 | loss: 0.0000604
+2025-04-06 18:25:04,187 - INFO - 	speed: 0.0482s/iter; left time: 606.7479s
+2025-04-06 18:25:05,178 - INFO - Epoch: 7 cost time: 4.1023
+2025-04-06 18:25:05,787 - INFO - Epoch: 7, Steps: 135 | Train Loss: 0.00016
+Validation results --- Loss: 0.28600, Accuracy: 0.91667, Precision: 0.92857, Recall: 0.91667, F1: 0.91608, AUROC: 0.99609, AUPRC: 0.99607
+Test results --- Loss: 0.30595, Accuracy: 0.89687, Precision: 0.90972, Recall: 0.89688, F1: 0.89606, AUROC: 0.98826, AUPRC: 0.98869
+2025-04-06 18:25:05,788 - INFO - EarlyStopping counter: 4 out of 10
+2025-04-06 18:25:05,788 - INFO - 
+2025-04-06 18:25:05,788 - INFO - 
+2025-04-06 18:25:08,651 - INFO - 	iters: 100, epoch: 8 | loss: 0.0000221
+2025-04-06 18:25:08,651 - INFO - 	speed: 0.0446s/iter; left time: 555.9549s
+2025-04-06 18:25:09,780 - INFO - Epoch: 8 cost time: 3.9914
+2025-04-06 18:25:10,581 - INFO - Epoch: 8, Steps: 135 | Train Loss: 0.00011
+Validation results --- Loss: 0.28198, Accuracy: 0.91667, Precision: 0.92857, Recall: 0.91667, F1: 0.91608, AUROC: 0.99604, AUPRC: 0.99602
+Test results --- Loss: 0.30675, Accuracy: 0.89687, Precision: 0.90972, Recall: 0.89688, F1: 0.89606, AUROC: 0.98809, AUPRC: 0.98851
+2025-04-06 18:25:10,581 - INFO - EarlyStopping counter: 5 out of 10
+2025-04-06 18:25:10,581 - INFO - 
+2025-04-06 18:25:10,581 - INFO - 
+2025-04-06 18:25:13,532 - INFO - 	iters: 100, epoch: 9 | loss: 0.0001581
+2025-04-06 18:25:13,533 - INFO - 	speed: 0.0488s/iter; left time: 601.5067s
+2025-04-06 18:25:14,657 - INFO - Epoch: 9 cost time: 4.0762
+2025-04-06 18:25:15,800 - INFO - Epoch: 9, Steps: 135 | Train Loss: 0.00008
+Validation results --- Loss: 0.29675, Accuracy: 0.91563, Precision: 0.92781, Recall: 0.91563, F1: 0.91502, AUROC: 0.99609, AUPRC: 0.99611
+Test results --- Loss: 0.32287, Accuracy: 0.89792, Precision: 0.91111, Recall: 0.89792, F1: 0.89709, AUROC: 0.98829, AUPRC: 0.98870
+2025-04-06 18:25:15,800 - INFO - EarlyStopping counter: 6 out of 10
+2025-04-06 18:25:15,800 - INFO - 
+2025-04-06 18:25:15,800 - INFO - 
+2025-04-06 18:25:19,401 - INFO - 	iters: 100, epoch: 10 | loss: 0.0000611
+2025-04-06 18:25:19,401 - INFO - 	speed: 0.0587s/iter; left time: 715.1458s
+2025-04-06 18:25:20,691 - INFO - Epoch: 10 cost time: 4.8908
+2025-04-06 18:25:21,619 - INFO - Epoch: 10, Steps: 135 | Train Loss: 0.00006
+Validation results --- Loss: 0.35587, Accuracy: 0.89896, Precision: 0.91594, Recall: 0.89896, F1: 0.89792, AUROC: 0.99585, AUPRC: 0.99521
+Test results --- Loss: 0.38308, Accuracy: 0.88854, Precision: 0.90508, Recall: 0.88854, F1: 0.88739, AUROC: 0.98877, AUPRC: 0.98917
+2025-04-06 18:25:21,619 - INFO - EarlyStopping counter: 7 out of 10
+2025-04-06 18:25:21,619 - INFO - 
+2025-04-06 18:25:21,619 - INFO - 
+2025-04-06 18:25:24,951 - INFO - 	iters: 100, epoch: 11 | loss: 0.0000120
+2025-04-06 18:25:24,951 - INFO - 	speed: 0.0555s/iter; left time: 668.8227s
+2025-04-06 18:25:26,204 - INFO - Epoch: 11 cost time: 4.5851
+2025-04-06 18:25:27,218 - INFO - Epoch: 11, Steps: 135 | Train Loss: 0.00005
+Validation results --- Loss: 0.31248, Accuracy: 0.91354, Precision: 0.92629, Recall: 0.91354, F1: 0.91289, AUROC: 0.99584, AUPRC: 0.99517
+Test results --- Loss: 0.34011, Accuracy: 0.89792, Precision: 0.91111, Recall: 0.89792, F1: 0.89709, AUROC: 0.98869, AUPRC: 0.98909
+2025-04-06 18:25:27,218 - INFO - EarlyStopping counter: 8 out of 10
+2025-04-06 18:25:27,218 - INFO - 
+2025-04-06 18:25:27,218 - INFO - 
+2025-04-06 18:25:30,589 - INFO - 	iters: 100, epoch: 12 | loss: 0.0000116
+2025-04-06 18:25:30,590 - INFO - 	speed: 0.0564s/iter; left time: 671.9363s
+2025-04-06 18:25:31,912 - INFO - Epoch: 12 cost time: 4.6938
+2025-04-06 18:25:32,931 - INFO - Epoch: 12, Steps: 135 | Train Loss: 0.00004
+Validation results --- Loss: 0.28819, Accuracy: 0.91979, Precision: 0.93088, Recall: 0.91979, F1: 0.91927, AUROC: 0.99585, AUPRC: 0.99519
+Test results --- Loss: 0.31466, Accuracy: 0.90104, Precision: 0.91340, Recall: 0.90104, F1: 0.90030, AUROC: 0.98879, AUPRC: 0.98918
+2025-04-06 18:25:32,931 - INFO - EarlyStopping counter: 9 out of 10
+2025-04-06 18:25:32,931 - INFO - 
+2025-04-06 18:25:32,931 - INFO - 
+2025-04-06 18:25:36,327 - INFO - 	iters: 100, epoch: 13 | loss: 0.0000032
+2025-04-06 18:25:36,328 - INFO - 	speed: 0.0574s/iter; left time: 675.9611s
+2025-04-06 18:25:37,442 - INFO - Epoch: 13 cost time: 4.5108
+2025-04-06 18:25:38,104 - INFO - Epoch: 13, Steps: 135 | Train Loss: 0.00003
+Validation results --- Loss: 0.33432, Accuracy: 0.91042, Precision: 0.92403, Recall: 0.91042, F1: 0.90969, AUROC: 0.99586, AUPRC: 0.99526
+Test results --- Loss: 0.36380, Accuracy: 0.89687, Precision: 0.91101, Recall: 0.89688, F1: 0.89598, AUROC: 0.98919, AUPRC: 0.98956
+2025-04-06 18:25:38,104 - INFO - EarlyStopping counter: 10 out of 10
+2025-04-06 18:25:38,104 - INFO - Early stopping triggered.
+2025-04-06 18:25:38,104 - INFO - Early stopping
+2025-04-06 18:25:38,128 - INFO - >>>>>>>testing : classification_TDBRAIN-Indep_-1_25_1_1.1_nolearnab_best_TCN_TDBRAIN_ftM_sl96_ll48_pl96_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_seed41<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-04-06 18:25:40,776 - INFO - Validation results --- Loss: 0.17270, Accuracy: 0.93958, Precision: 0.94565, Recall: 0.93958, F1: 0.93938, AUROC: 0.99472, AUPRC: 0.99396
+Test results --- Loss: 0.20739, Accuracy: 0.91875, Precision: 0.92298, Recall: 0.91875, F1: 0.91855, AUROC: 0.98223, AUPRC: 0.98288
+

@@ -1,0 +1,635 @@
+2025-04-06 15:44:20,956 - INFO - Args in experiment:
+2025-04-06 15:44:20,957 - INFO - Namespace(a=-0.19, activation='gelu', anomaly_ratio=0.25, augmentations='flip,shuffle,frequency,jitter,mask,drop', b=-0.27, batch_size=32, c_out=7, chunk_size=16, d_conv=4, d_ff=256, d_layers=1, d_model=128, data='ADFTD', data_path='ETTh1.csv', dec_in=7, des='Exp_ADFTD', devices='0,1,2,3', distil=True, dropout=0.1, e_layers=6, embed='timeF', enc_in=19, expand=2, factor=1, features='M', freq='h', gpu=0, inverse=False, is_training=1, itr=5, label_len=48, learnab=True, learning_rate=0.0001, loss='MSE', lradj='type1', mask_rate=0.25, model='TCN', model_id='ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best', moving_avg=25, n=10, n_heads=8, no_inter_attn=False, num_class=3, num_kernels=6, num_workers=0, output_attention=False, p_hidden_dims=[128, 128], p_hidden_layers=2, patch_H='2,4,8', patch_len=16, patch_len_list='2,4,8', patience=10, pred_len=0, root_path='../Medformer_train/dataset/ADFTD/', sampling_rate=256, seasonal_patterns='Monthly', seed=43, seq_len=256, single_channel=False, stride=8, swa=False, t=1, target='OT', task_name='classification', top_k=5, train_epochs=100, use_amp=False, use_gpu=True, use_multi_gpu=False)
+2025-04-06 15:44:20,957 - INFO - >>>>>>>training : classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed43<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-04-06 15:45:00,484 - INFO - train_steps: 1264
+2025-04-06 15:45:00,486 - INFO - 
+2025-04-06 15:45:00,486 - INFO - 
+2025-04-06 15:45:03,691 - INFO - 	iters: 100, epoch: 1 | loss: 1.0007406
+2025-04-06 15:45:03,692 - INFO - 	speed: 0.0321s/iter; left time: 4051.5391s
+2025-04-06 15:45:06,853 - INFO - 	iters: 200, epoch: 1 | loss: 1.0182846
+2025-04-06 15:45:06,854 - INFO - 	speed: 0.0316s/iter; left time: 3990.3278s
+2025-04-06 15:45:09,843 - INFO - 	iters: 300, epoch: 1 | loss: 0.9174224
+2025-04-06 15:45:09,843 - INFO - 	speed: 0.0299s/iter; left time: 3769.7504s
+2025-04-06 15:45:12,914 - INFO - 	iters: 400, epoch: 1 | loss: 0.9233342
+2025-04-06 15:45:12,914 - INFO - 	speed: 0.0307s/iter; left time: 3869.5728s
+2025-04-06 15:45:16,062 - INFO - 	iters: 500, epoch: 1 | loss: 0.6687274
+2025-04-06 15:45:16,062 - INFO - 	speed: 0.0315s/iter; left time: 3963.1167s
+2025-04-06 15:45:19,163 - INFO - 	iters: 600, epoch: 1 | loss: 0.8523734
+2025-04-06 15:45:19,166 - INFO - 	speed: 0.0310s/iter; left time: 3904.7237s
+2025-04-06 15:45:22,878 - INFO - 	iters: 700, epoch: 1 | loss: 0.6569251
+2025-04-06 15:45:22,879 - INFO - 	speed: 0.0371s/iter; left time: 4666.5032s
+2025-04-06 15:45:26,708 - INFO - 	iters: 800, epoch: 1 | loss: 0.9810404
+2025-04-06 15:45:26,708 - INFO - 	speed: 0.0383s/iter; left time: 4808.9038s
+2025-04-06 15:45:30,236 - INFO - 	iters: 900, epoch: 1 | loss: 0.5480477
+2025-04-06 15:45:30,237 - INFO - 	speed: 0.0353s/iter; left time: 4428.0399s
+2025-04-06 15:45:33,185 - INFO - 	iters: 1000, epoch: 1 | loss: 0.8124716
+2025-04-06 15:45:33,186 - INFO - 	speed: 0.0295s/iter; left time: 3698.1629s
+2025-04-06 15:45:36,244 - INFO - 	iters: 1100, epoch: 1 | loss: 0.6983057
+2025-04-06 15:45:36,244 - INFO - 	speed: 0.0306s/iter; left time: 3832.3096s
+2025-04-06 15:45:39,100 - INFO - 	iters: 1200, epoch: 1 | loss: 0.8952402
+2025-04-06 15:45:39,100 - INFO - 	speed: 0.0286s/iter; left time: 3575.1139s
+2025-04-06 15:45:41,150 - INFO - Epoch: 1 cost time: 40.6637
+2025-04-06 15:45:52,835 - INFO - Epoch: 1, Steps: 1264 | Train Loss: 0.81206
+Validation results --- Loss: 1.20538, Accuracy: 0.55178, Precision: 0.48366, Recall: 0.52483, F1: 0.47270, AUROC: 0.70103, AUPRC: 0.52306
+Test results --- Loss: 0.93071, Accuracy: 0.58001, Precision: 0.51763, Recall: 0.52373, F1: 0.50639, AUROC: 0.72888, AUPRC: 0.56815
+2025-04-06 15:45:52,835 - INFO - Metric score decreased (inf --> -0.472698).  Saving model ...
+2025-04-06 15:45:52,856 - INFO - Model saved at ./checkpoints/classification/ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best/TCN/classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed43//checkpoint.pth
+2025-04-06 15:45:52,857 - INFO - 
+2025-04-06 15:45:52,857 - INFO - 
+2025-04-06 15:45:55,531 - INFO - 	iters: 100, epoch: 2 | loss: 0.5067071
+2025-04-06 15:45:55,531 - INFO - 	speed: 0.1643s/iter; left time: 20544.9052s
+2025-04-06 15:45:58,459 - INFO - 	iters: 200, epoch: 2 | loss: 0.5782465
+2025-04-06 15:45:58,459 - INFO - 	speed: 0.0293s/iter; left time: 3657.7481s
+2025-04-06 15:46:01,620 - INFO - 	iters: 300, epoch: 2 | loss: 0.5743732
+2025-04-06 15:46:01,621 - INFO - 	speed: 0.0316s/iter; left time: 3946.8726s
+2025-04-06 15:46:04,879 - INFO - 	iters: 400, epoch: 2 | loss: 0.6519644
+2025-04-06 15:46:04,879 - INFO - 	speed: 0.0326s/iter; left time: 4064.4345s
+2025-04-06 15:46:08,002 - INFO - 	iters: 500, epoch: 2 | loss: 0.4802366
+2025-04-06 15:46:08,002 - INFO - 	speed: 0.0312s/iter; left time: 3892.5192s
+2025-04-06 15:46:11,113 - INFO - 	iters: 600, epoch: 2 | loss: 0.4397395
+2025-04-06 15:46:11,114 - INFO - 	speed: 0.0311s/iter; left time: 3875.7835s
+2025-04-06 15:46:14,052 - INFO - 	iters: 700, epoch: 2 | loss: 0.4973992
+2025-04-06 15:46:14,053 - INFO - 	speed: 0.0294s/iter; left time: 3655.6528s
+2025-04-06 15:46:17,292 - INFO - 	iters: 800, epoch: 2 | loss: 0.5722976
+2025-04-06 15:46:17,293 - INFO - 	speed: 0.0324s/iter; left time: 4028.8713s
+2025-04-06 15:46:20,911 - INFO - 	iters: 900, epoch: 2 | loss: 0.5688098
+2025-04-06 15:46:20,911 - INFO - 	speed: 0.0362s/iter; left time: 4494.0345s
+2025-04-06 15:46:24,095 - INFO - 	iters: 1000, epoch: 2 | loss: 0.6916776
+2025-04-06 15:46:24,095 - INFO - 	speed: 0.0318s/iter; left time: 3952.2735s
+2025-04-06 15:46:27,225 - INFO - 	iters: 1100, epoch: 2 | loss: 0.4563456
+2025-04-06 15:46:27,225 - INFO - 	speed: 0.0313s/iter; left time: 3882.6898s
+2025-04-06 15:46:30,570 - INFO - 	iters: 1200, epoch: 2 | loss: 0.5153211
+2025-04-06 15:46:30,571 - INFO - 	speed: 0.0335s/iter; left time: 4146.7520s
+2025-04-06 15:46:32,902 - INFO - Epoch: 2 cost time: 40.0451
+2025-04-06 15:46:52,456 - INFO - Epoch: 2, Steps: 1264 | Train Loss: 0.57161
+Validation results --- Loss: 1.19605, Accuracy: 0.56508, Precision: 0.52124, Recall: 0.53935, F1: 0.51737, AUROC: 0.72482, AUPRC: 0.54906
+Test results --- Loss: 0.99815, Accuracy: 0.57776, Precision: 0.51737, Recall: 0.52234, F1: 0.51633, AUROC: 0.72301, AUPRC: 0.56357
+2025-04-06 15:46:52,456 - INFO - Metric score decreased (-0.472698 --> -0.517373).  Saving model ...
+2025-04-06 15:46:52,493 - INFO - Model saved at ./checkpoints/classification/ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best/TCN/classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed43//checkpoint.pth
+2025-04-06 15:46:52,494 - INFO - 
+2025-04-06 15:46:52,494 - INFO - 
+2025-04-06 15:46:55,998 - INFO - 	iters: 100, epoch: 3 | loss: 0.4769819
+2025-04-06 15:46:55,999 - INFO - 	speed: 0.2543s/iter; left time: 31472.0998s
+2025-04-06 15:46:59,360 - INFO - 	iters: 200, epoch: 3 | loss: 0.4318001
+2025-04-06 15:46:59,360 - INFO - 	speed: 0.0336s/iter; left time: 4155.9744s
+2025-04-06 15:47:02,262 - INFO - 	iters: 300, epoch: 3 | loss: 0.5627593
+2025-04-06 15:47:02,268 - INFO - 	speed: 0.0291s/iter; left time: 3593.7715s
+2025-04-06 15:47:05,154 - INFO - 	iters: 400, epoch: 3 | loss: 0.3203942
+2025-04-06 15:47:05,154 - INFO - 	speed: 0.0289s/iter; left time: 3563.1230s
+2025-04-06 15:47:07,993 - INFO - 	iters: 500, epoch: 3 | loss: 0.4628487
+2025-04-06 15:47:07,993 - INFO - 	speed: 0.0284s/iter; left time: 3502.5203s
+2025-04-06 15:47:10,995 - INFO - 	iters: 600, epoch: 3 | loss: 0.5316719
+2025-04-06 15:47:10,995 - INFO - 	speed: 0.0300s/iter; left time: 3700.6958s
+2025-04-06 15:47:14,064 - INFO - 	iters: 700, epoch: 3 | loss: 0.2728511
+2025-04-06 15:47:14,064 - INFO - 	speed: 0.0307s/iter; left time: 3780.3603s
+2025-04-06 15:47:17,037 - INFO - 	iters: 800, epoch: 3 | loss: 0.2864950
+2025-04-06 15:47:17,038 - INFO - 	speed: 0.0297s/iter; left time: 3659.0481s
+2025-04-06 15:47:20,199 - INFO - 	iters: 900, epoch: 3 | loss: 0.4379736
+2025-04-06 15:47:20,199 - INFO - 	speed: 0.0316s/iter; left time: 3887.8588s
+2025-04-06 15:47:23,143 - INFO - 	iters: 1000, epoch: 3 | loss: 0.3226132
+2025-04-06 15:47:23,144 - INFO - 	speed: 0.0294s/iter; left time: 3617.7652s
+2025-04-06 15:47:26,556 - INFO - 	iters: 1100, epoch: 3 | loss: 0.5187260
+2025-04-06 15:47:26,556 - INFO - 	speed: 0.0341s/iter; left time: 4189.3411s
+2025-04-06 15:47:29,780 - INFO - 	iters: 1200, epoch: 3 | loss: 0.3136065
+2025-04-06 15:47:29,780 - INFO - 	speed: 0.0322s/iter; left time: 3955.3998s
+2025-04-06 15:47:32,167 - INFO - Epoch: 3 cost time: 39.6728
+2025-04-06 15:47:42,336 - INFO - Epoch: 3, Steps: 1264 | Train Loss: 0.43374
+Validation results --- Loss: 1.45087, Accuracy: 0.52579, Precision: 0.47538, Recall: 0.49816, F1: 0.46594, AUROC: 0.68811, AUPRC: 0.50144
+Test results --- Loss: 1.03217, Accuracy: 0.58930, Precision: 0.53625, Recall: 0.53065, F1: 0.52360, AUROC: 0.74280, AUPRC: 0.57497
+2025-04-06 15:47:42,336 - INFO - EarlyStopping counter: 1 out of 10
+2025-04-06 15:47:42,336 - INFO - 
+2025-04-06 15:47:42,336 - INFO - 
+2025-04-06 15:47:45,361 - INFO - 	iters: 100, epoch: 4 | loss: 0.5237401
+2025-04-06 15:47:45,362 - INFO - 	speed: 0.1558s/iter; left time: 19088.6423s
+2025-04-06 15:47:48,345 - INFO - 	iters: 200, epoch: 4 | loss: 0.2532031
+2025-04-06 15:47:48,345 - INFO - 	speed: 0.0298s/iter; left time: 3651.5276s
+2025-04-06 15:47:51,349 - INFO - 	iters: 300, epoch: 4 | loss: 0.5694081
+2025-04-06 15:47:51,349 - INFO - 	speed: 0.0300s/iter; left time: 3674.5452s
+2025-04-06 15:47:54,186 - INFO - 	iters: 400, epoch: 4 | loss: 0.3518260
+2025-04-06 15:47:54,187 - INFO - 	speed: 0.0284s/iter; left time: 3467.2050s
+2025-04-06 15:47:57,006 - INFO - 	iters: 500, epoch: 4 | loss: 0.1728092
+2025-04-06 15:47:57,006 - INFO - 	speed: 0.0282s/iter; left time: 3443.1418s
+2025-04-06 15:48:00,044 - INFO - 	iters: 600, epoch: 4 | loss: 0.5547293
+2025-04-06 15:48:00,044 - INFO - 	speed: 0.0304s/iter; left time: 3706.7682s
+2025-04-06 15:48:03,729 - INFO - 	iters: 700, epoch: 4 | loss: 0.2587744
+2025-04-06 15:48:03,730 - INFO - 	speed: 0.0369s/iter; left time: 4492.6119s
+2025-04-06 15:48:06,621 - INFO - 	iters: 800, epoch: 4 | loss: 0.3008522
+2025-04-06 15:48:06,621 - INFO - 	speed: 0.0289s/iter; left time: 3522.1363s
+2025-04-06 15:48:09,435 - INFO - 	iters: 900, epoch: 4 | loss: 0.2521645
+2025-04-06 15:48:09,435 - INFO - 	speed: 0.0281s/iter; left time: 3424.4860s
+2025-04-06 15:48:12,417 - INFO - 	iters: 1000, epoch: 4 | loss: 0.1707450
+2025-04-06 15:48:12,417 - INFO - 	speed: 0.0298s/iter; left time: 3626.6197s
+2025-04-06 15:48:15,393 - INFO - 	iters: 1100, epoch: 4 | loss: 0.4916490
+2025-04-06 15:48:15,394 - INFO - 	speed: 0.0298s/iter; left time: 3616.4225s
+2025-04-06 15:48:18,215 - INFO - 	iters: 1200, epoch: 4 | loss: 0.7537556
+2025-04-06 15:48:18,215 - INFO - 	speed: 0.0282s/iter; left time: 3425.4913s
+2025-04-06 15:48:20,218 - INFO - Epoch: 4 cost time: 37.8823
+2025-04-06 15:48:32,081 - INFO - Epoch: 4, Steps: 1264 | Train Loss: 0.33580
+Validation results --- Loss: 1.61651, Accuracy: 0.52415, Precision: 0.48524, Recall: 0.49575, F1: 0.47168, AUROC: 0.69971, AUPRC: 0.51569
+Test results --- Loss: 1.15996, Accuracy: 0.58363, Precision: 0.53383, Recall: 0.52474, F1: 0.52279, AUROC: 0.73831, AUPRC: 0.57014
+2025-04-06 15:48:32,082 - INFO - EarlyStopping counter: 2 out of 10
+2025-04-06 15:48:32,082 - INFO - 
+2025-04-06 15:48:32,082 - INFO - 
+2025-04-06 15:48:34,954 - INFO - 	iters: 100, epoch: 5 | loss: 0.2056244
+2025-04-06 15:48:34,954 - INFO - 	speed: 0.1674s/iter; left time: 20294.7303s
+2025-04-06 15:48:37,803 - INFO - 	iters: 200, epoch: 5 | loss: 0.3722507
+2025-04-06 15:48:37,803 - INFO - 	speed: 0.0285s/iter; left time: 3451.1472s
+2025-04-06 15:48:40,699 - INFO - 	iters: 300, epoch: 5 | loss: 0.3284544
+2025-04-06 15:48:40,699 - INFO - 	speed: 0.0290s/iter; left time: 3505.8697s
+2025-04-06 15:48:43,613 - INFO - 	iters: 400, epoch: 5 | loss: 0.2955915
+2025-04-06 15:48:43,614 - INFO - 	speed: 0.0291s/iter; left time: 3524.9051s
+2025-04-06 15:48:46,620 - INFO - 	iters: 500, epoch: 5 | loss: 0.2552902
+2025-04-06 15:48:46,621 - INFO - 	speed: 0.0301s/iter; left time: 3633.7005s
+2025-04-06 15:48:50,121 - INFO - 	iters: 600, epoch: 5 | loss: 0.1303314
+2025-04-06 15:48:50,121 - INFO - 	speed: 0.0350s/iter; left time: 4226.1009s
+2025-04-06 15:48:53,808 - INFO - 	iters: 700, epoch: 5 | loss: 0.2922029
+2025-04-06 15:48:53,808 - INFO - 	speed: 0.0369s/iter; left time: 4447.7345s
+2025-04-06 15:48:57,457 - INFO - 	iters: 800, epoch: 5 | loss: 0.1562383
+2025-04-06 15:48:57,457 - INFO - 	speed: 0.0365s/iter; left time: 4398.9839s
+2025-04-06 15:49:00,645 - INFO - 	iters: 900, epoch: 5 | loss: 0.3928624
+2025-04-06 15:49:00,646 - INFO - 	speed: 0.0319s/iter; left time: 3839.8601s
+2025-04-06 15:49:03,563 - INFO - 	iters: 1000, epoch: 5 | loss: 0.0998867
+2025-04-06 15:49:03,564 - INFO - 	speed: 0.0292s/iter; left time: 3511.8636s
+2025-04-06 15:49:06,625 - INFO - 	iters: 1100, epoch: 5 | loss: 0.2022589
+2025-04-06 15:49:06,625 - INFO - 	speed: 0.0306s/iter; left time: 3680.9808s
+2025-04-06 15:49:10,037 - INFO - 	iters: 1200, epoch: 5 | loss: 0.5439533
+2025-04-06 15:49:10,037 - INFO - 	speed: 0.0341s/iter; left time: 4099.4204s
+2025-04-06 15:49:12,480 - INFO - Epoch: 5 cost time: 40.3982
+2025-04-06 15:49:25,886 - INFO - Epoch: 5, Steps: 1264 | Train Loss: 0.26641
+Validation results --- Loss: 1.55088, Accuracy: 0.56188, Precision: 0.53099, Recall: 0.54061, F1: 0.52778, AUROC: 0.71739, AUPRC: 0.53968
+Test results --- Loss: 1.13929, Accuracy: 0.58895, Precision: 0.55431, Recall: 0.55674, F1: 0.55518, AUROC: 0.75612, AUPRC: 0.58941
+2025-04-06 15:49:25,886 - INFO - Metric score decreased (-0.517373 --> -0.527779).  Saving model ...
+2025-04-06 15:49:25,938 - INFO - Model saved at ./checkpoints/classification/ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best/TCN/classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed43//checkpoint.pth
+2025-04-06 15:49:25,939 - INFO - 
+2025-04-06 15:49:25,939 - INFO - 
+2025-04-06 15:49:28,577 - INFO - 	iters: 100, epoch: 6 | loss: 0.1334437
+2025-04-06 15:49:28,577 - INFO - 	speed: 0.1854s/iter; left time: 22244.3478s
+2025-04-06 15:49:31,670 - INFO - 	iters: 200, epoch: 6 | loss: 0.1482968
+2025-04-06 15:49:31,670 - INFO - 	speed: 0.0309s/iter; left time: 3707.6437s
+2025-04-06 15:49:34,774 - INFO - 	iters: 300, epoch: 6 | loss: 0.2309970
+2025-04-06 15:49:34,775 - INFO - 	speed: 0.0310s/iter; left time: 3718.6123s
+2025-04-06 15:49:37,823 - INFO - 	iters: 400, epoch: 6 | loss: 0.2641996
+2025-04-06 15:49:37,824 - INFO - 	speed: 0.0305s/iter; left time: 3649.2623s
+2025-04-06 15:49:41,432 - INFO - 	iters: 500, epoch: 6 | loss: 0.2398916
+2025-04-06 15:49:41,433 - INFO - 	speed: 0.0361s/iter; left time: 4315.3415s
+2025-04-06 15:49:45,075 - INFO - 	iters: 600, epoch: 6 | loss: 0.2398977
+2025-04-06 15:49:45,075 - INFO - 	speed: 0.0364s/iter; left time: 4351.8897s
+2025-04-06 15:49:48,652 - INFO - 	iters: 700, epoch: 6 | loss: 0.2712497
+2025-04-06 15:49:48,653 - INFO - 	speed: 0.0358s/iter; left time: 4271.0450s
+2025-04-06 15:49:51,679 - INFO - 	iters: 800, epoch: 6 | loss: 0.4421619
+2025-04-06 15:49:51,679 - INFO - 	speed: 0.0303s/iter; left time: 3609.1069s
+2025-04-06 15:49:54,686 - INFO - 	iters: 900, epoch: 6 | loss: 0.0926205
+2025-04-06 15:49:54,687 - INFO - 	speed: 0.0301s/iter; left time: 3584.6941s
+2025-04-06 15:49:57,770 - INFO - 	iters: 1000, epoch: 6 | loss: 0.3219307
+2025-04-06 15:49:57,771 - INFO - 	speed: 0.0308s/iter; left time: 3671.7651s
+2025-04-06 15:50:00,914 - INFO - 	iters: 1100, epoch: 6 | loss: 0.1625754
+2025-04-06 15:50:00,914 - INFO - 	speed: 0.0314s/iter; left time: 3739.7849s
+2025-04-06 15:50:03,830 - INFO - 	iters: 1200, epoch: 6 | loss: 0.1292925
+2025-04-06 15:50:03,830 - INFO - 	speed: 0.0292s/iter; left time: 3466.9082s
+2025-04-06 15:50:05,835 - INFO - Epoch: 6 cost time: 39.8957
+2025-04-06 15:50:18,279 - INFO - Epoch: 6, Steps: 1264 | Train Loss: 0.20674
+Validation results --- Loss: 1.78844, Accuracy: 0.52927, Precision: 0.51281, Recall: 0.50613, F1: 0.49899, AUROC: 0.71965, AUPRC: 0.53971
+Test results --- Loss: 1.44763, Accuracy: 0.56806, Precision: 0.53343, Recall: 0.51559, F1: 0.51925, AUROC: 0.72717, AUPRC: 0.56128
+2025-04-06 15:50:18,279 - INFO - EarlyStopping counter: 1 out of 10
+2025-04-06 15:50:18,280 - INFO - 
+2025-04-06 15:50:18,280 - INFO - 
+2025-04-06 15:50:21,358 - INFO - 	iters: 100, epoch: 7 | loss: 0.1306553
+2025-04-06 15:50:21,359 - INFO - 	speed: 0.1753s/iter; left time: 20808.4507s
+2025-04-06 15:50:24,799 - INFO - 	iters: 200, epoch: 7 | loss: 0.1757421
+2025-04-06 15:50:24,799 - INFO - 	speed: 0.0344s/iter; left time: 4080.0807s
+2025-04-06 15:50:28,317 - INFO - 	iters: 300, epoch: 7 | loss: 0.0735262
+2025-04-06 15:50:28,317 - INFO - 	speed: 0.0352s/iter; left time: 4169.6763s
+2025-04-06 15:50:31,435 - INFO - 	iters: 400, epoch: 7 | loss: 0.1695515
+2025-04-06 15:50:31,436 - INFO - 	speed: 0.0312s/iter; left time: 3692.6004s
+2025-04-06 15:50:34,866 - INFO - 	iters: 500, epoch: 7 | loss: 0.2530672
+2025-04-06 15:50:34,867 - INFO - 	speed: 0.0343s/iter; left time: 4059.8585s
+2025-04-06 15:50:38,489 - INFO - 	iters: 600, epoch: 7 | loss: 0.1015538
+2025-04-06 15:50:38,494 - INFO - 	speed: 0.0363s/iter; left time: 4287.3443s
+2025-04-06 15:50:41,955 - INFO - 	iters: 700, epoch: 7 | loss: 0.1814067
+2025-04-06 15:50:41,956 - INFO - 	speed: 0.0346s/iter; left time: 4088.9347s
+2025-04-06 15:50:44,941 - INFO - 	iters: 800, epoch: 7 | loss: 0.1867922
+2025-04-06 15:50:44,941 - INFO - 	speed: 0.0298s/iter; left time: 3522.5262s
+2025-04-06 15:50:48,224 - INFO - 	iters: 900, epoch: 7 | loss: 0.2770468
+2025-04-06 15:50:48,225 - INFO - 	speed: 0.0328s/iter; left time: 3872.4872s
+2025-04-06 15:50:51,301 - INFO - 	iters: 1000, epoch: 7 | loss: 0.1008401
+2025-04-06 15:50:51,302 - INFO - 	speed: 0.0308s/iter; left time: 3624.4902s
+2025-04-06 15:50:54,393 - INFO - 	iters: 1100, epoch: 7 | loss: 0.0992531
+2025-04-06 15:50:54,393 - INFO - 	speed: 0.0309s/iter; left time: 3639.3168s
+2025-04-06 15:50:57,531 - INFO - 	iters: 1200, epoch: 7 | loss: 0.1774658
+2025-04-06 15:50:57,531 - INFO - 	speed: 0.0314s/iter; left time: 3690.9255s
+2025-04-06 15:50:59,463 - INFO - Epoch: 7 cost time: 41.1833
+2025-04-06 15:51:14,432 - INFO - Epoch: 7, Steps: 1264 | Train Loss: 0.16368
+Validation results --- Loss: 2.12478, Accuracy: 0.59558, Precision: 0.57381, Recall: 0.57704, F1: 0.55226, AUROC: 0.73236, AUPRC: 0.56030
+Test results --- Loss: 1.54257, Accuracy: 0.58383, Precision: 0.54687, Recall: 0.54945, F1: 0.53913, AUROC: 0.75904, AUPRC: 0.59041
+2025-04-06 15:51:14,432 - INFO - Metric score decreased (-0.527779 --> -0.552263).  Saving model ...
+2025-04-06 15:51:14,567 - INFO - Model saved at ./checkpoints/classification/ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best/TCN/classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed43//checkpoint.pth
+2025-04-06 15:51:14,568 - INFO - 
+2025-04-06 15:51:14,568 - INFO - 
+2025-04-06 15:51:17,373 - INFO - 	iters: 100, epoch: 8 | loss: 0.1085156
+2025-04-06 15:51:17,373 - INFO - 	speed: 0.1984s/iter; left time: 23304.5076s
+2025-04-06 15:51:20,262 - INFO - 	iters: 200, epoch: 8 | loss: 0.1514096
+2025-04-06 15:51:20,263 - INFO - 	speed: 0.0289s/iter; left time: 3390.7732s
+2025-04-06 15:51:23,433 - INFO - 	iters: 300, epoch: 8 | loss: 0.0236471
+2025-04-06 15:51:23,434 - INFO - 	speed: 0.0317s/iter; left time: 3717.8684s
+2025-04-06 15:51:26,733 - INFO - 	iters: 400, epoch: 8 | loss: 0.1108071
+2025-04-06 15:51:26,733 - INFO - 	speed: 0.0330s/iter; left time: 3864.6887s
+2025-04-06 15:51:30,189 - INFO - 	iters: 500, epoch: 8 | loss: 0.1211064
+2025-04-06 15:51:30,189 - INFO - 	speed: 0.0346s/iter; left time: 4046.0565s
+2025-04-06 15:51:33,452 - INFO - 	iters: 600, epoch: 8 | loss: 0.0254103
+2025-04-06 15:51:33,453 - INFO - 	speed: 0.0326s/iter; left time: 3817.0001s
+2025-04-06 15:51:36,602 - INFO - 	iters: 700, epoch: 8 | loss: 0.0173513
+2025-04-06 15:51:36,602 - INFO - 	speed: 0.0315s/iter; left time: 3679.0526s
+2025-04-06 15:51:39,796 - INFO - 	iters: 800, epoch: 8 | loss: 0.1554402
+2025-04-06 15:51:39,796 - INFO - 	speed: 0.0319s/iter; left time: 3729.3408s
+2025-04-06 15:51:42,786 - INFO - 	iters: 900, epoch: 8 | loss: 0.2713946
+2025-04-06 15:51:42,786 - INFO - 	speed: 0.0299s/iter; left time: 3486.5302s
+2025-04-06 15:51:45,360 - INFO - 	iters: 1000, epoch: 8 | loss: 0.0719907
+2025-04-06 15:51:45,360 - INFO - 	speed: 0.0257s/iter; left time: 3000.5657s
+2025-04-06 15:51:48,221 - INFO - 	iters: 1100, epoch: 8 | loss: 0.0659893
+2025-04-06 15:51:48,221 - INFO - 	speed: 0.0286s/iter; left time: 3331.8406s
+2025-04-06 15:51:51,143 - INFO - 	iters: 1200, epoch: 8 | loss: 0.1034506
+2025-04-06 15:51:51,143 - INFO - 	speed: 0.0292s/iter; left time: 3399.3896s
+2025-04-06 15:51:53,165 - INFO - Epoch: 8 cost time: 38.5967
+2025-04-06 15:52:05,223 - INFO - Epoch: 8, Steps: 1264 | Train Loss: 0.12710
+Validation results --- Loss: 2.11749, Accuracy: 0.56836, Precision: 0.51890, Recall: 0.54361, F1: 0.51404, AUROC: 0.72196, AUPRC: 0.54341
+Test results --- Loss: 1.44693, Accuracy: 0.60254, Precision: 0.55985, Recall: 0.56007, F1: 0.55507, AUROC: 0.76735, AUPRC: 0.60525
+2025-04-06 15:52:05,224 - INFO - EarlyStopping counter: 1 out of 10
+2025-04-06 15:52:05,224 - INFO - 
+2025-04-06 15:52:05,224 - INFO - 
+2025-04-06 15:52:08,240 - INFO - 	iters: 100, epoch: 9 | loss: 0.1143088
+2025-04-06 15:52:08,240 - INFO - 	speed: 0.1710s/iter; left time: 19864.0462s
+2025-04-06 15:52:11,029 - INFO - 	iters: 200, epoch: 9 | loss: 0.0824374
+2025-04-06 15:52:11,029 - INFO - 	speed: 0.0279s/iter; left time: 3237.4958s
+2025-04-06 15:52:13,876 - INFO - 	iters: 300, epoch: 9 | loss: 0.0237597
+2025-04-06 15:52:13,876 - INFO - 	speed: 0.0285s/iter; left time: 3302.6375s
+2025-04-06 15:52:17,300 - INFO - 	iters: 400, epoch: 9 | loss: 0.0554394
+2025-04-06 15:52:17,301 - INFO - 	speed: 0.0342s/iter; left time: 3968.5080s
+2025-04-06 15:52:20,987 - INFO - 	iters: 500, epoch: 9 | loss: 0.0672626
+2025-04-06 15:52:20,987 - INFO - 	speed: 0.0369s/iter; left time: 4268.3968s
+2025-04-06 15:52:24,592 - INFO - 	iters: 600, epoch: 9 | loss: 0.1263988
+2025-04-06 15:52:24,593 - INFO - 	speed: 0.0361s/iter; left time: 4171.7563s
+2025-04-06 15:52:27,825 - INFO - 	iters: 700, epoch: 9 | loss: 0.0580954
+2025-04-06 15:52:27,826 - INFO - 	speed: 0.0323s/iter; left time: 3735.7352s
+2025-04-06 15:52:30,850 - INFO - 	iters: 800, epoch: 9 | loss: 0.0252568
+2025-04-06 15:52:30,850 - INFO - 	speed: 0.0302s/iter; left time: 3492.5186s
+2025-04-06 15:52:33,771 - INFO - 	iters: 900, epoch: 9 | loss: 0.1035656
+2025-04-06 15:52:33,772 - INFO - 	speed: 0.0292s/iter; left time: 3371.4761s
+2025-04-06 15:52:36,760 - INFO - 	iters: 1000, epoch: 9 | loss: 0.1036480
+2025-04-06 15:52:36,760 - INFO - 	speed: 0.0299s/iter; left time: 3444.9798s
+2025-04-06 15:52:39,770 - INFO - 	iters: 1100, epoch: 9 | loss: 0.0515838
+2025-04-06 15:52:39,770 - INFO - 	speed: 0.0301s/iter; left time: 3467.1655s
+2025-04-06 15:52:42,985 - INFO - 	iters: 1200, epoch: 9 | loss: 0.0507725
+2025-04-06 15:52:42,985 - INFO - 	speed: 0.0322s/iter; left time: 3700.6208s
+2025-04-06 15:52:45,443 - INFO - Epoch: 9 cost time: 40.2194
+2025-04-06 15:53:00,835 - INFO - Epoch: 9, Steps: 1264 | Train Loss: 0.09572
+Validation results --- Loss: 2.47096, Accuracy: 0.55997, Precision: 0.54206, Recall: 0.52983, F1: 0.50047, AUROC: 0.74239, AUPRC: 0.57052
+Test results --- Loss: 1.72203, Accuracy: 0.60745, Precision: 0.54602, Recall: 0.53721, F1: 0.52527, AUROC: 0.76506, AUPRC: 0.60027
+2025-04-06 15:53:00,835 - INFO - EarlyStopping counter: 2 out of 10
+2025-04-06 15:53:00,836 - INFO - 
+2025-04-06 15:53:00,836 - INFO - 
+2025-04-06 15:53:03,408 - INFO - 	iters: 100, epoch: 10 | loss: 0.0751612
+2025-04-06 15:53:03,408 - INFO - 	speed: 0.2042s/iter; left time: 23470.4191s
+2025-04-06 15:53:06,609 - INFO - 	iters: 200, epoch: 10 | loss: 0.0312662
+2025-04-06 15:53:06,609 - INFO - 	speed: 0.0320s/iter; left time: 3675.6336s
+2025-04-06 15:53:10,191 - INFO - 	iters: 300, epoch: 10 | loss: 0.0673785
+2025-04-06 15:53:10,192 - INFO - 	speed: 0.0358s/iter; left time: 4110.0515s
+2025-04-06 15:53:13,821 - INFO - 	iters: 400, epoch: 10 | loss: 0.0156134
+2025-04-06 15:53:13,821 - INFO - 	speed: 0.0363s/iter; left time: 4160.5523s
+2025-04-06 15:53:17,397 - INFO - 	iters: 500, epoch: 10 | loss: 0.1093966
+2025-04-06 15:53:17,397 - INFO - 	speed: 0.0358s/iter; left time: 4094.8449s
+2025-04-06 15:53:20,190 - INFO - 	iters: 600, epoch: 10 | loss: 0.1027900
+2025-04-06 15:53:20,191 - INFO - 	speed: 0.0279s/iter; left time: 3196.4339s
+2025-04-06 15:53:23,061 - INFO - 	iters: 700, epoch: 10 | loss: 0.0407219
+2025-04-06 15:53:23,061 - INFO - 	speed: 0.0287s/iter; left time: 3281.7758s
+2025-04-06 15:53:25,885 - INFO - 	iters: 800, epoch: 10 | loss: 0.0358133
+2025-04-06 15:53:25,886 - INFO - 	speed: 0.0282s/iter; left time: 3226.1698s
+2025-04-06 15:53:28,712 - INFO - 	iters: 900, epoch: 10 | loss: 0.0565633
+2025-04-06 15:53:28,712 - INFO - 	speed: 0.0283s/iter; left time: 3225.8320s
+2025-04-06 15:53:31,642 - INFO - 	iters: 1000, epoch: 10 | loss: 0.0349323
+2025-04-06 15:53:31,643 - INFO - 	speed: 0.0293s/iter; left time: 3341.4002s
+2025-04-06 15:53:34,590 - INFO - 	iters: 1100, epoch: 10 | loss: 0.1596597
+2025-04-06 15:53:34,590 - INFO - 	speed: 0.0295s/iter; left time: 3357.8603s
+2025-04-06 15:53:37,527 - INFO - 	iters: 1200, epoch: 10 | loss: 0.0496654
+2025-04-06 15:53:37,527 - INFO - 	speed: 0.0294s/iter; left time: 3343.0216s
+2025-04-06 15:53:39,334 - INFO - Epoch: 10 cost time: 38.4985
+2025-04-06 15:53:51,020 - INFO - Epoch: 10, Steps: 1264 | Train Loss: 0.07400
+Validation results --- Loss: 2.61397, Accuracy: 0.59176, Precision: 0.57539, Recall: 0.57838, F1: 0.57480, AUROC: 0.73366, AUPRC: 0.56232
+Test results --- Loss: 1.96470, Accuracy: 0.57551, Precision: 0.54817, Recall: 0.54906, F1: 0.54768, AUROC: 0.75343, AUPRC: 0.58799
+2025-04-06 15:53:51,021 - INFO - Metric score decreased (-0.552263 --> -0.574795).  Saving model ...
+2025-04-06 15:53:51,183 - INFO - Model saved at ./checkpoints/classification/ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best/TCN/classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed43//checkpoint.pth
+2025-04-06 15:53:51,183 - INFO - 
+2025-04-06 15:53:51,183 - INFO - 
+2025-04-06 15:53:53,758 - INFO - 	iters: 100, epoch: 11 | loss: 0.0316075
+2025-04-06 15:53:53,758 - INFO - 	speed: 0.1623s/iter; left time: 18447.9375s
+2025-04-06 15:53:56,681 - INFO - 	iters: 200, epoch: 11 | loss: 0.0112895
+2025-04-06 15:53:56,681 - INFO - 	speed: 0.0292s/iter; left time: 3319.6759s
+2025-04-06 15:53:59,924 - INFO - 	iters: 300, epoch: 11 | loss: 0.0631100
+2025-04-06 15:53:59,925 - INFO - 	speed: 0.0324s/iter; left time: 3679.7561s
+2025-04-06 15:54:03,035 - INFO - 	iters: 400, epoch: 11 | loss: 0.0078034
+2025-04-06 15:54:03,035 - INFO - 	speed: 0.0311s/iter; left time: 3526.3908s
+2025-04-06 15:54:06,020 - INFO - 	iters: 500, epoch: 11 | loss: 0.0769122
+2025-04-06 15:54:06,021 - INFO - 	speed: 0.0299s/iter; left time: 3381.2191s
+2025-04-06 15:54:08,917 - INFO - 	iters: 600, epoch: 11 | loss: 0.0640146
+2025-04-06 15:54:08,918 - INFO - 	speed: 0.0290s/iter; left time: 3278.0878s
+2025-04-06 15:54:11,829 - INFO - 	iters: 700, epoch: 11 | loss: 0.0363329
+2025-04-06 15:54:11,830 - INFO - 	speed: 0.0291s/iter; left time: 3292.3053s
+2025-04-06 15:54:15,312 - INFO - 	iters: 800, epoch: 11 | loss: 0.0050929
+2025-04-06 15:54:15,313 - INFO - 	speed: 0.0348s/iter; left time: 3934.4209s
+2025-04-06 15:54:18,613 - INFO - 	iters: 900, epoch: 11 | loss: 0.0384980
+2025-04-06 15:54:18,613 - INFO - 	speed: 0.0330s/iter; left time: 3724.7027s
+2025-04-06 15:54:21,645 - INFO - 	iters: 1000, epoch: 11 | loss: 0.0698393
+2025-04-06 15:54:21,645 - INFO - 	speed: 0.0303s/iter; left time: 3419.0714s
+2025-04-06 15:54:24,934 - INFO - 	iters: 1100, epoch: 11 | loss: 0.0093697
+2025-04-06 15:54:24,935 - INFO - 	speed: 0.0329s/iter; left time: 3706.2141s
+2025-04-06 15:54:28,090 - INFO - 	iters: 1200, epoch: 11 | loss: 0.1984703
+2025-04-06 15:54:28,090 - INFO - 	speed: 0.0315s/iter; left time: 3550.9490s
+2025-04-06 15:54:30,242 - INFO - Epoch: 11 cost time: 39.0586
+2025-04-06 15:54:42,073 - INFO - Epoch: 11, Steps: 1264 | Train Loss: 0.05718
+Validation results --- Loss: 3.13764, Accuracy: 0.54428, Precision: 0.53077, Recall: 0.51484, F1: 0.49195, AUROC: 0.72595, AUPRC: 0.54928
+Test results --- Loss: 2.23784, Accuracy: 0.59564, Precision: 0.53306, Recall: 0.52456, F1: 0.51413, AUROC: 0.74765, AUPRC: 0.58370
+2025-04-06 15:54:42,073 - INFO - EarlyStopping counter: 1 out of 10
+2025-04-06 15:54:42,073 - INFO - 
+2025-04-06 15:54:42,073 - INFO - 
+2025-04-06 15:54:44,793 - INFO - 	iters: 100, epoch: 12 | loss: 0.0311462
+2025-04-06 15:54:44,794 - INFO - 	speed: 0.1670s/iter; left time: 18773.7701s
+2025-04-06 15:54:48,042 - INFO - 	iters: 200, epoch: 12 | loss: 0.0064287
+2025-04-06 15:54:48,042 - INFO - 	speed: 0.0325s/iter; left time: 3648.1154s
+2025-04-06 15:54:51,225 - INFO - 	iters: 300, epoch: 12 | loss: 0.0150696
+2025-04-06 15:54:51,225 - INFO - 	speed: 0.0318s/iter; left time: 3570.7507s
+2025-04-06 15:54:54,844 - INFO - 	iters: 400, epoch: 12 | loss: 0.0106564
+2025-04-06 15:54:54,844 - INFO - 	speed: 0.0362s/iter; left time: 4056.9531s
+2025-04-06 15:54:57,928 - INFO - 	iters: 500, epoch: 12 | loss: 0.0045357
+2025-04-06 15:54:57,928 - INFO - 	speed: 0.0308s/iter; left time: 3454.3459s
+2025-04-06 15:55:00,940 - INFO - 	iters: 600, epoch: 12 | loss: 0.0199354
+2025-04-06 15:55:00,940 - INFO - 	speed: 0.0301s/iter; left time: 3369.9384s
+2025-04-06 15:55:03,932 - INFO - 	iters: 700, epoch: 12 | loss: 0.0252039
+2025-04-06 15:55:03,932 - INFO - 	speed: 0.0299s/iter; left time: 3345.0399s
+2025-04-06 15:55:06,867 - INFO - 	iters: 800, epoch: 12 | loss: 0.0761153
+2025-04-06 15:55:06,868 - INFO - 	speed: 0.0294s/iter; left time: 3278.6526s
+2025-04-06 15:55:10,116 - INFO - 	iters: 900, epoch: 12 | loss: 0.0415055
+2025-04-06 15:55:10,116 - INFO - 	speed: 0.0325s/iter; left time: 3625.4607s
+2025-04-06 15:55:13,406 - INFO - 	iters: 1000, epoch: 12 | loss: 0.0807638
+2025-04-06 15:55:13,407 - INFO - 	speed: 0.0329s/iter; left time: 3668.2986s
+2025-04-06 15:55:16,805 - INFO - 	iters: 1100, epoch: 12 | loss: 0.0595388
+2025-04-06 15:55:16,806 - INFO - 	speed: 0.0340s/iter; left time: 3785.6754s
+2025-04-06 15:55:20,252 - INFO - 	iters: 1200, epoch: 12 | loss: 0.0044633
+2025-04-06 15:55:20,252 - INFO - 	speed: 0.0345s/iter; left time: 3836.1699s
+2025-04-06 15:55:22,363 - INFO - Epoch: 12 cost time: 40.2895
+2025-04-06 15:55:36,658 - INFO - Epoch: 12, Steps: 1264 | Train Loss: 0.04489
+Validation results --- Loss: 3.57297, Accuracy: 0.56454, Precision: 0.54131, Recall: 0.53517, F1: 0.49882, AUROC: 0.72635, AUPRC: 0.55437
+Test results --- Loss: 2.37844, Accuracy: 0.59885, Precision: 0.54833, Recall: 0.53551, F1: 0.52246, AUROC: 0.75484, AUPRC: 0.59281
+2025-04-06 15:55:36,658 - INFO - EarlyStopping counter: 2 out of 10
+2025-04-06 15:55:36,658 - INFO - 
+2025-04-06 15:55:36,658 - INFO - 
+2025-04-06 15:55:39,793 - INFO - 	iters: 100, epoch: 13 | loss: 0.0023122
+2025-04-06 15:55:39,793 - INFO - 	speed: 0.1954s/iter; left time: 21716.2503s
+2025-04-06 15:55:42,835 - INFO - 	iters: 200, epoch: 13 | loss: 0.0166795
+2025-04-06 15:55:42,835 - INFO - 	speed: 0.0304s/iter; left time: 3377.3158s
+2025-04-06 15:55:45,920 - INFO - 	iters: 300, epoch: 13 | loss: 0.0060275
+2025-04-06 15:55:45,921 - INFO - 	speed: 0.0309s/iter; left time: 3423.5021s
+2025-04-06 15:55:49,344 - INFO - 	iters: 400, epoch: 13 | loss: 0.1511282
+2025-04-06 15:55:49,345 - INFO - 	speed: 0.0342s/iter; left time: 3794.3868s
+2025-04-06 15:55:52,602 - INFO - 	iters: 500, epoch: 13 | loss: 0.0909861
+2025-04-06 15:55:52,602 - INFO - 	speed: 0.0326s/iter; left time: 3606.2335s
+2025-04-06 15:55:55,698 - INFO - 	iters: 600, epoch: 13 | loss: 0.0252322
+2025-04-06 15:55:55,699 - INFO - 	speed: 0.0310s/iter; left time: 3426.2572s
+2025-04-06 15:55:59,011 - INFO - 	iters: 700, epoch: 13 | loss: 0.0015053
+2025-04-06 15:55:59,012 - INFO - 	speed: 0.0331s/iter; left time: 3661.5574s
+2025-04-06 15:56:02,095 - INFO - 	iters: 800, epoch: 13 | loss: 0.1296802
+2025-04-06 15:56:02,095 - INFO - 	speed: 0.0308s/iter; left time: 3405.2662s
+2025-04-06 15:56:04,846 - INFO - 	iters: 900, epoch: 13 | loss: 0.0111194
+2025-04-06 15:56:04,847 - INFO - 	speed: 0.0275s/iter; left time: 3035.3549s
+2025-04-06 15:56:07,545 - INFO - 	iters: 1000, epoch: 13 | loss: 0.0017333
+2025-04-06 15:56:07,545 - INFO - 	speed: 0.0270s/iter; left time: 2974.9478s
+2025-04-06 15:56:10,373 - INFO - 	iters: 1100, epoch: 13 | loss: 0.0044914
+2025-04-06 15:56:10,373 - INFO - 	speed: 0.0283s/iter; left time: 3114.0685s
+2025-04-06 15:56:13,365 - INFO - 	iters: 1200, epoch: 13 | loss: 0.1542196
+2025-04-06 15:56:13,366 - INFO - 	speed: 0.0299s/iter; left time: 3292.7853s
+2025-04-06 15:56:15,224 - INFO - Epoch: 13 cost time: 38.5661
+2025-04-06 15:56:26,907 - INFO - Epoch: 13, Steps: 1264 | Train Loss: 0.03914
+Validation results --- Loss: 3.07407, Accuracy: 0.55465, Precision: 0.52939, Recall: 0.53331, F1: 0.52158, AUROC: 0.71563, AUPRC: 0.54383
+Test results --- Loss: 2.23406, Accuracy: 0.59619, Precision: 0.55922, Recall: 0.56069, F1: 0.55951, AUROC: 0.75574, AUPRC: 0.58799
+2025-04-06 15:56:26,907 - INFO - EarlyStopping counter: 3 out of 10
+2025-04-06 15:56:26,908 - INFO - 
+2025-04-06 15:56:26,908 - INFO - 
+2025-04-06 15:56:29,769 - INFO - 	iters: 100, epoch: 14 | loss: 0.0074300
+2025-04-06 15:56:29,770 - INFO - 	speed: 0.1640s/iter; left time: 18022.7505s
+2025-04-06 15:56:32,973 - INFO - 	iters: 200, epoch: 14 | loss: 0.0090597
+2025-04-06 15:56:32,974 - INFO - 	speed: 0.0320s/iter; left time: 3517.0699s
+2025-04-06 15:56:36,181 - INFO - 	iters: 300, epoch: 14 | loss: 0.0019805
+2025-04-06 15:56:36,182 - INFO - 	speed: 0.0321s/iter; left time: 3517.9940s
+2025-04-06 15:56:39,431 - INFO - 	iters: 400, epoch: 14 | loss: 0.0128892
+2025-04-06 15:56:39,431 - INFO - 	speed: 0.0325s/iter; left time: 3560.5602s
+2025-04-06 15:56:42,561 - INFO - 	iters: 500, epoch: 14 | loss: 0.0024932
+2025-04-06 15:56:42,561 - INFO - 	speed: 0.0313s/iter; left time: 3425.8427s
+2025-04-06 15:56:45,320 - INFO - 	iters: 600, epoch: 14 | loss: 0.0452945
+2025-04-06 15:56:45,321 - INFO - 	speed: 0.0276s/iter; left time: 3018.3742s
+2025-04-06 15:56:48,121 - INFO - 	iters: 700, epoch: 14 | loss: 0.0687480
+2025-04-06 15:56:48,121 - INFO - 	speed: 0.0280s/iter; left time: 3060.0689s
+2025-04-06 15:56:51,101 - INFO - 	iters: 800, epoch: 14 | loss: 0.0693668
+2025-04-06 15:56:51,102 - INFO - 	speed: 0.0298s/iter; left time: 3253.5249s
+2025-04-06 15:56:54,238 - INFO - 	iters: 900, epoch: 14 | loss: 0.0352965
+2025-04-06 15:56:54,239 - INFO - 	speed: 0.0314s/iter; left time: 3421.4967s
+2025-04-06 15:56:57,265 - INFO - 	iters: 1000, epoch: 14 | loss: 0.0475778
+2025-04-06 15:56:57,266 - INFO - 	speed: 0.0303s/iter; left time: 3298.6082s
+2025-04-06 15:57:00,482 - INFO - 	iters: 1100, epoch: 14 | loss: 0.0017072
+2025-04-06 15:57:00,482 - INFO - 	speed: 0.0322s/iter; left time: 3501.2539s
+2025-04-06 15:57:03,501 - INFO - 	iters: 1200, epoch: 14 | loss: 0.0048206
+2025-04-06 15:57:03,501 - INFO - 	speed: 0.0302s/iter; left time: 3283.6423s
+2025-04-06 15:57:05,703 - INFO - Epoch: 14 cost time: 38.7956
+2025-04-06 15:57:22,254 - INFO - Epoch: 14, Steps: 1264 | Train Loss: 0.03489
+Validation results --- Loss: 3.39841, Accuracy: 0.54748, Precision: 0.53175, Recall: 0.52509, F1: 0.51832, AUROC: 0.72934, AUPRC: 0.55445
+Test results --- Loss: 2.56847, Accuracy: 0.58390, Precision: 0.54883, Recall: 0.54108, F1: 0.54310, AUROC: 0.75022, AUPRC: 0.58527
+2025-04-06 15:57:22,254 - INFO - EarlyStopping counter: 4 out of 10
+2025-04-06 15:57:22,254 - INFO - 
+2025-04-06 15:57:22,254 - INFO - 
+2025-04-06 15:57:25,796 - INFO - 	iters: 100, epoch: 15 | loss: 0.0057307
+2025-04-06 15:57:25,796 - INFO - 	speed: 0.2230s/iter; left time: 24213.8432s
+2025-04-06 15:57:28,749 - INFO - 	iters: 200, epoch: 15 | loss: 0.0016419
+2025-04-06 15:57:28,749 - INFO - 	speed: 0.0295s/iter; left time: 3203.6118s
+2025-04-06 15:57:31,814 - INFO - 	iters: 300, epoch: 15 | loss: 0.0049685
+2025-04-06 15:57:31,815 - INFO - 	speed: 0.0307s/iter; left time: 3323.4282s
+2025-04-06 15:57:34,763 - INFO - 	iters: 400, epoch: 15 | loss: 0.0026293
+2025-04-06 15:57:34,763 - INFO - 	speed: 0.0295s/iter; left time: 3193.1908s
+2025-04-06 15:57:37,313 - INFO - 	iters: 500, epoch: 15 | loss: 0.0137066
+2025-04-06 15:57:37,313 - INFO - 	speed: 0.0255s/iter; left time: 2759.4849s
+2025-04-06 15:57:40,156 - INFO - 	iters: 600, epoch: 15 | loss: 0.0409504
+2025-04-06 15:57:40,156 - INFO - 	speed: 0.0284s/iter; left time: 3073.2887s
+2025-04-06 15:57:43,035 - INFO - 	iters: 700, epoch: 15 | loss: 0.0706410
+2025-04-06 15:57:43,035 - INFO - 	speed: 0.0288s/iter; left time: 3109.6120s
+2025-04-06 15:57:46,027 - INFO - 	iters: 800, epoch: 15 | loss: 0.0184557
+2025-04-06 15:57:46,027 - INFO - 	speed: 0.0299s/iter; left time: 3228.2993s
+2025-04-06 15:57:48,999 - INFO - 	iters: 900, epoch: 15 | loss: 0.0276041
+2025-04-06 15:57:49,000 - INFO - 	speed: 0.0297s/iter; left time: 3204.1809s
+2025-04-06 15:57:52,082 - INFO - 	iters: 1000, epoch: 15 | loss: 0.0058580
+2025-04-06 15:57:52,082 - INFO - 	speed: 0.0308s/iter; left time: 3320.1347s
+2025-04-06 15:57:55,076 - INFO - 	iters: 1100, epoch: 15 | loss: 0.0032541
+2025-04-06 15:57:55,077 - INFO - 	speed: 0.0299s/iter; left time: 3221.4933s
+2025-04-06 15:57:58,130 - INFO - 	iters: 1200, epoch: 15 | loss: 0.0076487
+2025-04-06 15:57:58,130 - INFO - 	speed: 0.0305s/iter; left time: 3282.4467s
+2025-04-06 15:58:00,047 - INFO - Epoch: 15 cost time: 37.7927
+2025-04-06 15:58:12,003 - INFO - Epoch: 15, Steps: 1264 | Train Loss: 0.02949
+Validation results --- Loss: 3.88745, Accuracy: 0.57655, Precision: 0.54827, Recall: 0.55176, F1: 0.52969, AUROC: 0.72758, AUPRC: 0.55655
+Test results --- Loss: 2.52511, Accuracy: 0.60568, Precision: 0.55720, Recall: 0.55450, F1: 0.54808, AUROC: 0.76969, AUPRC: 0.60563
+2025-04-06 15:58:12,003 - INFO - EarlyStopping counter: 5 out of 10
+2025-04-06 15:58:12,004 - INFO - 
+2025-04-06 15:58:12,004 - INFO - 
+2025-04-06 15:58:15,064 - INFO - 	iters: 100, epoch: 16 | loss: 0.0006211
+2025-04-06 15:58:15,064 - INFO - 	speed: 0.1693s/iter; left time: 18177.4323s
+2025-04-06 15:58:18,114 - INFO - 	iters: 200, epoch: 16 | loss: 0.0013137
+2025-04-06 15:58:18,115 - INFO - 	speed: 0.0305s/iter; left time: 3270.9581s
+2025-04-06 15:58:21,335 - INFO - 	iters: 300, epoch: 16 | loss: 0.0138946
+2025-04-06 15:58:21,336 - INFO - 	speed: 0.0322s/iter; left time: 3451.5306s
+2025-04-06 15:58:24,630 - INFO - 	iters: 400, epoch: 16 | loss: 0.0147182
+2025-04-06 15:58:24,630 - INFO - 	speed: 0.0329s/iter; left time: 3525.4897s
+2025-04-06 15:58:27,944 - INFO - 	iters: 500, epoch: 16 | loss: 0.0111323
+2025-04-06 15:58:27,945 - INFO - 	speed: 0.0332s/iter; left time: 3545.2169s
+2025-04-06 15:58:31,100 - INFO - 	iters: 600, epoch: 16 | loss: 0.0086399
+2025-04-06 15:58:31,100 - INFO - 	speed: 0.0315s/iter; left time: 3370.1700s
+2025-04-06 15:58:34,044 - INFO - 	iters: 700, epoch: 16 | loss: 0.0058465
+2025-04-06 15:58:34,044 - INFO - 	speed: 0.0294s/iter; left time: 3141.8891s
+2025-04-06 15:58:36,655 - INFO - 	iters: 800, epoch: 16 | loss: 0.0024832
+2025-04-06 15:58:36,655 - INFO - 	speed: 0.0261s/iter; left time: 2784.5405s
+2025-04-06 15:58:39,354 - INFO - 	iters: 900, epoch: 16 | loss: 0.0038453
+2025-04-06 15:58:39,355 - INFO - 	speed: 0.0270s/iter; left time: 2876.1376s
+2025-04-06 15:58:42,408 - INFO - 	iters: 1000, epoch: 16 | loss: 0.1534526
+2025-04-06 15:58:42,409 - INFO - 	speed: 0.0305s/iter; left time: 3250.9217s
+2025-04-06 15:58:45,466 - INFO - 	iters: 1100, epoch: 16 | loss: 0.0892107
+2025-04-06 15:58:45,467 - INFO - 	speed: 0.0306s/iter; left time: 3251.5359s
+2025-04-06 15:58:48,684 - INFO - 	iters: 1200, epoch: 16 | loss: 0.0061889
+2025-04-06 15:58:48,684 - INFO - 	speed: 0.0322s/iter; left time: 3418.3979s
+2025-04-06 15:58:50,637 - INFO - Epoch: 16 cost time: 38.6331
+2025-04-06 15:59:02,759 - INFO - Epoch: 16, Steps: 1264 | Train Loss: 0.02752
+Validation results --- Loss: 3.94052, Accuracy: 0.58760, Precision: 0.55476, Recall: 0.56014, F1: 0.52954, AUROC: 0.73624, AUPRC: 0.56603
+Test results --- Loss: 2.86577, Accuracy: 0.59933, Precision: 0.55051, Recall: 0.54052, F1: 0.53072, AUROC: 0.75558, AUPRC: 0.58691
+2025-04-06 15:59:02,759 - INFO - EarlyStopping counter: 6 out of 10
+2025-04-06 15:59:02,760 - INFO - 
+2025-04-06 15:59:02,760 - INFO - 
+2025-04-06 15:59:06,071 - INFO - 	iters: 100, epoch: 17 | loss: 0.1565348
+2025-04-06 15:59:06,072 - INFO - 	speed: 0.1739s/iter; left time: 18443.9315s
+2025-04-06 15:59:09,254 - INFO - 	iters: 200, epoch: 17 | loss: 0.0139735
+2025-04-06 15:59:09,254 - INFO - 	speed: 0.0318s/iter; left time: 3371.6554s
+2025-04-06 15:59:12,464 - INFO - 	iters: 300, epoch: 17 | loss: 0.0005164
+2025-04-06 15:59:12,465 - INFO - 	speed: 0.0321s/iter; left time: 3399.8051s
+2025-04-06 15:59:15,307 - INFO - 	iters: 400, epoch: 17 | loss: 0.0014356
+2025-04-06 15:59:15,308 - INFO - 	speed: 0.0284s/iter; left time: 3006.3415s
+2025-04-06 15:59:17,911 - INFO - 	iters: 500, epoch: 17 | loss: 0.0341741
+2025-04-06 15:59:17,912 - INFO - 	speed: 0.0260s/iter; left time: 2751.8108s
+2025-04-06 15:59:21,071 - INFO - 	iters: 600, epoch: 17 | loss: 0.0163735
+2025-04-06 15:59:21,071 - INFO - 	speed: 0.0316s/iter; left time: 3335.7356s
+2025-04-06 15:59:24,160 - INFO - 	iters: 700, epoch: 17 | loss: 0.0009448
+2025-04-06 15:59:24,160 - INFO - 	speed: 0.0309s/iter; left time: 3257.8571s
+2025-04-06 15:59:27,134 - INFO - 	iters: 800, epoch: 17 | loss: 0.0039490
+2025-04-06 15:59:27,134 - INFO - 	speed: 0.0297s/iter; left time: 3134.3144s
+2025-04-06 15:59:30,602 - INFO - 	iters: 900, epoch: 17 | loss: 0.0037027
+2025-04-06 15:59:30,602 - INFO - 	speed: 0.0347s/iter; left time: 3650.7043s
+2025-04-06 15:59:34,448 - INFO - 	iters: 1000, epoch: 17 | loss: 0.0001828
+2025-04-06 15:59:34,449 - INFO - 	speed: 0.0385s/iter; left time: 4046.2198s
+2025-04-06 15:59:38,200 - INFO - 	iters: 1100, epoch: 17 | loss: 0.0044507
+2025-04-06 15:59:38,200 - INFO - 	speed: 0.0375s/iter; left time: 3940.8430s
+2025-04-06 15:59:41,618 - INFO - 	iters: 1200, epoch: 17 | loss: 0.0006697
+2025-04-06 15:59:41,618 - INFO - 	speed: 0.0342s/iter; left time: 3588.2923s
+2025-04-06 15:59:43,909 - INFO - Epoch: 17 cost time: 41.1488
+2025-04-06 15:59:59,662 - INFO - Epoch: 17, Steps: 1264 | Train Loss: 0.02485
+Validation results --- Loss: 3.81278, Accuracy: 0.56174, Precision: 0.54105, Recall: 0.53708, F1: 0.52374, AUROC: 0.73269, AUPRC: 0.56324
+Test results --- Loss: 2.83840, Accuracy: 0.58793, Precision: 0.53940, Recall: 0.53599, F1: 0.53510, AUROC: 0.74517, AUPRC: 0.57929
+2025-04-06 15:59:59,663 - INFO - EarlyStopping counter: 7 out of 10
+2025-04-06 15:59:59,663 - INFO - 
+2025-04-06 15:59:59,663 - INFO - 
+2025-04-06 16:00:03,000 - INFO - 	iters: 100, epoch: 18 | loss: 0.0018199
+2025-04-06 16:00:03,001 - INFO - 	speed: 0.2138s/iter; left time: 22411.4380s
+2025-04-06 16:00:06,333 - INFO - 	iters: 200, epoch: 18 | loss: 0.0038983
+2025-04-06 16:00:06,334 - INFO - 	speed: 0.0333s/iter; left time: 3489.0876s
+2025-04-06 16:00:09,630 - INFO - 	iters: 300, epoch: 18 | loss: 0.0099961
+2025-04-06 16:00:09,630 - INFO - 	speed: 0.0330s/iter; left time: 3448.3548s
+2025-04-06 16:00:12,796 - INFO - 	iters: 400, epoch: 18 | loss: 0.0288327
+2025-04-06 16:00:12,797 - INFO - 	speed: 0.0317s/iter; left time: 3309.5286s
+2025-04-06 16:00:15,632 - INFO - 	iters: 500, epoch: 18 | loss: 0.0018014
+2025-04-06 16:00:15,633 - INFO - 	speed: 0.0284s/iter; left time: 2961.2009s
+2025-04-06 16:00:18,620 - INFO - 	iters: 600, epoch: 18 | loss: 0.0318800
+2025-04-06 16:00:18,621 - INFO - 	speed: 0.0299s/iter; left time: 3116.0019s
+2025-04-06 16:00:21,581 - INFO - 	iters: 700, epoch: 18 | loss: 0.0006812
+2025-04-06 16:00:21,582 - INFO - 	speed: 0.0296s/iter; left time: 3085.8361s
+2025-04-06 16:00:24,342 - INFO - 	iters: 800, epoch: 18 | loss: 0.1885656
+2025-04-06 16:00:24,343 - INFO - 	speed: 0.0276s/iter; left time: 2874.4459s
+2025-04-06 16:00:26,964 - INFO - 	iters: 900, epoch: 18 | loss: 0.0020242
+2025-04-06 16:00:26,965 - INFO - 	speed: 0.0262s/iter; left time: 2727.1296s
+2025-04-06 16:00:29,697 - INFO - 	iters: 1000, epoch: 18 | loss: 0.0028966
+2025-04-06 16:00:29,697 - INFO - 	speed: 0.0273s/iter; left time: 2839.7838s
+2025-04-06 16:00:32,680 - INFO - 	iters: 1100, epoch: 18 | loss: 0.0234994
+2025-04-06 16:00:32,681 - INFO - 	speed: 0.0298s/iter; left time: 3097.0537s
+2025-04-06 16:00:35,564 - INFO - 	iters: 1200, epoch: 18 | loss: 0.0079359
+2025-04-06 16:00:35,564 - INFO - 	speed: 0.0288s/iter; left time: 2990.2934s
+2025-04-06 16:00:37,422 - INFO - Epoch: 18 cost time: 37.7590
+2025-04-06 16:00:50,397 - INFO - Epoch: 18, Steps: 1264 | Train Loss: 0.02418
+Validation results --- Loss: 4.19860, Accuracy: 0.57006, Precision: 0.54190, Recall: 0.54268, F1: 0.51491, AUROC: 0.73516, AUPRC: 0.56253
+Test results --- Loss: 2.67780, Accuracy: 0.60343, Precision: 0.56228, Recall: 0.55066, F1: 0.54730, AUROC: 0.77035, AUPRC: 0.60557
+2025-04-06 16:00:50,397 - INFO - EarlyStopping counter: 8 out of 10
+2025-04-06 16:00:50,398 - INFO - 
+2025-04-06 16:00:50,398 - INFO - 
+2025-04-06 16:00:53,848 - INFO - 	iters: 100, epoch: 19 | loss: 0.0003115
+2025-04-06 16:00:53,849 - INFO - 	speed: 0.1828s/iter; left time: 18932.5695s
+2025-04-06 16:00:57,171 - INFO - 	iters: 200, epoch: 19 | loss: 0.0249756
+2025-04-06 16:00:57,172 - INFO - 	speed: 0.0332s/iter; left time: 3438.1861s
+2025-04-06 16:01:00,699 - INFO - 	iters: 300, epoch: 19 | loss: 0.0031600
+2025-04-06 16:01:00,700 - INFO - 	speed: 0.0353s/iter; left time: 3645.0899s
+2025-04-06 16:01:04,173 - INFO - 	iters: 400, epoch: 19 | loss: 0.0460692
+2025-04-06 16:01:04,174 - INFO - 	speed: 0.0347s/iter; left time: 3586.7659s
+2025-04-06 16:01:07,171 - INFO - 	iters: 500, epoch: 19 | loss: 0.0109535
+2025-04-06 16:01:07,172 - INFO - 	speed: 0.0300s/iter; left time: 3092.7962s
+2025-04-06 16:01:09,895 - INFO - 	iters: 600, epoch: 19 | loss: 0.0115573
+2025-04-06 16:01:09,895 - INFO - 	speed: 0.0272s/iter; left time: 2806.1808s
+2025-04-06 16:01:12,799 - INFO - 	iters: 700, epoch: 19 | loss: 0.0369162
+2025-04-06 16:01:12,800 - INFO - 	speed: 0.0290s/iter; left time: 2989.7794s
+2025-04-06 16:01:15,659 - INFO - 	iters: 800, epoch: 19 | loss: 0.0029935
+2025-04-06 16:01:15,659 - INFO - 	speed: 0.0286s/iter; left time: 2941.0782s
+2025-04-06 16:01:18,636 - INFO - 	iters: 900, epoch: 19 | loss: 0.0587784
+2025-04-06 16:01:18,637 - INFO - 	speed: 0.0298s/iter; left time: 3059.4009s
+2025-04-06 16:01:21,891 - INFO - 	iters: 1000, epoch: 19 | loss: 0.3347583
+2025-04-06 16:01:21,892 - INFO - 	speed: 0.0325s/iter; left time: 3340.8399s
+2025-04-06 16:01:25,240 - INFO - 	iters: 1100, epoch: 19 | loss: 0.0006899
+2025-04-06 16:01:25,242 - INFO - 	speed: 0.0335s/iter; left time: 3435.2897s
+2025-04-06 16:01:28,992 - INFO - 	iters: 1200, epoch: 19 | loss: 0.0041072
+2025-04-06 16:01:28,992 - INFO - 	speed: 0.0375s/iter; left time: 3841.5161s
+2025-04-06 16:01:31,190 - INFO - Epoch: 19 cost time: 40.7912
+2025-04-06 16:01:43,806 - INFO - Epoch: 19, Steps: 1264 | Train Loss: 0.02303
+Validation results --- Loss: 3.91646, Accuracy: 0.51822, Precision: 0.50034, Recall: 0.48929, F1: 0.47141, AUROC: 0.72450, AUPRC: 0.54621
+Test results --- Loss: 2.77763, Accuracy: 0.59551, Precision: 0.56606, Recall: 0.54681, F1: 0.55085, AUROC: 0.75763, AUPRC: 0.59889
+2025-04-06 16:01:43,806 - INFO - EarlyStopping counter: 9 out of 10
+2025-04-06 16:01:43,806 - INFO - 
+2025-04-06 16:01:43,806 - INFO - 
+2025-04-06 16:01:46,829 - INFO - 	iters: 100, epoch: 20 | loss: 0.0005556
+2025-04-06 16:01:46,830 - INFO - 	speed: 0.1784s/iter; left time: 18245.1177s
+2025-04-06 16:01:49,836 - INFO - 	iters: 200, epoch: 20 | loss: 0.0019373
+2025-04-06 16:01:49,836 - INFO - 	speed: 0.0301s/iter; left time: 3071.8994s
+2025-04-06 16:01:52,782 - INFO - 	iters: 300, epoch: 20 | loss: 0.0243092
+2025-04-06 16:01:52,783 - INFO - 	speed: 0.0295s/iter; left time: 3007.4977s
+2025-04-06 16:01:56,013 - INFO - 	iters: 400, epoch: 20 | loss: 0.0147986
+2025-04-06 16:01:56,017 - INFO - 	speed: 0.0323s/iter; left time: 3298.9440s
+2025-04-06 16:01:59,324 - INFO - 	iters: 500, epoch: 20 | loss: 0.0056569
+2025-04-06 16:01:59,324 - INFO - 	speed: 0.0331s/iter; left time: 3369.3546s
+2025-04-06 16:02:02,433 - INFO - 	iters: 600, epoch: 20 | loss: 0.0004017
+2025-04-06 16:02:02,434 - INFO - 	speed: 0.0311s/iter; left time: 3164.9256s
+2025-04-06 16:02:05,724 - INFO - 	iters: 700, epoch: 20 | loss: 0.0193379
+2025-04-06 16:02:05,724 - INFO - 	speed: 0.0329s/iter; left time: 3345.5647s
+2025-04-06 16:02:09,175 - INFO - 	iters: 800, epoch: 20 | loss: 0.1658341
+2025-04-06 16:02:09,175 - INFO - 	speed: 0.0345s/iter; left time: 3505.6322s
+2025-04-06 16:02:12,738 - INFO - 	iters: 900, epoch: 20 | loss: 0.0441128
+2025-04-06 16:02:12,739 - INFO - 	speed: 0.0356s/iter; left time: 3616.5040s
+2025-04-06 16:02:15,687 - INFO - 	iters: 1000, epoch: 20 | loss: 0.0039214
+2025-04-06 16:02:15,688 - INFO - 	speed: 0.0295s/iter; left time: 2989.6448s
+2025-04-06 16:02:18,708 - INFO - 	iters: 1100, epoch: 20 | loss: 0.0397326
+2025-04-06 16:02:18,709 - INFO - 	speed: 0.0302s/iter; left time: 3059.7292s
+2025-04-06 16:02:21,689 - INFO - 	iters: 1200, epoch: 20 | loss: 0.0277690
+2025-04-06 16:02:21,690 - INFO - 	speed: 0.0298s/iter; left time: 3016.4404s
+2025-04-06 16:02:23,564 - INFO - Epoch: 20 cost time: 39.7578
+2025-04-06 16:02:32,573 - INFO - Epoch: 20, Steps: 1264 | Train Loss: 0.02349
+Validation results --- Loss: 3.89837, Accuracy: 0.59080, Precision: 0.56994, Recall: 0.56433, F1: 0.54317, AUROC: 0.75953, AUPRC: 0.59340
+Test results --- Loss: 3.18562, Accuracy: 0.58950, Precision: 0.54516, Recall: 0.53754, F1: 0.53469, AUROC: 0.75178, AUPRC: 0.58289
+2025-04-06 16:02:32,573 - INFO - EarlyStopping counter: 10 out of 10
+2025-04-06 16:02:32,573 - INFO - Early stopping triggered.
+2025-04-06 16:02:32,573 - INFO - Early stopping
+2025-04-06 16:02:32,593 - INFO - >>>>>>>testing : classification_ADFTD-Indep_1_10_-0.19_-0.27_learnab_Best_TCN_ADFTD_ftM_sl256_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_ADFTD_seed43<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-04-06 16:03:08,424 - INFO - Validation results --- Loss: 2.61890, Accuracy: 0.59176, Precision: 0.57539, Recall: 0.57838, F1: 0.57480, AUROC: 0.73366, AUPRC: 0.56232
+Test results --- Loss: 1.96444, Accuracy: 0.57551, Precision: 0.54817, Recall: 0.54906, F1: 0.54768, AUROC: 0.75343, AUPRC: 0.58799
+

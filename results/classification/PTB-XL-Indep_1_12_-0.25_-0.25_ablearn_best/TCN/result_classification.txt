@@ -1,0 +1,25 @@
+classification_TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best_TCN_PTB-XL_ftM_sl96_ll48_pl96_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_PTB_XL_seed41  
+Validation results --- Loss: 0.75290, Accuracy: 0.74562, Precision: 0.67984, Recall: 0.61581, F1: 0.63702, AUROC: 0.91116, AUPRC: 0.69567
+Test results --- Loss: 0.80296, Accuracy: 0.73221, Precision: 0.64489, Recall: 0.58655, F1: 0.60437, AUROC: 0.90125, AUPRC: 0.66304
+
+
+classification_TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best_TCN_PTB-XL_ftM_sl250_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_PTB_XL_seed42  
+Validation results --- Loss: 0.70964, Accuracy: 0.74453, Precision: 0.66183, Recall: 0.63693, F1: 0.64724, AUROC: 0.91353, AUPRC: 0.70658
+Test results --- Loss: 0.73532, Accuracy: 0.73558, Precision: 0.64946, Recall: 0.61896, F1: 0.63180, AUROC: 0.90526, AUPRC: 0.68464
+
+
+classification_TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best_TCN_PTB-XL_ftM_sl250_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_PTB_XL_seed43  
+Validation results --- Loss: 0.70423, Accuracy: 0.74847, Precision: 0.67643, Recall: 0.62663, F1: 0.64211, AUROC: 0.91279, AUPRC: 0.70903
+Test results --- Loss: 0.73660, Accuracy: 0.74020, Precision: 0.66021, Recall: 0.60997, F1: 0.62258, AUROC: 0.90685, AUPRC: 0.68051
+
+
+classification_TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best_TCN_PTB-XL_ftM_sl250_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_PTB_XL_seed44  
+Validation results --- Loss: 0.69770, Accuracy: 0.74595, Precision: 0.67144, Recall: 0.61873, F1: 0.63039, AUROC: 0.91426, AUPRC: 0.69999
+Test results --- Loss: 0.72901, Accuracy: 0.73960, Precision: 0.66317, Recall: 0.61038, F1: 0.62098, AUROC: 0.90602, AUPRC: 0.67809
+
+
+classification_TCN/PTB-XL-Indep_1_12_-0.25_-0.25_ablearn_best_TCN_PTB-XL_ftM_sl250_ll48_pl0_dm128_nh8_el6_dl1_df256_fc1_ebtimeF_dtTrue_Exp_TCN_PTB_XL_seed45  
+Validation results --- Loss: 0.69156, Accuracy: 0.74725, Precision: 0.66619, Recall: 0.61961, F1: 0.62929, AUROC: 0.91567, AUPRC: 0.70392
+Test results --- Loss: 0.73088, Accuracy: 0.73879, Precision: 0.65278, Recall: 0.60894, F1: 0.61501, AUROC: 0.90734, AUPRC: 0.68098
+
+
