@@ -17,9 +17,9 @@ CUDA_VISIBLE_DEVICES=6 python \
   --patience 10 \
   --t 1 \
   --n 9 \
-  --a 1 \
-  --b 1 \
-  --learnab False \
+  --a -0.8 \
+  --b -0.6 \
+  --learnab True \
   --gpu 0
 
 
