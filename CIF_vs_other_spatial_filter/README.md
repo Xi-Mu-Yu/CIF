@@ -96,27 +96,27 @@ Raw multichannel signal  →  [Spatial preprocessing]  →  HM-BiTCN  →  Class
 
 ## 3. Experimental Results
 
-On APAVA, ADFTD, TDBRAIN, and PTB, we use the same HM-BiTCN configuration and only switch `--spatial_mode`. The table below reports **mean ± std Test Accuracy** over 4 random seeds (seeds 42–45):
+On APAVA, ADFTD, TDBRAIN, and PTB, we use the same HM-BiTCN configuration and only switch `--spatial_mode`. The table below reports **mean ± std Test Accuracy** over 5 random seeds (seeds 41–45):
 
 | Method | APAVA | ADFTD | TDBRAIN | PTB |
 |--------|-------|-------|---------|-----|
-| **cif** | **86.20 ± 1.15** | **58.20 ± 0.67** | **93.44 ± 1.42** | **88.96 ± 0.61** |
-| laplacian | 86.78 ± 0.64 | 50.59 ± 0.90 | 78.33 ± 2.40 | 80.30 ± 2.17 |
-| bipolar | 85.59 ± 1.40 | 51.29 ± 0.74 | 76.35 ± 3.53 | 78.03 ± 4.05 |
-| linear | 84.01 ± 1.70 | 52.55 ± 2.26 | 88.12 ± 2.87 | 85.09 ± 2.78 |
-| ecg | 84.03 ± 1.43 | 50.02 ± 1.95 | 90.81 ± 1.46 | 84.03 ± 1.74 |
-| csp | 83.72 ± 0.93 | 50.45 ± 0.99 | 91.04 ± 2.20 | 76.57 ± 1.15 |
-| ica | 82.56 ± 2.51 | 53.36 ± 0.91 | 91.72 ± 2.16 | 82.14 ± 1.84 |
-| car | 80.29 ± 2.48 | 52.68 ± 1.04 | 74.04 ± 1.61 | 83.74 ± 2.38 |
-| sss | 79.70 ± 0.23 | 53.96 ± 1.01 | 85.86 ± 0.86 | 85.82 ± 1.03 |
-| ssp | 78.16 ± 0.43 | 53.83 ± 1.64 | 71.67 ± 5.69 | 79.63 ± 1.50 |
+| laplacian | **86.40 ± 0.94** | 49.85 ± 1.69 | 78.83 ± 2.37 | 79.52 ± 2.50 |
+| **cif** | 86.30 ± 1.05 | **58.56 ± 0.93** | **93.13 ± 1.41** | **88.29 ± 1.45** |
+| bipolar | 86.18 ± 1.72 | 51.12 ± 0.74 | 77.19 ± 3.57 | 79.01 ± 4.12 |
+| linear | 84.33 ± 1.65 | 53.16 ± 2.37 | 88.87 ± 2.98 | 84.98 ± 2.50 |
+| ecg | 83.56 ± 1.58 | 49.45 ± 2.09 | 90.54 ± 1.41 | 84.10 ± 1.56 |
+| csp | 83.48 ± 0.96 | 50.24 ± 0.98 | 90.37 ± 2.38 | 76.54 ± 1.03 |
+| ica | 82.12 ± 2.41 | 52.29 ± 2.28 | 91.06 ± 2.34 | 82.15 ± 1.64 |
+| car | 80.73 ± 2.38 | 53.10 ± 1.26 | 74.25 ± 1.51 | 83.39 ± 2.23 |
+| sss | 79.06 ± 1.29 | 54.15 ± 0.98 | 86.33 ± 1.22 | 85.25 ± 1.46 |
+| ssp | 77.96 ± 0.56 | 53.93 ± 1.48 | 72.10 ± 5.16 | 79.69 ± 1.35 |
 
 **Main findings:**
 
-1. **CIF achieves the best (or tied-best) Test Accuracy on all 4 datasets**, with the largest gains on TDBRAIN (+5.3% vs. next-best csp/ica) and ADFTD (+5.6% vs. next-best).
-2. **Fixed re-referencing methods** (CAR, SSP) are generally weaker than CIF; CAR drops nearly 20 points on TDBRAIN, suggesting global mean subtraction destroys spatial structure on that dataset.
-3. **CSP is label-sensitive** and performs poorly on PTB (76.57%), likely because binary reduction (min class vs. rest) does not suit the multiclass structure of that task.
-4. **Laplacian slightly exceeds CIF on APAVA** (86.78 vs. 86.20), but CIF is better on the other three datasets, making it more balanced overall.
+1. **CIF achieves the best Test Accuracy on 3/4 datasets** (ADFTD, TDBRAIN, PTB), with the largest gains on TDBRAIN (+2.1% vs. next-best ica) and ADFTD (+4.4% vs. next-best sss).
+2. **Fixed re-referencing methods** (CAR, SSP) are generally weaker than CIF; CAR drops nearly 19 points on TDBRAIN, suggesting global mean subtraction destroys spatial structure on that dataset.
+3. **CSP is label-sensitive** and performs poorly on PTB (76.54%), likely because binary reduction (min class vs. rest) does not suit the multiclass structure of that task.
+4. **Laplacian slightly exceeds CIF on APAVA** (86.40 vs. 86.30), but CIF is better on the other three datasets, making it more balanced overall.
 5. **Linear (`C²` params) does not beat CIF**, indicating that CIF's region-ordering prior effectively constrains the search space and yields better generalization with far fewer parameters.
 
 Full logs and per-seed results are in `./results/classification/` and `./log/classification/`.
