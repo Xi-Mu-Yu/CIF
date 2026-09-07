@@ -65,5 +65,6 @@ bash ./scripts/TCN.sh
 
 
 ## Acknowledgements
-Our code is largely based on [Medformer](https://github.com/DL4mHealth/Medformer) and [Time-Series-Library](https://github.com/thuml/Time-Series-Library). Thanks for these authors for their valuable work, hope our work can also contribute to related research.
+Our code is largely based on [Medformer](https://github.com/DL4mHealth/Medformer)  [ADformer](https://github.com/DL4mHealth/ADformer). [ecg_ptbxl_benchmarking
+](https://github.com/helme/ecg_ptbxl_benchmarking) and [Time-Series-Library](https://github.com/thuml/Time-Series-Library). Thanks for these authors for their valuable work, hope our work can also contribute to related research.
 
